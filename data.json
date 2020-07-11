@@ -18,7 +18,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Hold Ground",
           "fr": "Défense statique"
@@ -50,7 +50,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Knock Down",
           "fr": "Frappe au sol"
@@ -82,7 +82,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 1,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Mighty Blow",
           "fr": "Coup puissant"
@@ -120,7 +120,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Shield Slam",
           "fr": "Coup de bouclier"
@@ -155,7 +155,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Blizzard",
           "fr": "Blizzard"
@@ -187,7 +187,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Onwards!",
           "fr": "En avant !"
@@ -235,7 +235,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Me Hearties",
           "fr": "Les gars de la Marine"
@@ -276,7 +276,7 @@
           "direct": true
         },
         "strentgh": 1,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Harpoon Strike",
           "fr": "Lancer de harpon"
@@ -308,7 +308,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Plundarr!",
           "fr": "Pullage !"
@@ -340,7 +340,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 1,
+        "defense": 1,
         "name": {
           "en": "Intimidation",
           "fr": "Intimidation"
@@ -372,7 +372,7 @@
         "range": null,
         "aoe": 3,
         "strentgh": 1,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Anchors Aweigh!",
           "fr": "Levez l'ancre !"
@@ -404,7 +404,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Set Sail!",
           "fr": "Hissez les voiles !"
@@ -450,7 +450,7 @@
         },
         "aoe": 1,
         "strentgh": 3,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Fireball",
           "fr": "Boule de feu"
@@ -486,7 +486,7 @@
         },
         "aoe": 1,
         "strentgh": 3,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Flamespear",
           "fr": "Trait de flammes"
@@ -522,7 +522,7 @@
         },
         "aoe": 1,
         "strentgh": 3,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Chain Lightning",
           "fr": "Chaîne d'éclairs"
@@ -558,7 +558,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Ignite",
           "fr": "Embrasement"
@@ -590,7 +590,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 1,
+        "defense": 1,
         "name": {
           "en": "Arcane Shield",
           "fr": "Bouclier arcanique"
@@ -622,7 +622,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Teleport",
           "fr": "Téléportation"
@@ -668,7 +668,7 @@
         },
         "aoe": 1,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Relentless Advance",
           "fr": "Avance implacable"
@@ -703,7 +703,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 1,
+        "defense": 1,
         "name": {
           "en": "Darksteel Armour",
           "fr": "Armure du noiracier"
@@ -735,7 +735,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Throw",
           "fr": "Lancer"
@@ -764,7 +764,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Maul Thrash",
           "fr": "Mutilation"
@@ -796,7 +796,7 @@
         "range": null,
         "aoe": 6,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Fury",
           "fr": "Fureur"
@@ -828,7 +828,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 1,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Appetite for Destruction",
           "fr": "Soif de destruction"
@@ -883,7 +883,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Challenge",
           "fr": "Défi"
@@ -915,7 +915,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Focus",
           "fr": "Concentration"
@@ -947,7 +947,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Double Strike",
           "fr": "Double frappe"
@@ -985,7 +985,7 @@
         "range": null,
         "aoe": 3,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Flash of Jade",
           "fr": "Éclair de jade"
@@ -1017,7 +1017,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Revenge",
           "fr": "Vengeance"
@@ -1049,7 +1049,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 1,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Pounce",
           "fr": "Bon puissant"
@@ -1104,7 +1104,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Heavy Shot",
           "fr": "Volée de carreaux"
@@ -1146,7 +1146,7 @@
         },
         "aoe": 1,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Hunter's Quarry",
           "fr": "Proie de la chasseresse"
@@ -1178,7 +1178,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Prowl",
           "fr": "Traque"
@@ -1218,7 +1218,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 1,
+        "defense": 1,
         "name": {
           "en": "Ambush",
           "fr": "Embuscade"
@@ -1254,7 +1254,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Spring the Trap",
           "fr": "Pris au piège"
@@ -1296,7 +1296,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Hit and Run",
           "fr": "Fuite tactique"
@@ -1345,7 +1345,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Double Dealing",
           "fr": "Double assaut"
@@ -1377,7 +1377,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Nightshade",
           "fr": "Belladone"
@@ -1417,7 +1417,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Stalk Beneath",
           "fr": "Traque souterraine"
@@ -1455,7 +1455,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 3,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Burrow",
           "fr": "Tunnel"
@@ -1493,7 +1493,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Sneak Attack",
           "fr": "Attaque surnoise"
@@ -1525,7 +1525,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 1,
+        "defense": 1,
         "name": {
           "en": "Go to Ground",
           "fr": "Plongeon"
@@ -1570,7 +1570,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 3,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Ravenous Bite",
           "fr": "Morsure vorace"
@@ -1608,7 +1608,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Stalk the Prey",
           "fr": "Traque carnassière"
@@ -1640,7 +1640,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Closing In",
           "fr": ""
@@ -1678,7 +1678,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Overpower",
           "fr": "Projection"
@@ -1716,7 +1716,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Bone to Pick",
           "fr": ""
@@ -1754,7 +1754,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "A Cornered Beast",
           "fr": "Une bête aux abois"
@@ -1803,7 +1803,7 @@
         },
         "aoe": 1,
         "strentgh": 3,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Hell Hath No Fury",
           "fr": "L'Enfer n'est rien..."
@@ -1835,7 +1835,7 @@
         "range": null,
         "aoe": 6,
         "strentgh": 0,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Chop",
           "fr": "Moulinet"
@@ -1867,7 +1867,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Shockwave",
           "fr": "Onde de choc"
@@ -1905,7 +1905,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 3,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Leaping Strike",
           "fr": "Saut acrobatique"
@@ -1937,7 +1937,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 2,
+        "defense": 2,
         "name": {
           "en": "",
           "fr": "Rugissement sanglant"
@@ -1973,7 +1973,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Sap Strength",
           "fr": ""
@@ -2018,7 +2018,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Clairvoiance",
           "fr": "Clairvoyance"
@@ -2060,7 +2060,7 @@
         },
         "aoe": 1,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Grasping Vines",
           "fr": "Charme"
@@ -2092,7 +2092,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Healing Rain",
           "fr": "Pluie salvatrice"
@@ -2124,7 +2124,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Intervention",
           "fr": "Intervention"
@@ -2160,7 +2160,7 @@
         },
         "aoe": 1,
         "strentgh": 3,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Nature's Wrath",
           "fr": "Courroux de la nature"
@@ -2196,7 +2196,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Winding Paths",
           "fr": "Voies sinueuses"
@@ -2245,7 +2245,7 @@
         },
         "aoe": 1,
         "strentgh": 1,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Dark Envoy",
           "fr": "Sombre héraut"
@@ -2277,7 +2277,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Nightmare",
           "fr": "Cauchemar"
@@ -2315,7 +2315,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Guiding Light",
           "fr": "Lumière inspirante"
@@ -2347,7 +2347,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 1,
+        "defense": 1,
         "name": {
           "en": "Murder of Crows",
           "fr": "Volée de corbeaux"
@@ -2383,7 +2383,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Soul Reave",
           "fr": "Déchirure de l'âme"
@@ -2415,7 +2415,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Grim Harvest",
           "fr": "Moisson sinistre"
@@ -2460,7 +2460,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Rodeo",
           "fr": "Rodéo"
@@ -2498,7 +2498,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 1,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Charge",
           "fr": ""
@@ -2536,7 +2536,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 1,
+        "defense": 1,
         "name": {
           "en": "Momentum",
           "fr": "Sur la lancée"
@@ -2572,7 +2572,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Bludgeon",
           "fr": "Matraquage"
@@ -2604,7 +2604,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 3,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Finishing Blow",
           "fr": "Coup final"
@@ -2642,7 +2642,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Rush",
           "fr": "Au grand galop"
@@ -2687,7 +2687,7 @@
         "range": null,
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Double Jump",
           "fr": "Double saut"
@@ -2725,7 +2725,7 @@
         "range": null,
         "aoe": 6,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Mighty Jump",
           "fr": "Saut puissant"
@@ -2767,7 +2767,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Poisoned Dart",
           "fr": "Fléchette empoisonnée"
@@ -2799,7 +2799,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 1,
+        "defense": 1,
         "name": {
           "en": "Blinding Dart",
           "fr": "Fléchette avauglante"
@@ -2831,7 +2831,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Scout Ahead",
           "fr": "Reconnaissance"
@@ -2873,7 +2873,7 @@
         },
         "aoe": 1,
         "strentgh": 1,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Tongue Lash",
           "fr": "Langue collante"
@@ -2922,7 +2922,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Darting Strikes",
           "fr": "Scission de l'âme"
@@ -2958,7 +2958,7 @@
         },
         "aoe": 1,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Life Drain",
           "fr": "Absorption vitale"
@@ -3000,7 +3000,7 @@
         },
         "aoe": 1,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Effigy",
           "fr": "Effigie"
@@ -3038,7 +3038,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Spirit Slither",
           "fr": "Esprit glissant"
@@ -3070,7 +3070,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Mind Control",
           "fr": "Contrôle Mental"
@@ -3102,7 +3102,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": 2,
+        "defense": 2,
         "name": {
           "en": "Curse",
           "fr": "Malédiction"
@@ -3147,7 +3147,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Take Flight",
           "fr": "Envol"
@@ -3189,7 +3189,7 @@
         },
         "aoe": 1,
         "strentgh": 1,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Wingstorm",
           "fr": "Tempête d'ailes"
@@ -3221,7 +3221,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "From the Ashes",
           "fr": "Renaissance"
@@ -3253,7 +3253,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Healing Tears",
           "fr": "Larmes curatives"
@@ -3291,7 +3291,7 @@
         "range": null,
         "aoe": null,
         "strentgh": null,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Inner Fire",
           "fr": "Feu intérieur"
@@ -3323,7 +3323,7 @@
         "range": null,
         "aoe": 3,
         "strentgh": 2,
-        "defence": null,
+        "defense": null,
         "name": {
           "en": "Death From Above",
           "fr": "La mort venue du ciel"
