@@ -1,0 +1,3352 @@
+{
+  "Dugrun" : {
+    "id": 0,
+    "hp": 6,
+    "defense": 2,
+    "levelUp": {
+      "hp": 7,
+      "defense": 2,
+      "en": "Adjacent enemies must target Dugrun, if able.",
+      "fr": "Les ennemis adjacents ne peuvent pas attaquer, sauf si Dugrun est la cible de l'attaque."
+    },
+    "cards": [
+      {
+        "number": "DUG02",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Hold Ground",
+          "fr": "Défense statique"
+        },
+        "text": {
+          "en": ["Negate any displacement effects caused by the attack."],
+          "fr": ["Annulez tous les effets de déplacement provoqués par l'attaque."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "DUG03",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Knock Down",
+          "fr": "Frappe au sol"
+        },
+        "text": {
+          "en": ["↷ Dugrun's Allies gain +2 strength against the target until the end of the turn."],
+          "fr": ["↷ Les alliés de Dugrun gagnent +2 force contre la cible jusqu'à la fin du tour."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "DUG04",
+        "color": "blue",
+        "type": "attack",
+        "movement": 1,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 1,
+        "defence": null,
+        "name": {
+          "en": "Mighty Blow",
+          "fr": "Coup puissant"
+        },
+        "text": {
+          "en": [
+            "↷ Push 2",
+            "If the target is damaged by the Push, they suffer Stun."
+          ],
+          "fr": [
+            "↷ Poussée 2",
+            "Si la cible a reçu des dommages à cause de la Poussée, elle subit un Étourdissement."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "DUG05",
+        "color": "blue",
+        "type": "skill",
+        "movement": 1,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Shield Slam",
+          "fr": "Coup de bouclier"
+        },
+        "text": {
+          "en": [
+            "Dash 2.",
+            "Each adjacent Enemy suffers Push 1."
+          ],
+          "fr": [
+            "Course 2.",
+            "Chaque ennemi adjacent subit Poussée 1."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true
+        }
+      },
+      {
+        "number": "DUG06",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Blizzard",
+          "fr": "Blizzard"
+        },
+        "text": {
+          "en": ["↷ If damage was dealt, deal 1 damage to each other Enemey."],
+          "fr": ["↷ Si au moins un dommage a été infligé, infligez un dommage à tous les autres ennemies."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "DUG07",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 1,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Onwards!",
+          "fr": "En avant !"
+        },
+        "text": {
+          "en": [
+            "Draw 1.",
+            "Dugrun's Allies may Dash 1."
+          ],
+          "fr": [
+            "Pioche 1.",
+            "Les alliés de Dugrun peuvent effectuer une Course 1."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true
+        }
+      }
+    ]
+  },
+  "Gold'arr" : {
+    "id": 1,
+    "hp": 8,
+    "defense": 1,
+    "levelUp": {
+      "hp": 8,
+      "defense": 1,
+      "en": "Immune to Push.",
+      "fr": "Immunité à la Poussée."
+    },
+    "cards": [
+      {
+        "number": "GOL02",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Me Hearties",
+          "fr": "Les gars de la Marine"
+        },
+        "text": {
+          "en": [
+            "Draw 1.",
+            "Gold'arr's Allies gain +1 strentgh and +1 movement until the end of the turn."
+          ],
+          "fr": [
+            "Pioche 1.",
+            "Les alliés de Gold'arr gagnent +1 force et +1 mouvement jusqu'à la fin du tour."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GOL03",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 2,
+          "max": 3,
+          "direct": true
+        },
+        "strentgh": 1,
+        "defence": null,
+        "name": {
+          "en": "Harpoon Strike",
+          "fr": "Lancer de harpon"
+        },
+        "text": {
+          "en": ["↷ Pull 2."],
+          "fr": ["↷ Attraction 2."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GOL04",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Plundarr!",
+          "fr": "Pullage !"
+        },
+        "text": {
+          "en": ["↷ Draw 1 for each damage dealt."],
+          "fr": ["↷ Pioche 1 pour chaque dommage infligé."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GOL05",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 1,
+        "name": {
+          "en": "Intimidation",
+          "fr": "Intimidation"
+        },
+        "text": {
+          "en": ["↷ The attacker suffers Fear 2."],
+          "fr": ["↷ L'attaquant subit Peur 2."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GOL06",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 3,
+        "strentgh": 1,
+        "defence": null,
+        "name": {
+          "en": "Anchors Aweigh!",
+          "fr": "Levez l'ancre !"
+        },
+        "text": {
+          "en": ["↷ Push 1."],
+          "fr": ["↷ Poussée 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GOL07",
+        "color": "blue",
+        "type": "skill",
+        "movement": 1,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Set Sail!",
+          "fr": "Hissez les voiles !"
+        },
+        "text": {
+          "en": ["Dash 5 ignoring Champions and traps. Deal 1 damage to each Enemy dashed through."],
+          "fr": ["Course 5, en ignorant les champions et les pièges. Infligez 1 dommage à chaque ennemi traversé par la Course."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": true
+        }
+      }
+    ]
+  },
+  "Gwaien" : {
+    "id": 2,
+    "hp": 6,
+    "defense": 0,
+    "levelUp": {
+      "hp": 6,
+      "defense": 0,
+      "en": "When you activate Gwaien, decrease the minimum range by 1 and increase the maximum range by 1.",
+      "fr": "Quand vous activez Gwaien, diminuez sa portée minimale de 1 et augmentez sa portée maximale de 1."
+    },
+    "cards": [
+      {
+        "number": "GWA02",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 2,
+          "max": 3,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 3,
+        "defence": null,
+        "name": {
+          "en": "Fireball",
+          "fr": "Boule de feu"
+        },
+        "text": {
+          "en": ["↷ Deal 2 damages to each Champion adjacent to the target."],
+          "fr": ["↷ Infligez 2 dommages à chaque champion adjacent à la cible."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GWA03",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 3,
+          "max": 5,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 3,
+        "defence": null,
+        "name": {
+          "en": "Flamespear",
+          "fr": "Trait de flammes"
+        },
+        "text": {
+          "en": ["↷ Push 1."],
+          "fr": ["↷ Poussée 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GWA04",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 2,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 3,
+        "defence": null,
+        "name": {
+          "en": "Chain Lightning",
+          "fr": "Chaîne d'éclairs"
+        },
+        "text": {
+          "en": ["↷ Fi damage was dealt, deal 2 damages to another Champion within 2 hexes of the target."],
+          "fr": ["↷ Si au moins un dommage a été infligé, infligez 2 dommages à un autre champion qui se trouve dans les 2 cases de la cible."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GWA05",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Ignite",
+          "fr": "Embrasement"
+        },
+        "text": {
+          "en": ["↷ Gwaien's Allies gain +2 strength against the target until the end of the turn."],
+          "fr": ["↷ Les alliés de Gwaien gagnent +2 force contre la cible jusqu'à la fin du tour."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GWA06",
+        "color": "yellow",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 1,
+        "name": {
+          "en": "Arcane Shield",
+          "fr": "Bouclier arcanique"
+        },
+        "text": {
+          "en": ["If the attacker is not adjacent to the target, this card gives +2 defense instead."],
+          "fr": ["Si l'attaquant n'est pas adjacent à la cible, cette carte accorde +2 défense à la place."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "GWA07",
+        "color": "blue",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Teleport",
+          "fr": "Téléportation"
+        },
+        "text": {
+          "en": ["Jump 4."],
+          "fr": ["Saut 4."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true
+        }
+      }
+    ]
+  },
+  "Kilgore" : {
+    "id": 3,
+    "hp": 7,
+    "defense": 1,
+    "levelUp": {
+      "hp": 8,
+      "defense": 1,
+      "en": "Immune to Stun.",
+      "fr": "Immunité à l'Étourdissement."
+    },
+    "cards": [
+      {
+        "number": "KIL02",
+        "color": "red",
+        "type": "skill",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Relentless Advance",
+          "fr": "Avance implacable"
+        },
+        "text": {
+          "en": [
+            "Force 1.",
+            "Place Kolgore in the target's original hex."
+          ],
+          "fr": [
+            "Transfert 1.",
+            "Placez Kilgore dans la case d'origine de la cible."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true
+        }
+      },
+      {
+        "number": "KIL03",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 1,
+        "name": {
+          "en": "Darksteel Armour",
+          "fr": "Armure du noiracier"
+        },
+        "text": {
+          "en": ["↷ The target gains +2 defense until the end of the turn."],
+          "fr": ["↷ La cible gagne +2 défense jusqu'à la fin du tour."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": true,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KIL04",
+        "color": "blue",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Throw",
+          "fr": "Lancer"
+        },
+        "text": {
+          "en": ["One of Kilgore's adjacent Allies may Jump 3."],
+          "fr": ["Un allié adjacent à Kilgore peut effectuer un Saut 3."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true
+        }
+      },
+      {
+        "number": "KIL05",
+        "color": "blue",
+        "type": "attack",
+        "movement": 1,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Maul Thrash",
+          "fr": "Mutilation"
+        },
+        "text": {
+          "en": ["↷ Push 2."],
+          "fr": ["↷ Poussée 2."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KIL06",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 6,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Fury",
+          "fr": "Fureur"
+        },
+        "text": {
+          "en": ["↷ Heal 1."],
+          "fr": ["↷ Soin 1."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KIL07",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 0,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 1,
+        "defence": null,
+        "name": {
+          "en": "Appetite for Destruction",
+          "fr": "Soif de destruction"
+        },
+        "text": {
+          "en": [
+            "Lifesteal.",
+            "This card gains +2 strength for each ready standard Core you control."
+          ],
+          "fr": [
+            "Drain de vie.",
+            "Cette attaque gagne +2 force pour chaque essence standart régénérée que vous contrôlez."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Tzu Xiao" : {
+    "id": 4,
+    "hp": 9,
+    "defense": 0,
+    "levelUp": {
+      "hp": 9,
+      "defense": 0,
+      "en": "Adjacent Enemies suffer -1.",
+      "fr": "Les ennemis adjacents subissent -1 défense."
+    },
+    "cards": [
+      {
+        "number": "TZU02",
+        "color": "blue",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Challenge",
+          "fr": "Défi"
+        },
+        "text": {
+          "en": ["↷ Pull 1."],
+          "fr": ["↷ Attraction 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TZU03",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 1,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Focus",
+          "fr": "Concentration"
+        },
+        "text": {
+          "en": ["Your Champions gain +1 strength and +1 movement until the end of the turn."],
+          "fr": ["Vos champions gagnent +1 force et +1 mouvement jusqu'à la fin du tour."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TZU04",
+        "color": "red",
+        "type": "attack",
+        "movement": 0,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Double Strike",
+          "fr": "Double frappe"
+        },
+        "text": {
+          "en": [
+            "↶ Dash 2.",
+            "Double."
+          ],
+          "fr": [
+            "↶ Course 2.",
+            "Doublé."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TZU05",
+        "color": "red",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": 3,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Flash of Jade",
+          "fr": "Éclair de jade"
+        },
+        "text": {
+          "en": ["Deal damages to each target until they are Blooddied."],
+          "fr": ["Infligez des dommages à chaque cible jusqu'à ce qu'elle soit Mal en point."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TZU06",
+        "color": "blue",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Revenge",
+          "fr": "Vengeance"
+        },
+        "text": {
+          "en": ["↷ If the target was not taken Out of Action, the attacker also suffers the attack damages."],
+          "fr": ["↷ Si la cible n'a pas été mise Hors de combat, l'attaquant subit aussi les dommages de l'attaque."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TZU07",
+        "color": "red",
+        "type": "attack",
+        "movement": 0,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 1,
+        "defence": null,
+        "name": {
+          "en": "Pounce",
+          "fr": "Bon puissant"
+        },
+        "text": {
+          "en": [
+            "↶ Jump 3.",
+            "↷ Push 1."
+          ],
+          "fr": [
+            "↶ Saut 3.",
+            "↷ Pousée 1."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Deryn" : {
+    "id": 5,
+    "hp": 7,
+    "defense": 0,
+    "levelUp": {
+      "hp": 7,
+      "defense": 0,
+      "en": "Deryn gains +2 defense whilst on a trap hex. Do not trigger traps in Deryn's hex.",
+      "fr": "Deryn gagne +2 défense si elle se trouve sur une case Piège. Ne déclenchez pas les pièges dans la case de Deryn."
+    },
+    "cards": [
+      {
+        "number": "DER02",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 2,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Heavy Shot",
+          "fr": "Volée de carreaux"
+        },
+        "text": {
+          "en": [
+            "This attack gains +1 strength if Deryn is on a trap hex.",
+            "↷ Push 1, or Push 2 if Deryn is on a trap hex."
+          ],
+          "fr": [
+            "Cette attaque gagne +1 force si Deryn se trouve sur une case Piège.",
+            "↷ Poussée 1, ou Poussée 2 si Deryn se trouve sur une case Piège."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "DER03",
+        "color": "red",
+        "type": "skill",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 4,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Hunter's Quarry",
+          "fr": "Proie de la chasseresse"
+        },
+        "text": {
+          "en": ["The next attack on the target this turn ignores defense and gains +1 strength."],
+          "fr": ["La prochaine attaque sur la cible durant ce tour ignore la défense et gagne +1 strength."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "DER04",
+        "color": "blue",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Prowl",
+          "fr": "Traque"
+        },
+        "text": {
+          "en": [
+            "Draw 2.",
+            "Plan 1.",
+            "You may look at a trap token in play, then place it on any free trap hex."
+          ],
+          "fr": [
+            "Pioche 2.",
+            "Plan 1.",
+            "Vous pouvez regarder un jetion Piège en jeu, puis le placer sur n'importe quelle case Piège libre."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "DER05",
+        "color": "yellow",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 1,
+        "name": {
+          "en": "Ambush",
+          "fr": "Embuscade"
+        },
+        "text": {
+          "en": ["↷ Place Deryn adjacent to the attacker."],
+          "fr": ["↷ Placez Deryn sur une case adjacente à celle de l'attaquant."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "DER06",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 4,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Spring the Trap",
+          "fr": "Pris au piège"
+        },
+        "text": {
+          "en": [
+            "If the target is in a trap hex, this attack gains +2 strength.",
+            "↷ If the target is in a trap hex, they suffer Stun."
+          ],
+          "fr": [
+            "Si la cible se trouve dans une cage Piège, cette attaque gagne +2 force.",
+            "↷ Si la cible se trouve dans une cage Piège, elle subit Étourdissement."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "DER07",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 3,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Hit and Run",
+          "fr": "Fuite tactique"
+        },
+        "text": {
+          "en": ["↷ Dash 2."],
+          "fr": ["↷ Course 2."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Rath" : {
+    "id": 6,
+    "hp": 6,
+    "defense": 0,
+    "levelUp": {
+      "hp": 7,
+      "defense": 0,
+      "en": "Rath's attacks gain Poison 1.",
+      "fr": "Les attaques de Rath gagnent Poison 1."
+    },
+    "cards": [
+      {
+        "number": "RAT02",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Double Dealing",
+          "fr": "Double assaut"
+        },
+        "text": {
+          "en": ["Double."],
+          "fr": ["Doublé."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "RAT03",
+        "color": "blue",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Nightshade",
+          "fr": "Belladone"
+        },
+        "text": {
+          "en": [
+            "Draw 2.",
+            "Plan 1.",
+            "Rath's next attack this turn ignores defense."
+          ],
+          "fr": [
+            "Pioche 2.",
+            "Plan 1.",
+            "La prochaine attaque de Rath durant ce tour ignore la défense."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "RAT04",
+        "color": "red",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Stalk Beneath",
+          "fr": "Traque souterraine"
+        },
+        "text": {
+          "en": [
+            "Deal 2 damages to an adjacent Enemy.",
+            "If damage was dealt, place Rath adjacent to an Ally."
+          ],
+          "fr": [
+            "Infligez 2 dommages à un ennemi adjacent.",
+            "Si des dommages ont été infligés, placez Rath sur une case adjacente à celle d'un allié."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "RAT05",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 0,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 3,
+        "defence": null,
+        "name": {
+          "en": "Burrow",
+          "fr": "Tunnel"
+        },
+        "text": {
+          "en": [
+            "↶ Jump 2.",
+            "↷ Jump 2."
+          ],
+          "fr": [
+            "↶ Saut 2.",
+            "↷ Saut 2."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "RAT06",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Sneak Attack",
+          "fr": "Attaque surnoise"
+        },
+        "text": {
+          "en": ["Reactions cannot be played during this attack."],
+          "fr": ["Les cartes Réactions ne peuvent pas être jouées durant cette attaque."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "RAT07",
+        "color": "yellow",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 1,
+        "name": {
+          "en": "Go to Ground",
+          "fr": "Plongeon"
+        },
+        "text": {
+          "en": ["↷ Jump 2."],
+          "fr": ["↷ Saut 2."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Mariusz" : {
+    "id": 7,
+    "hp": 7,
+    "defense": 0,
+    "levelUp": {
+      "hp": 7,
+      "defense": 0,
+      "en": "Mariusz attacks gain Lifesteal while Mariusz is Bloodied.",
+      "fr": "Les attaques de Mariusz gagnent Drain de vie quand Marisz est Mal en point."
+    },
+    "cards": [
+      {
+        "number": "MAR02",
+        "color": "blue",
+        "type": "attack",
+        "movement": 0,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 3,
+        "defence": null,
+        "name": {
+          "en": "Ravenous Bite",
+          "fr": "Morsure vorace"
+        },
+        "text": {
+          "en": [
+            "↶ Dash 2.",
+            "Lifsteal."
+          ],
+          "fr": [
+            "↶ Course 2.",
+            "Drain de vie."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "MAR03",
+        "color": "blue",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Stalk the Prey",
+          "fr": "Traque carnassière"
+        },
+        "text": {
+          "en": ["Place Mariusz adjacent to an Enemy. Each adjacent Bloodied Enemy suffers Stun."],
+          "fr": ["Placez Mariusz sur une case adjacente à un ennemi. Tous les ennemis adjacents Mal en point subissent un Étourdissement."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "MAR04",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Closing In",
+          "fr": ""
+        },
+        "text": {
+          "en": [
+            "↶ Dash 2.",
+            "If Mariusz is Bloodied, this attack gains Double."
+          ],
+          "fr": [
+            "↶ Course 2.",
+            "Si Mariusz est Mal en point, cette attaque gagne Doublé."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "MAR05",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 1,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Overpower",
+          "fr": "Projection"
+        },
+        "text": {
+          "en": [
+            "↶ Dash 2.",
+            "↷ If Mariusz is Bloodied, Force 1."
+          ],
+          "fr": [
+            "↶ Course 2.",
+            "↷ Si Mariusz est Mal en point, Transfert 1."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "MAR06",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Bone to Pick",
+          "fr": ""
+        },
+        "text": {
+          "en": [
+            "↶ If Mariusz is Bloodied, Dash 2.",
+            "If Mariusz is Bloodied, this attack gains +2 strength."
+          ],
+          "fr": [
+            "↶ Si Mariusz est Mal en point, Course 2.",
+            "Si Mariusw est Mal en point, cette attaque gagne +2 force."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "MAR07",
+        "color": "yellow",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "A Cornered Beast",
+          "fr": "Une bête aux abois"
+        },
+        "text": {
+          "en": ["↷ Enemies adjacent to the target suffer 2 damages."],
+          "fr": ["↷ Les ennemis adjacents à la cible subissent 2 dommages."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Korvash" : {
+    "id": 8,
+    "hp": 8,
+    "defense": 0,
+    "levelUp": {
+      "hp": 9,
+      "defense": 0,
+      "en": "Korvash's attacks ignore defense if the target is Bloodied.",
+      "fr": "Les attaques de Korvash ignorent la défense si la cible est Mal en point."
+    },
+    "cards": [
+      {
+        "number": "KOR02",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 3,
+        "defence": null,
+        "name": {
+          "en": "Hell Hath No Fury",
+          "fr": "L'Enfer n'est rien..."
+        },
+        "text": {
+          "en": ["↷ If the target is Bloodied, it suffers Force 1."],
+          "fr": ["↷ Si la cible est Mal en point, elle subit Transfert 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOR03",
+        "color": "red",
+        "type": "attack",
+        "movement": 0,
+        "range": null,
+        "aoe": 6,
+        "strentgh": 0,
+        "defence": null,
+        "name": {
+          "en": "Chop",
+          "fr": "Moulinet"
+        },
+        "text": {
+          "en": ["This attack gains +2 strength for each target."],
+          "fr": ["Cette attaque gagne +2 force pour chaque cible."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOR04",
+        "color": "blue",
+        "type": "skill",
+        "movement": 1,
+        "range": null,
+        "aoe": 1,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Shockwave",
+          "fr": "Onde de choc"
+        },
+        "text": {
+          "en": [
+            "Push 1.",
+            "Stun."
+          ],
+          "fr": [
+            "Poussée 1.",
+            "Étourdissement."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOR05",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 1,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 3,
+        "defence": null,
+        "name": {
+          "en": "Leaping Strike",
+          "fr": "Saut acrobatique"
+        },
+        "text": {
+          "en": ["↶ Jump 2."],
+          "fr": ["↶ Saut 2."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOR06",
+        "color": "blue",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 2,
+        "name": {
+          "en": "",
+          "fr": "Rugissement sanglant"
+        },
+        "text": {
+          "en": ["↷ If the attacker is Bloodied, ignore any post attack effects."],
+          "fr": ["↷ Si l'attaquant est Mal en point, ignorez tous les effets Après l'attaque."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOR07",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Sap Strength",
+          "fr": ""
+        },
+        "text": {
+          "en": ["If the target is Bloodied, this attack gains +2 strength."],
+          "fr": ["Si la cible est Mal en point, cette attaque gagne +2 force."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Loralei" : {
+    "id": 9,
+    "hp": 4,
+    "defense": 2,
+    "levelUp": {
+      "hp": 4,
+      "defense": 2,
+      "en": "During your Upkeep Phase, draw 2 additional cards.",
+      "fr": "Durant votre phase d'entretien, piochez 2 cartes supplémentaires."
+    },
+    "cards": [
+      {
+        "number": "LOR02",
+        "color": "blue",
+        "type": "skill",
+        "movement": 3,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Clairvoiance",
+          "fr": "Clairvoyance"
+        },
+        "text": {
+          "en": [
+            "Draw 1.",
+            "Plan 5."
+          ],
+          "fr": [
+            "Pioche 1.",
+            "Plan 5."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "LOR03",
+        "color": "red",
+        "type": "skill",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Grasping Vines",
+          "fr": "Charme"
+        },
+        "text": {
+          "en": ["Place the target adjacent to Loralei. This may target Loralei's Allies."],
+          "fr": ["Placez la cible sur une case adjacente à Loralei. Des alliés de Loralei peuvent être ciblés."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "LOR04",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 3,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Healing Rain",
+          "fr": "Pluie salvatrice"
+        },
+        "text": {
+          "en": ["Discard up to 4 cards. Heal your Champions 1 for each of their cards discarded."],
+          "fr": ["Défaussez jusqu'à 4 cartes. Vous pouvez effectuer un Soin sur vos champions de 1 pour chacune de leurs cartes défaussées."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": true,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "LOR05",
+        "color": "blue",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Intervention",
+          "fr": "Intervention"
+        },
+        "text": {
+          "en": ["↷ If no damage was dealt, the target may Heal 3."],
+          "fr": ["↷ Si aucun dommage n'a été infligé, la cible peut recevoir un Soin 3."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": true,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "LOR06",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 3,
+          "max": 4,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 3,
+        "defence": null,
+        "name": {
+          "en": "Nature's Wrath",
+          "fr": "Courroux de la nature"
+        },
+        "text": {
+          "en": ["This attack ignores the defense of the target."],
+          "fr": ["Cette attaque ignore la défense de la cible."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "LOR07",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Winding Paths",
+          "fr": "Voies sinueuses"
+        },
+        "text": {
+          "en": ["↷ Swap the target's location with another Enemy Champion."],
+          "fr": ["↷ Échangez la place de la cible avec celle d'un autre champion ennemi."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Nevamor" : {
+    "id": 10,
+    "hp": 8,
+    "defense": 1,
+    "levelUp": {
+      "hp": 8,
+      "defense": 1,
+      "en": "Enemies adjacent to Nevamor cannot be targeted by an opponent's Reactions.",
+      "fr": "Les ennemis adjacents à Nevamor ne peuvent pas être ciblés par les cartes Réactions d'un adversaire."
+    },
+    "cards": [
+      {
+        "number": "NEV02",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 2,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 1,
+        "defence": null,
+        "name": {
+          "en": "Dark Envoy",
+          "fr": "Sombre héraut"
+        },
+        "text": {
+          "en": ["↷ Plan 2."],
+          "fr": ["↷ Plan 2."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "NEV03",
+        "color": "blue",
+        "type": "skill",
+        "movement": 1,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Nightmare",
+          "fr": "Cauchemar"
+        },
+        "text": {
+          "en": [
+            "Swoop 4.",
+            "Enemies swooped through suffer 1 damage and Fear 1."
+          ],
+          "fr": [
+            "Piqué 4.",
+            "Les ennemis situés sur la trajectoire du piqué subissent 1 dommage et Peur 1."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "NEV04",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Guiding Light",
+          "fr": "Lumière inspirante"
+        },
+        "text": {
+          "en": ["Place one of Nevamor's Allies adjacent to Nevamor. That Ally gains +1 strength until the end of the turn."],
+          "fr": ["Placez un allié de Nevamor sur une case adjacente à Nevamor. Cet allié gagne +1 force jusqu'à la fin du tour."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": true,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "NEV05",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 1,
+        "name": {
+          "en": "Murder of Crows",
+          "fr": "Volée de corbeaux"
+        },
+        "text": {
+          "en": ["↷ If Nevamor is within 2 hexes of the attacker, ignore any other ↷ effects, and end all other lasting effects."],
+          "fr": ["↷ Si Nevamor se trouve à 2 cases ou moins de l'attaquant, ignorez tous les autres effets ↷, et mettez fin à tous les autres effets persistants."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "NEV06",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Soul Reave",
+          "fr": "Déchirure de l'âme"
+        },
+        "text": {
+          "en": ["Lifesteal."],
+          "fr": ["Drain de vie."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "NEV07",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Grim Harvest",
+          "fr": "Moisson sinistre"
+        },
+        "text": {
+          "en": ["This attack gains +2 strength if the target has no Allies within 2 hexes."],
+          "fr": ["Cette attaque gagne +2 force si la cible n'a pas d'allié dans les 2 cases."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Taze" : {
+    "id": 11,
+    "hp": 9,
+    "defense": 0,
+    "levelUp": {
+      "hp": 9,
+      "defense": 0,
+      "en": "When Taze would Dash, he may deal 1 damage to an adjacent Enemy instead.",
+      "fr": "Quand Taze a la possibilité d'effectuer une Course, il peut infliger à la place 1 dommage à un ennemi adjacent."
+    },
+    "cards": [
+      {
+        "number": "TAZ02",
+        "color": "red",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Rodeo",
+          "fr": "Rodéo"
+        },
+        "text": {
+          "en": [
+            "May move through Enemies.",
+            "Enemies moved through suffer 2 damages."
+          ],
+          "fr": [
+            "Peut se déplacer à travers les ennemis.",
+            "Les ennemis situés sur la trajectoire du déplacement subissent 2 dommages."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TAZ03",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 1,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 1,
+        "defence": null,
+        "name": {
+          "en": "Charge",
+          "fr": ""
+        },
+        "text": {
+          "en": [
+            "↶ Dash 3.",
+            "This attack gains +1 strength for each hex dashed."
+          ],
+          "fr": [
+            "↶ Course 3.",
+            "Cette attaque gagne +1 force pour chaque case de course."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TAZ04",
+        "color": "blue",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 1,
+        "name": {
+          "en": "Momentum",
+          "fr": "Sur la lancée"
+        },
+        "text": {
+          "en": ["↷ Dash 1."],
+          "fr": ["↷ Course 1."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TAZ05",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Bludgeon",
+          "fr": "Matraquage"
+        },
+        "text": {
+          "en": ["↷ Stun."],
+          "fr": ["↷ Étourdissement."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TAZ06",
+        "color": "red",
+        "type": "attack",
+        "movement": 0,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 3,
+        "defence": null,
+        "name": {
+          "en": "Finishing Blow",
+          "fr": "Coup final"
+        },
+        "text": {
+          "en": [
+            "↶ Dash 2.",
+            "If the target is Bloodied, this attack ignores defense."
+          ],
+          "fr": [
+            "↶ Course 2.",
+            "Si la cible est Mal en point, cette attaque ignore la défense."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "TAZ07",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Rush",
+          "fr": "Au grand galop"
+        },
+        "text": {
+          "en": ["Taze or an Ally may Dash 2."],
+          "fr": ["Taze ou un allié peut effectuer une Course 2."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Ko'lel" : {
+    "id": 12,
+    "hp": 8,
+    "defense": 0,
+    "levelUp": {
+      "hp": 8,
+      "defense": 0,
+      "en": "Targets suffer -2 defense against Ko'lel's attacks.",
+      "fr": "Les cibles subissent -2 défense lors des attaques de Ko'lel."
+    },
+    "cards": [
+      {
+        "number": "KOL02",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 0,
+        "range": null,
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Double Jump",
+          "fr": "Double saut"
+        },
+        "text": {
+          "en": [
+            "↶ Jump 3.",
+            "↷ Jump 3."
+          ],
+          "fr": [
+            "↶ Saut 3.",
+            "↷ Saut 3."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOL03",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": null,
+        "aoe": 6,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Mighty Jump",
+          "fr": "Saut puissant"
+        },
+        "text": {
+          "en": [
+            "↶ Jump 3.",
+            "↷ Push 1."
+          ],
+          "fr": [
+            "↶ Saut 3.",
+            "↷ Poussée 1."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOL04",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Poisoned Dart",
+          "fr": "Fléchette empoisonnée"
+        },
+        "text": {
+          "en": ["Poison 1."],
+          "fr": ["Poison 1."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOL05",
+        "color": "blue",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 1,
+        "name": {
+          "en": "Blinding Dart",
+          "fr": "Fléchette avauglante"
+        },
+        "text": {
+          "en": ["↷ The attacker suffers Stun."],
+          "fr": ["↷ L'attaquant subit un Étourdissement."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOL06",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Scout Ahead",
+          "fr": "Reconnaissance"
+        },
+        "text": {
+          "en": [
+            "Draw 3.",
+            "Plan 3."
+          ],
+          "fr": [
+            "Pioche 3.",
+            "Plan 3."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KOL07",
+        "color": "blue",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 1,
+        "defence": null,
+        "name": {
+          "en": "Tongue Lash",
+          "fr": "Langue collante"
+        },
+        "text": {
+          "en": ["↷ If damage was dealt, the target suffers Pull 2 and Stun."],
+          "fr": ["↷ Si des dommages ont été infligés, la cible subit Attraction 2 et Étourdissement."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Sulka" : {
+    "id": 13,
+    "hp": 7,
+    "defense": 0,
+    "levelUp": {
+      "hp": 8,
+      "defense": 0,
+      "en": "After you play a Sulka Manipulation card, Draw 1, Plan 2.",
+      "fr": "Après avoir joué une carte Manipulation de Sulka, Pioche 1, Plan 1."
+    },
+    "cards": [
+      {
+        "number": "SUL02",
+        "color": "red",
+        "type": "attack",
+        "movement": 0,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": false
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Darting Strikes",
+          "fr": "Scission de l'âme"
+        },
+        "text": {
+          "en": ["Double."],
+          "fr": ["Doublé."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "SUL03",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Life Drain",
+          "fr": "Absorption vitale"
+        },
+        "text": {
+          "en": [
+            "Lifesteal.",
+            "You may choose to heal one of Sulka's Allies instead."
+          ],
+          "fr": [
+            "Drain de vie.",
+            "Vous pouvez choisir à la place de soigner l'un des alliés de Sulka."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": true,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "SUL04",
+        "color": "blue",
+        "type": "skill",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Effigy",
+          "fr": "Effigie"
+        },
+        "text": {
+          "en": [
+            "Force 1.",
+            "Stun."
+          ],
+          "fr": [
+            "Transfert 1.",
+            "Étourdissement."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "SUL05",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 3,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Spirit Slither",
+          "fr": "Esprit glissant"
+        },
+        "text": {
+          "en": ["May move through Enemies, statues, and traps. Enemies moved through suffer -2 defense until the end of the turn."],
+          "fr": ["Peut se déplacer à travers les ennemis, les statues et les pièges. Les ennemis situés sur la trajectoire du déplacement subissent -2 défense jusqu'à la fin du tour."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "SUL06",
+        "color": "red",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Mind Control",
+          "fr": "Contrôle Mental"
+        },
+        "text": {
+          "en": ["Discard the top card of an opponent's deck. The matching Enemy suffers Force 2."],
+          "fr": ["Défaussez la carte supérieure de la pioche d'un adversaire. L'ennemi correspondant à la carte subit Transfert 2."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "SUL07",
+        "color": "yellow",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": 2,
+        "name": {
+          "en": "Curse",
+          "fr": "Malédiction"
+        },
+        "text": {
+          "en": ["↷ The attacker suffers root."],
+          "fr": ["↷ L'attaquant subit une Immobilisation."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Akhet" : {
+    "id": 14,
+    "hp": 7,
+    "defense": 1,
+    "levelUp": {
+      "hp": 8,
+      "defense": 1,
+      "en": "During an Akhet attack activation, you may discard any number of red cards from your hand. The attack gains +1 strength for each card discarded.",
+      "fr": "Durant une activation d'attaque d'Akhet, vous pouvez défausser de votre main autant de cartes rouges que vous le souhaitez. L'attaque gagne +1 force pour chaque carte défaussée."
+    },
+    "cards": [
+      {
+        "number": "AKH02",
+        "color": "blue",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Take Flight",
+          "fr": "Envol"
+        },
+        "text": {
+          "en": [
+            "Swoop 4.",
+            "Place the first Champion swooped through adjacent to Akhet."
+          ],
+          "fr": [
+            "Piqué 4.",
+            "Placez le premier champion traversé lors de ce Piqué sur une case adjacente à Akhet."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "AKH03",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": true
+        },
+        "aoe": 1,
+        "strentgh": 1,
+        "defence": null,
+        "name": {
+          "en": "Wingstorm",
+          "fr": "Tempête d'ailes"
+        },
+        "text": {
+          "en": ["↷ Push 2."],
+          "fr": ["↷ Poussée 2."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "AKH04",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "From the Ashes",
+          "fr": "Renaissance"
+        },
+        "text": {
+          "en": ["↷ If the target was taken Out of Action by the attack, place them adjacent to the attacker instead of on their gate."],
+          "fr": ["↷ Si la cible a été mise Hors de combat par l'attaque, placez-la sur une case adjacente à l'attaquant au lieu de son protail."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "AKH05",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Healing Tears",
+          "fr": "Larmes curatives"
+        },
+        "text": {
+          "en": [
+            "Heal 2.",
+            "You may discard a blue card from your hand to Heal an adjacent Ally instead."
+          ],
+          "fr": [
+            "Soin 2.",
+            "Vous pouvez défausser une carte bleue de votre main pour effectuer à la place un Soin sur un allié adjacent."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": true,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "AKH06",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 3,
+        "range": null,
+        "aoe": null,
+        "strentgh": null,
+        "defence": null,
+        "name": {
+          "en": "Inner Fire",
+          "fr": "Feu intérieur"
+        },
+        "text": {
+          "en": ["Return a red card from your discard pile to your hand. Akhet's attacks gain +1 strength until the end of the turn."],
+          "fr": ["Reprenez une carte rouge de votre défausse et placez-la dans votre main. Les attaques d'Akhet gagnent +1 force jusqu'à la fin du tour."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "AKH07",
+        "color": "blue",
+        "type": "attack",
+        "movement": 0,
+        "range": null,
+        "aoe": 3,
+        "strentgh": 2,
+        "defence": null,
+        "name": {
+          "en": "Death From Above",
+          "fr": "La mort venue du ciel"
+        },
+        "text": {
+          "en": ["↶ Swoop 3."],
+          "fr": ["↶ Piqué 3."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  }
+}
