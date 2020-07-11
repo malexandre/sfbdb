@@ -90,8 +90,8 @@ function computeDataForCards(cards) {
     buff: 0,
     textMovement: 0,
     antiDefense: 0,
-    selfHeal: true,
-    heal: false,
+    selfHeal: 0,
+    heal: 0,
     reaction: {
       movement: 0,
       damage: 0,
@@ -140,7 +140,8 @@ function computeData() {
       red: computeDataForCards(champion.cards.filter((card) => card.color === "red")),
       blue: computeDataForCards(champion.cards.filter((card) => card.color === "blue")),
       yellow: computeDataForCards(champion.cards.filter((card) => card.color === "yellow")),
-      searchData: computeChampionSearchData(champion)
+      searchData: computeChampionSearchData(champion),
+      reactionColor: champion.cards.find((card) => card.type === "reaction").color
     }
 
     computedData[champion.id] = champion
