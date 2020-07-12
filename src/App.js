@@ -38,6 +38,7 @@ export default function App() {
 
       <div className="container mt-4">
         <Switch>
+          <Route path="/builder/:deckCode" component={ Builder } />
           <Route path="/builder" component={ Builder } />
           <Route path="/cards" component={ Cards } />
           <Route path="/" component={ Champions } />

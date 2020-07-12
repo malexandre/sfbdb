@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ChampionPicker from './ChampionPicker'
 
 import Champions from '../champions/Champions'
-import { buildDeckCode } from '../deckCode';
+import { buildDeckCode, parseDeckCode } from '../deckCode';
 
 const DEFAULT_STATE = {
   draftMode: "0",
@@ -25,13 +25,17 @@ export default class Builder extends Component {
   constructor(props) {
     super(props)
 
-    this.state = DEFAULT_STATE
+    this.state = Object.assign(DEFAULT_STATE, props.match.params.deckCode ? {
+      teams: parseDeckCode(props.match.params.deckCode),
+      deckCode: props.match.params.deckCode
+    } : {})
     this.handleDraftModeChange = this.handleDraftModeChange.bind(this)
     this.handleChampionClick = this.handleChampionClick.bind(this)
     this.handleClearSlot = this.handleClearSlot.bind(this)
     this.handlePickSlot = this.handlePickSlot.bind(this)
     this.mapTeamsToChampionIds = this.mapTeamsToChampionIds.bind(this)
     this.resizeTeams = this.resizeTeams.bind(this)
+    this.buildNewDeckCodeAndUpdateHistory = this.buildNewDeckCodeAndUpdateHistory.bind(this)
   }
 
   mapTeamsToChampionIds() {
@@ -55,19 +59,31 @@ export default class Builder extends Component {
     return results
   }
 
+  buildNewDeckCodeAndUpdateHistory(teams) {
+    const flattenTeams = [].concat.apply([], teams)
+    const deckCode =
+      flattenTeams.filter((champion) => champion === null).length === 0 ? buildDeckCode(teams) : null
+
+    if (deckCode && deckCode !== this.state.deckCode) {
+      this.props.history.push(`/builder/${deckCode}`)
+    }
+    else if (!deckCode && this.state.deckCode) {
+      this.props.history.push(`/builder`)
+    }
+
+    return deckCode
+  }
+
   handleDraftModeChange(event) {
     const draftMode = event.target.value
     const teamSize = draftMode === "0" ? 3 : 5
     const teams = this.resizeTeams(this.state.teams, draftMode)
-    const flattenTeams = [].concat.apply([], teams)
-    const deckCode =
-      flattenTeams.filter((champion) => champion === null).length === 0 ? buildDeckCode(teams) : null
 
     this.setState({
       draftMode,
       teamSize,
       teams,
-      deckCode
+      deckCode: this.buildNewDeckCodeAndUpdateHistory(teams)
     })
   }
 
@@ -75,13 +91,9 @@ export default class Builder extends Component {
     const results = this.state.teams.map((team) => [...team]) // deepcopy
     results[this.state.activeTeam][this.state.activeSlot] = champion
 
-    const flattenTeams = [].concat.apply([], results)
-    const deckCode =
-      flattenTeams.filter((champion) => champion === null).length === 0 ? buildDeckCode(results) : null
-
     this.setState({
       teams: results,
-      deckCode
+      deckCode: this.buildNewDeckCodeAndUpdateHistory(results)
     })
   }
 
@@ -93,13 +105,9 @@ export default class Builder extends Component {
     const results = this.state.teams.map((team) => [...team]) // deepcopy
     results[team][slot] = null
 
-    const flattenTeams = [].concat.apply([], results)
-    const deckCode =
-      flattenTeams.filter((champion) => champion === null).length === 0 ? buildDeckCode(results) : null
-
     this.setState({
       teams: results,
-      deckCode
+      deckCode: this.buildNewDeckCodeAndUpdateHistory(results)
     })
   }
 
