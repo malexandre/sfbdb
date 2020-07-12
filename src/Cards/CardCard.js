@@ -24,43 +24,43 @@ export default class CardCard extends Component {
           <h5>{ card.name.fr }</h5>
         </div>
         <div className="card-body">
-          <dl class="row card-details">
+          <dl className="row card-details">
             {card.movement !== 0 && [
-              <dt class="col-sm-7">Mouvement</dt>,
-              <dd class="col-sm-5">{ card.movement }</dd>
+              <dt className="col-sm-7" key="movement">Mouvement</dt>,
+              <dd className="col-sm-5" key="cardMovement">{ card.movement }</dd>
             ]}
 
             {card.range !== null && ([
-              <dt class="col-sm-7">Portée</dt>,
-              <dd class="col-sm-5">
+              <dt className="col-sm-7" key="range">Portée</dt>,
+              <dd className="col-sm-5" key="cardRange">
                 { card.range.min } - { card.range.max }
               </dd>
             ])}
 
             {card.range !== null && ([
-              <dt class="col-sm-7">Type de tir</dt>,
-              <dd class="col-sm-5">
+              <dt className="col-sm-7" key="rangeType">Type de tir</dt>,
+              <dd className="col-sm-5" key="cardRangeType">
                 { card.range.direct ? "direct" : "indirect" }
               </dd>
             ])}
 
             {card.range === null && card.aoe !== null && ([
-              <dt class="col-sm-7">Zone d'effet</dt>,
-              <dd class="col-sm-5">{ card.aoe } case{card.aoe !== 1 && "s"}</dd>
+              <dt className="col-sm-7" key="aoe">Zone d'effet</dt>,
+              <dd className="col-sm-5" key="cardAoe">{ card.aoe } case{card.aoe !== 1 && "s"}</dd>
             ])}
 
             {card.strength !== null && ([
-              <dt class="col-sm-7">Force</dt>,
-              <dd class="col-sm-5">{ card.strength }</dd>
+              <dt className="col-sm-7" key="strength">Force</dt>,
+              <dd className="col-sm-5" key="cardStrength">{ card.strength }</dd>
             ])}
 
             {card.defense !== null && ([
-              <dt class="col-sm-7">Défense</dt>,
-              <dd class="col-sm-5">{ card.defense }</dd>
+              <dt className="col-sm-7" key="defense">Défense</dt>,
+              <dd className="col-sm-5" key="cardDefense">{ card.defense }</dd>
             ])}
           </dl>
           <div>
-            { card.text.fr.map((text) => (<p>{ text }</p>)) }
+            { card.text.fr.map((text, idx) => (<p key={ idx }>{ text }</p>)) }
           </div>
         </div>
       </div>
