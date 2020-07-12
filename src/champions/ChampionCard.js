@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { DropletFill, OctagonFill, HeartFill, Heart, Shield, ShieldSlashFill, LayersFill } from 'react-bootstrap-icons'
+import { DropletFill, OctagonFill, HeartFill, Heart, Shield, ShieldSlashFill, LayersFill, DashCircleFill, FileArrowUpFill } from 'react-bootstrap-icons'
 
 import "./ChampionCard.css"
 import { ChampionType } from '../types'
@@ -28,18 +28,22 @@ export default class ChampionCard extends Component {
           <table className={`${tableColor} rounded m-auto text-center`}>
             <tbody>
             <tr>
-              <td className="px-2 pt-2"><DropletFill title="Nombre d'attaques" /></td>
-              <td className="px-2 pt-2"><OctagonFill title="Nombre de cartes de contrôle" /></td>
-              <td className="px-2 pt-2"><LayersFill title="Nombre de cartes permettant de piocher ou planifier" /></td>
-              <td className="px-2 pt-2"><HeartFill title="Nombre de cartes de soin" /></td>
-              <td className="px-2 pt-2"><ShieldSlashFill title="Nombre de cartes anti-armure" /></td>
+              <td className="px-1 pt-2" title="Nombre d'attaques"><DropletFill /></td>
+              <td className="px-1 pt-2" title="Nombre de cartes de contrôle"><OctagonFill /></td>
+              <td className="px-1 pt-2" title="Nombre de cartes permettant de piocher ou planifier"><LayersFill /></td>
+              <td className="px-1 pt-2" title="Nombre de cartes sans mouvement"><DashCircleFill /></td>
+              <td className="px-1 pt-2" title="Nombre de cartes de soin"><HeartFill /></td>
+              <td className="px-1 pt-2" title="Nombre de cartes de buff"><FileArrowUpFill /></td>
+              <td className="px-1 pt-2" title="Nombre de cartes anti-armure"><ShieldSlashFill /></td>
             </tr>
             <tr>
-              <td className="px-2 pb-2">{ champion.metadata.total.attack }</td>
-              <td className="px-2 pb-2">{ champion.metadata.total.control }</td>
-              <td className="px-2 pb-2">{ champion.metadata.total.deckManagement }</td>
-              <td className="px-2 pb-2">{ champion.metadata.total.heal + champion.metadata.total.selfHeal }</td>
-              <td className="px-2 pb-2">{ champion.metadata.total.textDamages +  champion.metadata.total.antiDefense }</td>
+              <td className="px-1 pb-2">{ champion.metadata.total.attack }</td>
+              <td className="px-1 pb-2">{ champion.metadata.total.control }</td>
+              <td className="px-1 pb-2">{ champion.metadata.total.deckManagement }</td>
+              <td className="px-1 pb-2">{ champion.metadata.total.withoutMove }</td>
+              <td className="px-1 pb-2">{ champion.metadata.total.heal + champion.metadata.total.selfHeal }</td>
+              <td className="px-1 pb-2">{ champion.metadata.total.buff }</td>
+              <td className="px-1 pb-2">{ champion.metadata.total.textDamages +  champion.metadata.total.antiDefense }</td>
             </tr>
             </tbody>
           </table>
