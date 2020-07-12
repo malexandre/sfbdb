@@ -2,43 +2,24 @@ import React, { Component } from 'react'
 import ChampionPicker from './ChampionPicker'
 
 import Champions from '../champions/Champions'
+import { buildDeckCode } from '../deckCode';
 
 const DEFAULT_STATE = {
   draftMode: "0",
   teamSize: 3,
   activeTeam: 0,
   activeSlot: 0,
-  teams: [[null, null, null]]
+  teams: [[null, null, null]],
+  deckCode: null
 }
 
 function resizeArray(arr, size, defaultValue) {
   while(size > arr.length) {
+    console.log("pushing", defaultValue)
     arr.push(defaultValue);
   }
   arr.length = size;
 }
-
-function resizeTeams(teams, draftMode) {
-  const results = teams.map((team) => [...team]) // deepcopy
-  const teamSize = draftMode === "0" ? 3 : 5
-
-  resizeArray(results, draftMode === "2" ? 2 : 1, [null, null, null, null, null])
-
-  for (const team of results) {
-    resizeArray(team, teamSize, null)
-  }
-
-  return results
-}
-
-function mapTeamsToChampionIds(teams) {
-  const flattenList = [].concat.apply([], teams)
-
-  return flattenList
-    .filter((champion) => champion !== null)
-    .map((champion) => champion.id)
-}
-
 
 export default class Builder extends Component {
   constructor(props) {
@@ -49,22 +30,59 @@ export default class Builder extends Component {
     this.handleChampionClick = this.handleChampionClick.bind(this)
     this.handleClearSlot = this.handleClearSlot.bind(this)
     this.handlePickSlot = this.handlePickSlot.bind(this)
+    this.mapTeamsToChampionIds = this.mapTeamsToChampionIds.bind(this)
+    this.resizeTeams = this.resizeTeams.bind(this)
+  }
+
+  mapTeamsToChampionIds() {
+    const flattenList = [].concat.apply([], this.state.teams)
+
+    return flattenList
+      .filter((champion) => champion !== null)
+      .map((champion) => champion.id)
+  }
+
+  resizeTeams(teams, draftMode) {
+    const results = teams.map((team) => [...team]) // deepcopy
+    const teamSize = draftMode === "0" ? 3 : 5
+
+    resizeArray(results, draftMode === "2" ? 2 : 1, [null, null, null, null, null])
+
+    for (const team of results) {
+      resizeArray(team, teamSize, null)
+    }
+
+    return results
   }
 
   handleDraftModeChange(event) {
     const draftMode = event.target.value
     const teamSize = draftMode === "0" ? 3 : 5
+    const teams = this.resizeTeams(this.state.teams, draftMode)
+    const flattenTeams = [].concat.apply([], teams)
+    const deckCode =
+      flattenTeams.filter((champion) => champion === null).length === 0 ? buildDeckCode(teams) : null
+
     this.setState({
       draftMode,
       teamSize,
-      teams: resizeTeams(this.state.teams, draftMode)
+      teams,
+      deckCode
     })
   }
 
   handleChampionClick(champion) {
     const results = this.state.teams.map((team) => [...team]) // deepcopy
     results[this.state.activeTeam][this.state.activeSlot] = champion
-    this.setState({ teams: results })
+
+    const flattenTeams = [].concat.apply([], results)
+    const deckCode =
+      flattenTeams.filter((champion) => champion === null).length === 0 ? buildDeckCode(results) : null
+
+    this.setState({
+      teams: results,
+      deckCode
+    })
   }
 
   handlePickSlot(team, slot) {
@@ -74,7 +92,15 @@ export default class Builder extends Component {
   handleClearSlot(team, slot) {
     const results = this.state.teams.map((team) => [...team]) // deepcopy
     results[team][slot] = null
-    this.setState({ teams: results })
+
+    const flattenTeams = [].concat.apply([], results)
+    const deckCode =
+      flattenTeams.filter((champion) => champion === null).length === 0 ? buildDeckCode(results) : null
+
+    this.setState({
+      teams: results,
+      deckCode
+    })
   }
 
   render() {
@@ -127,6 +153,15 @@ export default class Builder extends Component {
           </div>
         </div>
 
+        <div className="text-center mb-4">
+          Deck code :
+          { this.state.deckCode ? (
+              <blockquote className="blockquote">
+                <p className="mb-0">{ this.state.deckCode }</p>
+              </blockquote>
+            ) : <div><i>Le code sera généré une fois la compo finie</i></div> }
+        </div>
+
         <div>
           {this.state.draftMode === "2" && <h4 className="text-center">Équipe 1</h4>}
           <ChampionPicker
@@ -154,7 +189,7 @@ export default class Builder extends Component {
         <div className="mt-4">
           <Champions
             onChampionClick={ this.handleChampionClick }
-            filteredChapionId={ mapTeamsToChampionIds(this.state.teams) } />
+            filteredChapionId={ this.mapTeamsToChampionIds() } />
         </div>
       </div>
     )
