@@ -215,6 +215,7 @@ export default class Builder extends Component {
             team={ 0 }
             size={ this.state.teamSize }
             champions={ this.state.teams[0] }
+            activeTeam={ this.state.activeTeam }
             activeSlot={ this.state.activeSlot }
             onPickSlot={ this.handlePickSlot }
             onClearSlot={ this.handleClearSlot }
@@ -225,6 +226,7 @@ export default class Builder extends Component {
               team={ 1 }
               size={ this.state.teamSize }
               champions={ this.state.teams[1] }
+              activeTeam={ this.state.activeTeam }
               activeSlot={ this.state.activeSlot }
               onPickSlot={ this.handlePickSlot }
               onClearSlot={ this.handleClearSlot }

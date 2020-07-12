@@ -10,9 +10,9 @@ import ChampionCard from '../champions/ChampionCard'
 class EmptySlot extends Component {
   render() {
     return (
-      <div className="card w-100 h-100">
+      <div className={ `card w-100 h-100 ${this.props.active && "border border-success"}` }>
         <div className="card-body h-100 d-flex flex-column justify-content-center align-items-center">
-          <PlusCircle size="50" color="grey" />
+          <PlusCircle size="50" color={ this.props.active ? "#28a745" : "lightgray" } />
         </div>
       </div>
     )
@@ -59,9 +59,10 @@ class Slot extends Component {
       <div className="mb-4 mx-2 team-champion-card">
         <div className="w-100 h-100" onClick={ this.handlePickSlot }>
           {!this.props.champion ?
-            <EmptySlot /> :
+            <EmptySlot active={ this.props.active } /> :
             <ChampionCard
               champion={ this.props.champion }
+              active={ this.props.active }
               shortVersion={ true }
               onChampionClearClick={ this.handleClearSlot }
             />
@@ -114,6 +115,7 @@ export default class ChampionPicker extends Component {
             team={ this.props.team }
             slot={ slot }
             size={ this.props.size }
+            active={ this.props.team === this.props.activeTeam && this.props.activeSlot === slot }
             champion={ champions ? champions[slot] : null }
             onPickSlot={ this.props.onPickSlot }
             onClearSlot={ this.props.onClearSlot }

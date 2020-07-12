@@ -40,7 +40,7 @@ export default class ChampionCard extends Component {
     }
 
     return (
-      <div className="card w-100 mb-4" onClick={ this.handleCardClick }>
+      <div className={ `card w-100 mb-4 ${this.props.active && "border border-success"}` } onClick={ this.handleCardClick }>
         <div className="card-body">
           {this.props.onChampionClearClick && (
             <button type="button" className="close" aria-label="Clear pick" onClick={ this.handleClearClick }>
@@ -87,6 +87,7 @@ export default class ChampionCard extends Component {
 ChampionCard.propTypes = {
   champion: ChampionType,
   shortVersion: PropTypes.bool,
+  active: PropTypes.bool,
   onChampionClick: PropTypes.func,
   onChampionClearClick: PropTypes.func
 }
