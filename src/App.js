@@ -4,13 +4,20 @@ import { BrowserRouter as Router, Switch, Route, Link, NavLink } from 'react-rou
 import Builder from './Builder/builder'
 import Cards from './Cards/Cards'
 import Champions from './champions/Champions'
+import logo from './logo192.png'
 
 export default function App() {
   return (
     <Router>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <Link className="navbar-brand" to="/">
-          SFB DB
+          <img src={ logo }
+            width="30"
+            height="30"
+            className="d-inline-block align-top mr-2"
+            alt="Logo SFB"
+          />
+          SFB Database
         </Link>
         <button className="navbar-toggler"
           type="button"
