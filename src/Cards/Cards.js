@@ -106,7 +106,7 @@ export default class Cards extends Component {
     })
 
     return (
-      <div>
+      <div className="container mt-4">
         <CardFilter filter={ this.state } onInputChange={ this.handleInputChange } onReset={ this.resetState } />
         <CardList cards={ cards } />
       </div>

@@ -30,21 +30,21 @@ class Slot extends Component {
   handlePickSlot(event) {
     const cardRect = event.target.closest(".card").getBoundingClientRect()
     if (cardRect.left < 0) {
-      const padding = this.props.slot > 0 ? 100 : 10
+      const padding = this.props.slot > 0 ? 75 : 10
       this.props.updateSlide(-cardRect.left + padding)
     }
     else if (cardRect.right > (window.innerWidth || document.documentElement.clientWidth)) {
-      const padding = this.props.slot < this.props.size - 1 ? 100 : 15
+      const padding = this.props.slot < this.props.size - 1 ? 75 : 15
       this.props.updateSlide((window.innerWidth || document.documentElement.clientWidth) - cardRect.right - padding)
     }
-    else if (this.props.slot > 0 && cardRect.left < 100) {
-      this.props.updateSlide(cardRect.left + 100)
+    else if (this.props.slot > 0 && cardRect.left < 75) {
+      this.props.updateSlide(cardRect.left + 75)
     }
     else if (
       this.props.slot < this.props.size - 1 &&
-      (window.innerWidth || document.documentElement.clientWidth) - cardRect.right < 100
+      (window.innerWidth || document.documentElement.clientWidth) - cardRect.right < 75
     ) {
-      this.props.updateSlide((window.innerWidth || document.documentElement.clientWidth) - cardRect.right - 100)
+      this.props.updateSlide((window.innerWidth || document.documentElement.clientWidth) - cardRect.right - 75)
     }
 
     this.props.onPickSlot(this.props.team, this.props.slot)
@@ -106,24 +106,25 @@ export default class ChampionPicker extends Component {
     const champions = this.props.champions
 
     return (
-      <div
-        className="d-flex flex-row justify-content-center flex-nowrap champion-pciker"
-        style={ { transform: `translateX(${this.state.slide}px)` } }
-      >
-        {this.state.range.map((slot) => (
-          <Slot
-            team={ this.props.team }
-            slot={ slot }
-            size={ this.props.size }
-            active={ this.props.team === this.props.activeTeam && this.props.activeSlot === slot }
-            champion={ champions ? champions[slot] : null }
-            onPickSlot={ this.props.onPickSlot }
-            onClearSlot={ this.props.onClearSlot }
-            updateSlide={ this.updateSlide }
-            key={ slot }
-          />
-        ))}
-
+      <div className="row overflow-hidden">
+        <div
+          className="w-100 d-flex flex-row justify-content-center flex-nowrap champion-pciker"
+          style={ { transform: `translateX(${this.state.slide}px)` } }
+        >
+          {this.state.range.map((slot) => (
+            <Slot
+              team={ this.props.team }
+              slot={ slot }
+              size={ this.props.size }
+              active={ this.props.team === this.props.activeTeam && this.props.activeSlot === slot }
+              champion={ champions ? champions[slot] : null }
+              onPickSlot={ this.props.onPickSlot }
+              onClearSlot={ this.props.onClearSlot }
+              updateSlide={ this.updateSlide }
+              key={ slot }
+            />
+          ))}
+        </div>
       </div>
     )
   }

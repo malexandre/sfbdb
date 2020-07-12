@@ -90,7 +90,7 @@ export default class Champions extends Component {
     })
 
     return (
-      <div>
+      <div className="container mt-4">
         <ChampionFilter filter={ this.state } onInputChange={ this.handleInputChange } />
         <ChampionList champions={ champions } onChampionClick={ this.props.onChampionClick } />
       </div>
