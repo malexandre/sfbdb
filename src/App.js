@@ -23,7 +23,7 @@ export default function App() {
         </button>
         <div className="collapse navbar-collapse" id="main-navbar">
           <div className="navbar-nav">
-            <NavLink className="nav-item nav-link" activeClassName="active" to="/">
+            <NavLink className="nav-item nav-link" activeClassName="active" exact to="/">
               Les Champions
             </NavLink>
             <NavLink className="nav-item nav-link" activeClassName="active" to="/cards">
