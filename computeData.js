@@ -38,9 +38,11 @@ function normalizeString(str) {
     .trim()
 }
 
-function computeCardSearchData(card) {
+function computeCardSearchData(championName, card) {
   return {
     i18n: [
+      normalizeString(championName),
+      normalizeString(card.number),
       SEARCH_I18N[card.color],
       SEARCH_I18N[card.type],
       normalizeString(card.name.en),
@@ -49,12 +51,16 @@ function computeCardSearchData(card) {
       ...card.text.fr.map((str) => normalizeString(str))
     ].join(" "),
     en: [
+      normalizeString(championName),
+      normalizeString(card.number),
       SEARCH_EN[card.color],
       SEARCH_EN[card.type],
       normalizeString(card.name.en),
       ...card.text.en.map((str) => normalizeString(str))
     ].join(" "),
     fr: [
+      normalizeString(championName),
+      normalizeString(card.number),
       SEARCH_FR[card.color],
       SEARCH_FR[card.type],
       normalizeString(card.name.fr),
@@ -132,7 +138,7 @@ function computeData() {
     champion.name = championName
 
     for (const card of champion.cards) {
-      card.metadata.searchData = computeCardSearchData(card)
+      card.metadata.searchData = computeCardSearchData(championName, card)
     }
 
     champion.metadata = {
