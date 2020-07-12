@@ -28,8 +28,8 @@ export default class CardFilter extends Component {
 
         <div className="row text-center">
           <div className="col-4">
-            <label>Couleur de la réaction</label>
-            <div className="form-group d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <label><b>Couleur</b></label>
+            <div className="form-group d-flex flex-column flex-lg-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
                   className="form-check-input"
@@ -66,8 +66,8 @@ export default class CardFilter extends Component {
             </div>
           </div>
           <div className="col-4">
-            <label>Défense</label>
-            <div className="form-group d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <label><b>Type de carte</b></label>
+            <div className="form-group d-flex flex-column flex-lg-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
                   className="form-check-input"
@@ -104,8 +104,8 @@ export default class CardFilter extends Component {
             </div>
           </div>
           <div className="col-4">
-            <label>Langage</label>
-            <div className="form-group d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <label><b>Langage</b></label>
+            <div className="form-group d-flex flex-column flex-lg-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
                   className="form-check-input"
@@ -131,6 +131,185 @@ export default class CardFilter extends Component {
             </div>
           </div>
         </div>
+
+        <div className="row text-center">
+          <div className="col-12">
+            <label><b>Champions</b></label>
+            <div className="form-group d-flex align-items-center justify-content-center flex-wrap">
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="dug"
+                  name="dug"
+                  checked={ this.props.filter.dug }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="dug">Dugrun</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="gol"
+                  name="gol"
+                  checked={ this.props.filter.gol }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="gol">Gold'arr</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="gwa"
+                  name="gwa"
+                  checked={ this.props.filter.gwa }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="gwa">Gwaien</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="kil"
+                  name="kil"
+                  checked={ this.props.filter.kil }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="kil">Kilgore</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="tzu"
+                  name="tzu"
+                  checked={ this.props.filter.tzu }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="tzu">Tzu Xiao</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="der"
+                  name="der"
+                  checked={ this.props.filter.der }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="der">Deryn</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="rat"
+                  name="rat"
+                  checked={ this.props.filter.rat }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="rat">Rath</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="mar"
+                  name="mar"
+                  checked={ this.props.filter.mar }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="mar">Mariusz</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="kor"
+                  name="kor"
+                  checked={ this.props.filter.kor }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="kor">Korvash</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="lor"
+                  name="lor"
+                  checked={ this.props.filter.lor }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="lor">Loralei</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="nev"
+                  name="nev"
+                  checked={ this.props.filter.nev }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="nev">Nevamor</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="taz"
+                  name="taz"
+                  checked={ this.props.filter.taz }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="taz">Taze</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="kol"
+                  name="kol"
+                  checked={ this.props.filter.kol }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="kol">Ko'lel</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="sul"
+                  name="sul"
+                  checked={ this.props.filter.sul }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="sul">Sulka</label>
+              </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="akh"
+                  name="akh"
+                  checked={ this.props.filter.akh }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="akh">Akhet</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center mb-4">
+          <button type="button" class="btn btn-outline-secondary" onClick={ this.props.onReset }>
+            Réinitialiser les filtres
+          </button>
+        </div>
       </div>
     )
   }
@@ -148,5 +327,6 @@ CardFilter.propTypes = {
     french: PropTypes.bool,
     search: PropTypes.string
   }),
-  onInputChange: PropTypes.func
+  onInputChange: PropTypes.func,
+  onReset: PropTypes.func
 }

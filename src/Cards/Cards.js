@@ -6,6 +6,35 @@ import CardList from './CardList'
 
 const CARDS = [].concat.apply([], Object.values(data).map((champion) => champion.cards))
 
+const DEFAULT_STATE = {
+  red: true,
+  yellow: true,
+  blue: true,
+  attack: true,
+  skill: true,
+  reaction: true,
+  english: true,
+  french: true,
+
+  dug: true,
+  gol: true,
+  gwa: true,
+  kil: true,
+  tzu: true,
+  der: true,
+  rat: true,
+  mar: true,
+  kor: true,
+  lor: true,
+  nev: true,
+  taz: true,
+  kol: true,
+  sul: true,
+  akh: true,
+
+  search: ""
+}
+
 function normalizeString(str) {
   return str
     .normalize('NFD')
@@ -20,31 +49,27 @@ export default class Cards extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {
-      red: true,
-      yellow: true,
-      blue: true,
-      attack: true,
-      skill: true,
-      reaction: true,
-      english: true,
-      french: true,
-      search: ""
-    }
+    this.state = DEFAULT_STATE
 
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.resetState = this.resetState.bind(this);
   }
 
   handleInputChange(event) {
     const target = event.target
     const value = [
-      'red', 'blue', 'yellow', 'attack', 'skill', 'reaction', 'english', 'french'
+      'red', 'blue', 'yellow', 'attack', 'skill', 'reaction', 'english', 'french',
+      'dug', 'gol', 'gwa', 'kil', 'tzu', 'der', 'rat', 'mar', 'kor', 'lor', 'nev', 'taz', 'kol', 'sul', 'akh'
     ].includes(target.name) ? target.checked : target.value
     const name = target.name
 
     this.setState({
       [name]: value
     })
+  }
+
+  resetState() {
+    this.setState(DEFAULT_STATE)
   }
 
   render() {
@@ -71,6 +96,10 @@ export default class Cards extends Component {
         if (!this.state[card.type]) {
           return false
         }
+
+        if (!this.state[normalizeString(card.number.slice(0, 3))]) {
+          return false
+        }
       }
 
       return true
@@ -78,7 +107,7 @@ export default class Cards extends Component {
 
     return (
       <div>
-        <CardFilter filter={ this.state } onInputChange={ this.handleInputChange } />
+        <CardFilter filter={ this.state } onInputChange={ this.handleInputChange } onReset={ this.resetState } />
         <CardList cards={ cards } />
       </div>
     )
