@@ -1,4 +1,11 @@
 .team-champion-card {
   height: 198px;
   width: 255px;
+  flex-basis: 255px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.champion-pciker {
+  transition: .3s cubic-bezier(.25, .8, .5, 1);
 }

@@ -28,16 +28,35 @@ class Slot extends Component {
   }
 
   handlePickSlot(event) {
+    const cardRect = event.target.closest(".card").getBoundingClientRect()
+    if (cardRect.left < 0) {
+      const padding = this.props.slot > 0 ? 100 : 10
+      this.props.updateSlide(-cardRect.left + padding)
+    }
+    else if (cardRect.right > (window.innerWidth || document.documentElement.clientWidth)) {
+      const padding = this.props.slot < this.props.size - 1 ? 100 : 15
+      this.props.updateSlide((window.innerWidth || document.documentElement.clientWidth) - cardRect.right - padding)
+    }
+    else if (this.props.slot > 0 && cardRect.left < 100) {
+      this.props.updateSlide(cardRect.left + 100)
+    }
+    else if (
+      this.props.slot < this.props.size - 1 &&
+      (window.innerWidth || document.documentElement.clientWidth) - cardRect.right < 100
+    ) {
+      this.props.updateSlide((window.innerWidth || document.documentElement.clientWidth) - cardRect.right - 100)
+    }
+
     this.props.onPickSlot(this.props.team, this.props.slot)
   }
 
-  handleClearSlot(champion) {
+  handleClearSlot() {
     this.props.onClearSlot(this.props.team, this.props.slot)
   }
 
   render() {
     return (
-      <div className="mb-4 mr-4 team-champion-card">
+      <div className="mb-4 mx-2 team-champion-card">
         <div className="w-100 h-100" onClick={ this.handlePickSlot }>
           {!this.props.champion ?
             <EmptySlot /> :
@@ -58,27 +77,47 @@ export default class ChampionPicker extends Component {
     super(props)
 
     this.state = {
-      range: [...Array(this.props.size).keys()]
+      range: [...Array(this.props.size).keys()],
+      slide: 0,
+      size: props.size
     }
+
+    this.updateSlide = this.updateSlide.bind(this);
   }
 
-  static getDerivedStateFromProps(nextProps) {
-    return {
-      range: [...Array(nextProps.size).keys()]
+  static getDerivedStateFromProps(nextProps, state) {
+    if (nextProps.size !== state.size) {
+      return {
+        range: [...Array(nextProps.size).keys()],
+        slide: 0,
+        size: nextProps.size
+      }
     }
+
+    return null
+  }
+
+  updateSlide(slide) {
+    this.setState({ slide: slide + this.state.slide })
   }
 
   render() {
     const champions = this.props.champions
+
     return (
-      <div className="d-flex flex-row justify-content-center flex-nowrap">
+      <div
+        className="d-flex flex-row justify-content-center flex-nowrap champion-pciker"
+        style={ { transform: `translateX(${this.state.slide}px)` } }
+      >
         {this.state.range.map((slot) => (
           <Slot
             team={ this.props.team }
             slot={ slot }
+            size={ this.props.size }
             champion={ champions ? champions[slot] : null }
             onPickSlot={ this.props.onPickSlot }
             onClearSlot={ this.props.onClearSlot }
+            updateSlide={ this.updateSlide }
             key={ slot }
           />
         ))}
@@ -91,6 +130,7 @@ export default class ChampionPicker extends Component {
 ChampionPicker.propTypes = {
   team: PropTypes.number.isRequired,
   size: PropTypes.number.isRequired,
+  activeTeam: PropTypes.number,
   activeSlot: PropTypes.number,
   champions: PropTypes.arrayOf(ChampionType),
   onPickSlot: PropTypes.func.isRequired,

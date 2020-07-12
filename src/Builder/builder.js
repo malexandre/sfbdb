@@ -18,7 +18,6 @@ const DEFAULT_STATE = {
 
 function resizeArray(arr, size, defaultValue) {
   while(size > arr.length) {
-    console.log("pushing", defaultValue)
     arr.push(defaultValue);
   }
   arr.length = size;
