@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ChampionPicker from './ChampionPicker'
+import {CopyToClipboard} from 'react-copy-to-clipboard'
 
 import Champions from '../champions/Champions'
 import { buildDeckCode, parseDeckCode } from '../deckCode';
@@ -10,7 +11,9 @@ const DEFAULT_STATE = {
   activeTeam: 0,
   activeSlot: 0,
   teams: [[null, null, null]],
-  deckCode: null
+  deckCode: null,
+  copyAlert: false,
+  timeout: null
 }
 
 function resizeArray(arr, size, defaultValue) {
@@ -36,6 +39,8 @@ export default class Builder extends Component {
     this.mapTeamsToChampionIds = this.mapTeamsToChampionIds.bind(this)
     this.resizeTeams = this.resizeTeams.bind(this)
     this.buildNewDeckCodeAndUpdateHistory = this.buildNewDeckCodeAndUpdateHistory.bind(this)
+    this.onCopyToClipboard = this.onCopyToClipboard.bind(this)
+    this.onCloseCopyAlert = this.onCloseCopyAlert.bind(this)
   }
 
   mapTeamsToChampionIds() {
@@ -72,6 +77,26 @@ export default class Builder extends Component {
     }
 
     return deckCode
+  }
+
+  onCopyToClipboard() {
+    if (this.state.timeout) {
+      window.clearTimeout(this.state.timeout)
+    }
+
+    const timeout = setTimeout(() => {
+      this.setState({ copyAlert: false, timeout: null })
+    }, 5000)
+
+    this.setState({ copyAlert: true, timeout })
+  }
+
+  onCloseCopyAlert() {
+    if (this.state.timeout) {
+      window.clearTimeout(this.state.timeout)
+    }
+
+    this.setState({ copyAlert: false, timeout: null })
   }
 
   handleDraftModeChange(event) {
@@ -165,7 +190,22 @@ export default class Builder extends Component {
           Deck code :
           { this.state.deckCode ? (
               <blockquote className="blockquote">
-                <p className="mb-0">{ this.state.deckCode }</p>
+                <p>{ this.state.deckCode }</p>
+                <CopyToClipboard text={ this.state.deckCode } onCopy={ this.onCopyToClipboard }>
+                  <button className="btn btn-outline-secondary">Copier le code</button>
+                </CopyToClipboard>
+                {" "}
+                <CopyToClipboard text={ window.location.href } onCopy={ this.onCopyToClipboard }>
+                  <button className="btn btn-outline-secondary">Copier l'URL</button>
+                </CopyToClipboard>
+                {this.state.copyAlert && (
+                  <div className="alert alert-success mx-auto mt-4 w-50" role="alert">
+                    C'est copié !
+                    <button type="button" className="close" aria-label="Close" onClick={ this.onCloseCopyAlert }>
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                )}
               </blockquote>
             ) : <div><i>Le code sera généré une fois la compo finie</i></div> }
         </div>
