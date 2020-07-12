@@ -1,0 +1,48 @@
+.header-bg-red,
+.header-bg-blue,
+.header-bg-yellow {
+  height: 105px;
+}
+.header-bg-red {
+  background-color: #ed969e;
+}
+.header-bg-blue {
+  background-color: #7abaff;
+}
+.header-bg-yellow {
+  background-color: #ffdf7e;
+}
+
+.card-text {
+  line-height: 1.3;
+}
+
+.card-details {
+  font-size: 14px;
+  line-height: 1;
+  height: 87px;
+}
+
+@media (min-width: 576px) {
+  .card-text {
+    height: 165px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-text {
+    height: 185px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-text {
+    height: 125px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-text {
+    height: 165px;
+  }
+}
