@@ -45,11 +45,14 @@ function convertTeamFromArray(arr) {
 }
 
 
-export function buildDeckCode(teams) {
-  return base32.stringify(convertTeamToString(2, teams), { pad: false })
+export function buildDeckCode(draftMode, teams) {
+  return base32.stringify(convertTeamToString(parseInt(draftMode), teams), { pad: false })
 }
 
 export function parseDeckCode(code) {
   const decodedDeckCode = base32.parse(code, { out: Array, loose: true })
-  return convertTeamFromArray(decodedDeckCode)
+  return {
+    draftMode: `${decodedDeckCode[1]}`,
+    teams: convertTeamFromArray(decodedDeckCode)
+  }
 }

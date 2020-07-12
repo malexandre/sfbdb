@@ -27,10 +27,20 @@ export default class Builder extends Component {
   constructor(props) {
     super(props)
 
-    this.state = Object.assign(DEFAULT_STATE, props.match.params.deckCode ? {
-      teams: parseDeckCode(props.match.params.deckCode),
-      deckCode: props.match.params.deckCode
-    } : {})
+    let state = Object.assign({}, DEFAULT_STATE)
+
+    if (props.match.params.deckCode) {
+      const parsedData = parseDeckCode(props.match.params.deckCode)
+      state = Object.assign(
+        state,
+        parsedData,
+        {
+          deckCode: props.match.params.deckCode,
+          teamSize: parsedData.draftMode === "0" ? 3 : 5
+        }
+      )
+    }
+    this.state = state
     this.handleDraftModeChange = this.handleDraftModeChange.bind(this)
     this.handleChampionClick = this.handleChampionClick.bind(this)
     this.handleClearSlot = this.handleClearSlot.bind(this)
@@ -63,10 +73,12 @@ export default class Builder extends Component {
     return results
   }
 
-  buildNewDeckCodeAndUpdateHistory(teams) {
+  buildNewDeckCodeAndUpdateHistory(draftMode, teams) {
     const flattenTeams = [].concat.apply([], teams)
     const deckCode =
-      flattenTeams.filter((champion) => champion === null).length === 0 ? buildDeckCode(teams) : null
+      flattenTeams.filter((champion) => champion === null).length === 0 ?
+        buildDeckCode(draftMode, teams) :
+        null
 
     if (deckCode && deckCode !== this.state.deckCode) {
       this.props.history.push(`/builder/${deckCode}`)
@@ -107,7 +119,7 @@ export default class Builder extends Component {
       draftMode,
       teamSize,
       teams,
-      deckCode: this.buildNewDeckCodeAndUpdateHistory(teams)
+      deckCode: this.buildNewDeckCodeAndUpdateHistory(draftMode, teams)
     })
   }
 
@@ -117,7 +129,7 @@ export default class Builder extends Component {
 
     this.setState({
       teams: results,
-      deckCode: this.buildNewDeckCodeAndUpdateHistory(results)
+      deckCode: this.buildNewDeckCodeAndUpdateHistory(this.state.draftMode, results)
     })
   }
 
@@ -131,7 +143,7 @@ export default class Builder extends Component {
 
     this.setState({
       teams: results,
-      deckCode: this.buildNewDeckCodeAndUpdateHistory(results)
+      deckCode: this.buildNewDeckCodeAndUpdateHistory(this.state.draftMode, results)
     })
   }
 
