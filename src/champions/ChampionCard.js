@@ -6,6 +6,27 @@ import "./ChampionCard.css"
 import { ChampionType } from '../types'
 
 export default class ChampionCard extends Component {
+  constructor(props) {
+    super(props)
+
+    this.handleCardClick = this.handleCardClick.bind(this)
+    this.handleClearClick = this.handleClearClick.bind(this)
+  }
+
+  handleCardClick() {
+    if (this.props.onChampionClick) {
+      this.props.onChampionClick(this.props.champion)
+    }
+  }
+
+  handleClearClick(event) {
+    event.preventDefault()
+    event.stopPropagation()
+    if (this.props.onChampionClearClick) {
+      this.props.onChampionClearClick(this.props.champion)
+    }
+  }
+
   render() {
     const champion = this.props.champion
 
@@ -19,8 +40,13 @@ export default class ChampionCard extends Component {
     }
 
     return (
-      <div className="card w-100 mb-4">
+      <div className="card w-100 mb-4" onClick={ this.handleCardClick }>
         <div className="card-body">
+          {this.props.onChampionClearClick && (
+            <button type="button" className="close" aria-label="Clear pick" onClick={ this.handleClearClick }>
+              <span aria-hidden="true">&times;</span>
+            </button>
+          )}
           <h2 className="card-title text-center">{ champion.name }</h2>
           <p className="text-center"><Heart /> { champion.hp } <Shield /> { champion.defense }</p>
           {!this.props.shortVersion && (
@@ -60,5 +86,7 @@ export default class ChampionCard extends Component {
 
 ChampionCard.propTypes = {
   champion: ChampionType,
-  shortVersion: PropTypes.bool
+  shortVersion: PropTypes.bool,
+  onChampionClick: PropTypes.func,
+  onChampionClearClick: PropTypes.func
 }

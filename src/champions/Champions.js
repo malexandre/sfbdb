@@ -80,6 +80,10 @@ export default class Champions extends Component {
         if (!defWanted.includes(champion.defense)) {
           return false
         }
+
+        if (this.props.filteredChapionId && this.props.filteredChapionId.includes(champion.id)) {
+          return false
+        }
       }
 
       return true
@@ -88,7 +92,7 @@ export default class Champions extends Component {
     return (
       <div>
         <ChampionFilter filter={ this.state } onInputChange={ this.handleInputChange } />
-        <ChampionList champions={ champions } />
+        <ChampionList champions={ champions } onChampionClick={ this.props.onChampionClick } />
       </div>
     )
   }
