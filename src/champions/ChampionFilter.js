@@ -28,7 +28,7 @@ export default class ChampionFilter extends Component {
 
         <div className="row text-center">
           <div className="col-4">
-            <label>Couleur de la réaction</label>
+            <label><b>Réaction</b></label>
             <div className="form-group d-flex flex-column flex-md-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
@@ -66,7 +66,7 @@ export default class ChampionFilter extends Component {
             </div>
           </div>
           <div className="col-4">
-            <label>Défense</label>
+            <label><b>Défense</b></label>
             <div className="form-group d-flex flex-column flex-md-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
@@ -104,7 +104,7 @@ export default class ChampionFilter extends Component {
             </div>
           </div>
           <div className="col-4">
-            <label>Langage</label>
+            <label><b>Langage</b></label>
             <div className="form-group d-flex flex-column flex-md-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
