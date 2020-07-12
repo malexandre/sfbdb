@@ -22,6 +22,7 @@ export default class CardCard extends Component {
         <div className={ `card-header text-center header-bg-${card.color} d-flex flex-column justify-content-center` }>
           <div>Type : { card.type }</div>
           <h5>{ card.name.fr }</h5>
+          <div className="card-champion-name">{ card.metadata.championName }</div>
         </div>
         <div className="card-body">
           <dl className="row card-details">

@@ -23,6 +23,12 @@
   height: 87px;
 }
 
+.card-champion-name {
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1;
+}
+
 @media (min-width: 576px) {
   .card-text {
     height: 165px;
