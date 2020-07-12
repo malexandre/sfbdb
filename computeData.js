@@ -132,7 +132,7 @@ function computeData() {
     champion.name = championName
 
     for (const card of champion.cards) {
-      card.metadata.search = computeCardSearchData(card)
+      card.metadata.searchData = computeCardSearchData(card)
     }
 
     champion.metadata = {
