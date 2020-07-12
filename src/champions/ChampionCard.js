@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { DropletFill, OctagonFill, HeartFill, Heart, Shield, ShieldSlashFill, LayersFill, DashCircleFill, FileArrowUpFill } from 'react-bootstrap-icons'
 
 import "./ChampionCard.css"
@@ -22,9 +23,13 @@ export default class ChampionCard extends Component {
         <div className="card-body">
           <h2 className="card-title text-center">{ champion.name }</h2>
           <p className="text-center"><Heart /> { champion.hp } <Shield /> { champion.defense }</p>
-          <div className="text-center"><i>Expérimenté :</i></div>
-          <p className="text-center"><Heart /> { champion.levelUp.hp } <Shield /> { champion.levelUp.defense }</p>
-          <p className="level-up-power text-muted" title={ champion.levelUp.fr }>{ champion.levelUp.fr }</p>
+          {!this.props.shortVersion && (
+            <div>
+              <div className="text-center"><i>Expérimenté :</i></div>
+              <p className="text-center"><Heart /> { champion.levelUp.hp } <Shield /> { champion.levelUp.defense }</p>
+              <p className="level-up-power text-muted" title={ champion.levelUp.fr }>{ champion.levelUp.fr }</p>
+            </div>
+          )}
           <table className={`${tableColor} rounded m-auto text-center`}>
             <tbody>
             <tr>
@@ -54,5 +59,6 @@ export default class ChampionCard extends Component {
 }
 
 ChampionCard.propTypes = {
-  champion: ChampionType
+  champion: ChampionType,
+  shortVersion: PropTypes.bool
 }
