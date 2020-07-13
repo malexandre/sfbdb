@@ -306,7 +306,7 @@ export default class CardFilter extends Component {
         </div>
 
         <div className="text-center mb-4">
-          <button type="button" class="btn btn-outline-secondary" onClick={ this.props.onReset }>
+          <button type="button" className="btn btn-outline-secondary" onClick={ this.props.onReset }>
             Réinitialiser les filtres
           </button>
         </div>
