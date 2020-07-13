@@ -1,12 +1,28 @@
 import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Switch, Route, Link, NavLink } from 'react-router-dom'
+import { useTranslation, Trans } from 'react-i18next'
+
 import Builder from './Builder/builder'
 import Cards from './Cards/Cards'
 import Champions from './champions/Champions'
 import logo from './logo192.png'
 
 export default function App() {
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const setEnglish = () => {
+    changeLanguage('en')
+  }
+
+  const setFrench = () => {
+    changeLanguage('fr')
+  }
+
   return (
     <Router>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -31,16 +47,29 @@ export default function App() {
         <div className="collapse navbar-collapse" id="main-navbar">
           <div className="navbar-nav">
             <NavLink className="nav-item nav-link" activeClassName="active" exact to="/">
-              Les Champions
+              <Trans>
+                Les Champions
+              </Trans>
             </NavLink>
             <NavLink className="nav-item nav-link" activeClassName="active" to="/cards">
-              Les Cartes
+              <Trans>
+                Les Cartes
+              </Trans>
             </NavLink>
             <NavLink className="nav-item nav-link" activeClassName="active" to="/builder">
-              Team Builder
+              <Trans>
+                Team Builder
+              </Trans>
             </NavLink>
           </div>
         </div>
+
+        <span class="navbar-text" onClick={ setEnglish }>
+          EN
+        </span>
+        <span class="navbar-text" onClick={ setFrench }>
+          FR
+        </span>
       </nav>
 
       <Switch>
