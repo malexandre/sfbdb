@@ -50,6 +50,7 @@ export default class Builder extends Component {
     this.buildNewDeckCodeAndUpdateHistory = this.buildNewDeckCodeAndUpdateHistory.bind(this)
     this.onCopyToClipboard = this.onCopyToClipboard.bind(this)
     this.onCloseCopyAlert = this.onCloseCopyAlert.bind(this)
+    this.findNextAvailableSlot = this.findNextAvailableSlot.bind(this)
   }
 
   mapTeamsToChampionIds() {
@@ -123,13 +124,50 @@ export default class Builder extends Component {
     })
   }
 
+  findNextAvailableSlot(teams) {
+    const slotPerTeam = [...Array(this.state.teamSize).keys()]
+
+    const teamIndexes = [...Array(teams.length).keys()]
+    const slotIndexes = [
+      ...slotPerTeam.slice(this.state.activeSlot + 1),
+      ...slotPerTeam.slice(0, this.state.activeSlot)
+    ]
+
+    for (const slotIdx of slotIndexes) {
+      if (!teams[this.state.activeTeam][slotIdx]) {
+        return {
+          activeTeam: this.state.activeTeam,
+          activeSlot: slotIdx
+        }
+      }
+    }
+
+    for (const teamIdx of teamIndexes) {
+      for (const slotIdx of slotPerTeam) {
+        if (!teams[teamIdx][slotIdx]) {
+          return {
+            activeTeam: teamIdx,
+            activeSlot: slotIdx
+          }
+        }
+      }
+    }
+
+    // default value, don't change picked slot
+    return {
+      activeTeam: this.state.activeTeam,
+      activeSlot: this.state.activeSlot
+    }
+  }
+
   handleChampionClick(champion) {
     const results = this.state.teams.map((team) => [...team]) // deepcopy
     results[this.state.activeTeam][this.state.activeSlot] = champion
 
     this.setState({
       teams: results,
-      deckCode: this.buildNewDeckCodeAndUpdateHistory(this.state.draftMode, results)
+      deckCode: this.buildNewDeckCodeAndUpdateHistory(this.state.draftMode, results),
+      ...this.findNextAvailableSlot(results)
     })
   }
 
@@ -143,7 +181,8 @@ export default class Builder extends Component {
 
     this.setState({
       teams: results,
-      deckCode: this.buildNewDeckCodeAndUpdateHistory(this.state.draftMode, results)
+      deckCode: this.buildNewDeckCodeAndUpdateHistory(this.state.draftMode, results),
+      ...(results[this.state.activeTeam][this.state.activeSlot] ? { activeTeam: team, activeSlot: slot } : {})
     })
   }
 
