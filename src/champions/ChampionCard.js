@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { DropletFill, OctagonFill, HeartFill, Heart, Shield, ShieldSlashFill, LayersFill, DashCircleFill, FileArrowUpFill } from 'react-bootstrap-icons'
+import { DropletFill, OctagonFill, HeartFill, Heart, Shield, ShieldSlashFill, LayersFill, DashCircleFill, FileArrowUpFill, ForwardFill } from 'react-bootstrap-icons'
 
 import "./ChampionCard.css"
 import { ChampionType } from '../types'
@@ -40,21 +40,21 @@ export default class ChampionCard extends Component {
     }
 
     return (
-      <div className={ `card w-100 mb-4 ${this.props.active && "border border-success"}` } onClick={ this.handleCardClick }>
+      <div className={ `card w-100 ${this.props.active && "border border-success"}` } onClick={ this.handleCardClick }>
         <div className="card-body">
           {this.props.onChampionClearClick && (
             <button type="button" className="close" aria-label="Clear pick" onClick={ this.handleClearClick }>
               <span aria-hidden="true">&times;</span>
             </button>
           )}
-          <h2 className="card-title text-center">{ champion.name }</h2>
-          <p className="text-center"><Heart /> { champion.hp } <Shield /> { champion.defense }</p>
+          <h4 className="card-title text-center">{ champion.name }</h4>
+          <div className="text-center champion-hp mb-3">
+            <Heart /> { champion.hp } <Shield /> { champion.defense }
+            <ForwardFill className="mx-2" />
+            <Heart /> { champion.levelUp.hp } <Shield /> { champion.levelUp.defense }
+          </div>
           {!this.props.shortVersion && (
-            <div>
-              <div className="text-center"><i>Expérimenté :</i></div>
-              <p className="text-center"><Heart /> { champion.levelUp.hp } <Shield /> { champion.levelUp.defense }</p>
-              <p className="level-up-power text-muted" title={ champion.levelUp.fr }>{ champion.levelUp.fr }</p>
-            </div>
+            <p className="level-up-power text-muted" title={ champion.levelUp.fr }>{ champion.levelUp.fr }</p>
           )}
           <table className={`${tableColor} rounded m-auto text-center`}>
             <tbody>

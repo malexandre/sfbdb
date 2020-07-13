@@ -10,7 +10,7 @@ export default class ChampionList extends Component {
     return (
       <div className="row">
         {this.props.champions.map((champion) => (
-          <div className="col-xl-3 col-md-4 col-sm-6 col-12 d-flex align-items-stretch" key={ champion.id }>
+          <div className="col-xl-3 col-md-4 col-sm-6 col-12 d-flex align-items-stretch mb-4" key={ champion.id }>
             <ChampionCard champion={ champion } onChampionClick={ this.props.onChampionClick } />
           </div>
         ))}
