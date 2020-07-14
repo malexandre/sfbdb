@@ -52,8 +52,8 @@ export default class Cards extends Component {
     this.state = DEFAULT_STATE
 
     this.handleInputChange = this.handleInputChange.bind(this);
-    this.selectAllFilters = this.selectAllFilters.bind(this);
-    this.deselectAllFilters = this.deselectAllFilters.bind(this);
+    this.selectAllChampionsFilters = this.selectAllChampionsFilters.bind(this);
+    this.deselectAllChampionsFilters = this.deselectAllChampionsFilters.bind(this);
   }
 
   handleInputChange(event) {
@@ -69,17 +69,43 @@ export default class Cards extends Component {
     })
   }
 
-  selectAllFilters() {
+  selectAllChampionsFilters() {
     this.setState({
-      ...DEFAULT_STATE,
-      search: this.state.search
+      dug: true,
+      gol: true,
+      gwa: true,
+      kil: true,
+      tzu: true,
+      der: true,
+      rat: true,
+      mar: true,
+      kor: true,
+      lor: true,
+      nev: true,
+      taz: true,
+      kol: true,
+      sul: true,
+      akh: true
     })
   }
 
-  deselectAllFilters() {
+  deselectAllChampionsFilters() {
     this.setState({
-      ...Object.keys(this.state).reduce((acc, key) => ({ ...acc, [key]: false }), {}),
-      search: this.state.search
+      dug: false,
+      gol: false,
+      gwa: false,
+      kil: false,
+      tzu: false,
+      der: false,
+      rat: false,
+      mar: false,
+      kor: false,
+      lor: false,
+      nev: false,
+      taz: false,
+      kol: false,
+      sul: false,
+      akh: false
     })
   }
 
@@ -121,8 +147,8 @@ export default class Cards extends Component {
         <CardFilter
           filter={ this.state }
           onInputChange={ this.handleInputChange }
-          onSelectAll={ this.selectAllFilters }
-          onDeselectAll={ this.deselectAllFilters }
+          onSelectAllChampions={ this.selectAllChampionsFilters }
+          onDeselectAllChampions={ this.deselectAllChampionsFilters }
         />
         <CardList cards={ cards } />
       </div>

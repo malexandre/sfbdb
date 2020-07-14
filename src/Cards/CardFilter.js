@@ -307,11 +307,11 @@ export default class CardFilter extends Component {
         </div>
 
         <div className="text-center mb-4">
-          <button type="button" className="btn btn-outline-secondary mx-2" onClick={ this.props.onSelectAll }>
-            <Trans>Tout sélectionner</Trans>
+          <button type="button" className="btn btn-outline-secondary mx-2" onClick={ this.props.onSelectAllChampions }>
+            <Trans>Sélectionner tous les Champions</Trans>
           </button>
-          <button type="button" className="btn btn-outline-secondary mx-2" onClick={ this.props.onDeselectAll }>
-            <Trans>Tout désélectionner</Trans>
+          <button type="button" className="btn btn-outline-secondary mx-2" onClick={ this.props.onDeselectAllChampions }>
+            <Trans>Désélectionner tous les Champions</Trans>
           </button>
         </div>
       </div>
@@ -332,6 +332,6 @@ CardFilter.propTypes = {
     search: PropTypes.string
   }),
   onInputChange: PropTypes.func,
-  onSelectAll: PropTypes.func,
-  onDeselectAll: PropTypes.func
+  onSelectAllChampions: PropTypes.func,
+  onDeselectAllChampions: PropTypes.func
 }
