@@ -233,7 +233,7 @@
         "type": "skill",
         "movement": 2,
         "range": null,
-        "aoe": 1,
+        "aoe": null,
         "strength": null,
         "defense": null,
         "name": {
