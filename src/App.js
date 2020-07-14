@@ -45,7 +45,7 @@ export default function App() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="main-navbar">
-          <div className="navbar-nav">
+          <div className="navbar-nav mr-auto">
             <NavLink className="nav-item nav-link" activeClassName="active" exact to="/">
               <Trans>
                 Les Champions
@@ -62,24 +62,24 @@ export default function App() {
               </Trans>
             </NavLink>
           </div>
-        </div>
 
-        <span className="navbar-text" onClick={ setEnglish }>
-          <img src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/GB.svg"
-              width="30"
-              height="20"
-              className={ `d-inline-block align-top mx-2 ${i18n.language !== 'en' && 'unselected-flag'}` }
-              alt="Set language to English"
-            />
-        </span>
-        <span className="navbar-text" onClick={ setFrench }>
-          <img src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/FR.svg"
-              width="30"
-              height="20"
-              className={ `d-inline-block align-top mx-2 ${i18n.language !== 'fr' && 'unselected-flag'}` }
-              alt="Changer la langue du site en Français"
-            />
-        </span>
+          <span className="navbar-text" onClick={ setEnglish }>
+            <img src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/GB.svg"
+                width="30"
+                height="20"
+                className={ `mx-2 ${i18n.language !== 'en' && 'unselected-flag'}` }
+                alt="Set language to English"
+              />
+          </span>
+          <span className="navbar-text" onClick={ setFrench }>
+            <img src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/FR.svg"
+                width="30"
+                height="20"
+                className={ `mx-2 ${i18n.language !== 'fr' && 'unselected-flag'}` }
+                alt="Changer la langue du site en Français"
+              />
+          </span>
+        </div>
       </nav>
 
       <Switch>
