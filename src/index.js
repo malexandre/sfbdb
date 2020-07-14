@@ -9,9 +9,19 @@ import * as serviceWorker from './serviceWorker';
 import English from './locales/en.json'
 import French from './locales/fr.json'
 
+const languageDetector = new i18nLanguageDetector();
+languageDetector.addDetector({
+  name: 'defaultToEnglish',
+  cacheUserLanguage() {},
+
+  lookup() {
+    return 'en';
+  }
+});
+
 i18n
   .use(initReactI18next)
-  .use(i18nLanguageDetector)
+  .use(languageDetector)
   .init({
     resources: {
       en: {
@@ -32,9 +42,21 @@ i18n
       },
     },
     fallbackLng: "en",
+    supportedLngs: ["en", "fr"],
 
     interpolation: {
       escapeValue: false
+    },
+
+    detection: {
+      order: ['localStorage', 'navigator', 'htmlTag', 'defaultToEnglish'],
+
+      lookupLocalStorage: 'i18nextLng',
+
+      caches: ['localStorage'],
+      excludeCacheFor: ['cimode'],
+
+      htmlTag: document.documentElement
     }
   });
 

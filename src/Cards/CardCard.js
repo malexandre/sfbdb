@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import "./CardCard.css"
 import { CardType } from '../types'
 import { Trans, withTranslation } from 'react-i18next'
+import { getTranslatedTextFromObject } from '../utils'
 
 
 class CardCard extends Component {
@@ -21,7 +22,7 @@ class CardCard extends Component {
     return (
       <div className={ `card border-${cardColor} w-100 mb-4` }>
         <div className={ `card-header text-center header-bg-${card.color} d-flex flex-column justify-content-center` }>
-          <h5 className="m-0">{ card.name[this.props.i18n.language] }</h5>
+          <h5 className="m-0">{ getTranslatedTextFromObject(card.name, this.props.i18n.language) }</h5>
           <div className="card-champion-name">{ card.metadata.championName } · { this.props.t(card.type) }</div>
         </div>
         <div className="card-body">
@@ -61,7 +62,11 @@ class CardCard extends Component {
             ])}
           </dl>
           <div className="card-power">
-            { card.text[this.props.i18n.language].map((text, idx) => (<p key={ idx }>{ text }</p>)) }
+            {
+              getTranslatedTextFromObject(card.text, this.props.i18n.language).map(
+                (text, idx) => (<p key={ idx }>{ text }</p>)
+              )
+            }
           </div>
         </div>
       </div>

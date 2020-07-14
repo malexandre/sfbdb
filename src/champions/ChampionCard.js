@@ -5,6 +5,7 @@ import { DropletFill, OctagonFill, HeartFill, Heart, Shield, ShieldSlashFill, La
 import "./ChampionCard.css"
 import { ChampionType } from '../types'
 import { withTranslation } from 'react-i18next'
+import { getTranslatedTextFromObject } from '../utils'
 
 class ChampionCard extends Component {
   constructor(props) {
@@ -57,9 +58,9 @@ class ChampionCard extends Component {
           {!this.props.shortVersion && (
             <p
               className="level-up-power text-muted"
-              title={ champion.levelUp[this.props.i18n.language] }
+              title={ getTranslatedTextFromObject(champion.levelUp, this.props.i18n.language) }
             >
-              { champion.levelUp[this.props.i18n.language] }
+              { getTranslatedTextFromObject(champion.levelUp, this.props.i18n.language) }
             </p>
           )}
           <table className={`${tableColor} rounded m-auto text-center`}>
