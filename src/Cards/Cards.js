@@ -52,7 +52,8 @@ export default class Cards extends Component {
     this.state = DEFAULT_STATE
 
     this.handleInputChange = this.handleInputChange.bind(this);
-    this.resetState = this.resetState.bind(this);
+    this.selectAllFilters = this.selectAllFilters.bind(this);
+    this.deselectAllFilters = this.deselectAllFilters.bind(this);
   }
 
   handleInputChange(event) {
@@ -68,8 +69,18 @@ export default class Cards extends Component {
     })
   }
 
-  resetState() {
-    this.setState(DEFAULT_STATE)
+  selectAllFilters() {
+    this.setState({
+      ...DEFAULT_STATE,
+      search: this.state.search
+    })
+  }
+
+  deselectAllFilters() {
+    this.setState({
+      ...Object.keys(this.state).reduce((acc, key) => ({ ...acc, [key]: false }), {}),
+      search: this.state.search
+    })
   }
 
   render() {
@@ -107,7 +118,12 @@ export default class Cards extends Component {
 
     return (
       <div className="container mt-4">
-        <CardFilter filter={ this.state } onInputChange={ this.handleInputChange } onReset={ this.resetState } />
+        <CardFilter
+          filter={ this.state }
+          onInputChange={ this.handleInputChange }
+          onSelectAll={ this.selectAllFilters }
+          onDeselectAll={ this.deselectAllFilters }
+        />
         <CardList cards={ cards } />
       </div>
     )
