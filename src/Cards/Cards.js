@@ -52,6 +52,7 @@ export default class Cards extends Component {
     this.state = DEFAULT_STATE
 
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSearchInputClear = this.handleSearchInputClear.bind(this);
     this.selectAllChampionsFilters = this.selectAllChampionsFilters.bind(this);
     this.deselectAllChampionsFilters = this.deselectAllChampionsFilters.bind(this);
   }
@@ -67,6 +68,10 @@ export default class Cards extends Component {
     this.setState({
       [name]: value
     })
+  }
+
+  handleSearchInputClear() {
+    this.setState({ search: "" })
   }
 
   selectAllChampionsFilters() {
@@ -147,6 +152,7 @@ export default class Cards extends Component {
         <CardFilter
           filter={ this.state }
           onInputChange={ this.handleInputChange }
+          onClearSearchInput={ this.handleSearchInputClear }
           onSelectAllChampions={ this.selectAllChampionsFilters }
           onDeselectAllChampions={ this.deselectAllChampionsFilters }
         />

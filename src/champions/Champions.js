@@ -31,6 +31,7 @@ export default class Champions extends Component {
     }
 
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSearchInputClear = this.handleSearchInputClear.bind(this);
   }
 
   handleInputChange(event) {
@@ -43,6 +44,10 @@ export default class Champions extends Component {
     this.setState({
       [name]: value
     })
+  }
+
+  handleSearchInputClear() {
+    this.setState({ search: "" })
   }
 
   render() {
@@ -91,7 +96,11 @@ export default class Champions extends Component {
 
     return (
       <div className="container mt-4">
-        <ChampionFilter filter={ this.state } onInputChange={ this.handleInputChange } />
+        <ChampionFilter
+          filter={ this.state }
+          onInputChange={ this.handleInputChange }
+          onClearSearchInput={ this.handleSearchInputClear }
+        />
         <ChampionList champions={ champions } onChampionClick={ this.props.onChampionClick } />
       </div>
     )

@@ -1,31 +1,19 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { Search } from 'react-bootstrap-icons'
 import { Trans } from 'react-i18next'
+import SearchInput from '../SearchInput'
 
 
 export default class ChampionFilter extends Component {
   render() {
     return (
       <div>
-        <div className="row">
-          <div className="col-12">
-            <div className="input-group mb-3">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Filtrer..."
-                name="search"
-                value={ this.props.filter.search }
-                onChange={ this.props.onInputChange }
-              />
-              <div className="input-group-append">
-                <span className="input-group-text"><Search /></span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <SearchInput
+          search={ this.props.filter.search }
+          onInputChange={ this.props.onInputChange }
+          onClearSearchInput={ this.props.onClearSearchInput }
+        />
 
         <div className="row text-center">
           <div className="col-4">
@@ -149,5 +137,6 @@ ChampionFilter.propTypes = {
     french: PropTypes.bool,
     search: PropTypes.string
   }),
-  onInputChange: PropTypes.func
+  onInputChange: PropTypes.func,
+  onClearSearchInput: PropTypes.func
 }

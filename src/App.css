@@ -1,3 +1,9 @@
 .unselected-flag {
   filter: grayscale(10);
 }
+
+.clear-text-button {
+  z-index: 5;
+  margin-left: -23px;
+  margin-right: 10px;
+}
