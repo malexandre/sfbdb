@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import { Search } from 'react-bootstrap-icons'
+import { Trans } from 'react-i18next'
 
 
 export default class CardFilter extends Component {
@@ -28,7 +29,7 @@ export default class CardFilter extends Component {
 
         <div className="row text-center">
           <div className="col-4">
-            <label><b>Couleur</b></label>
+            <label><b><Trans>Couleur</Trans></b></label>
             <div className="form-group d-flex flex-column flex-lg-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
@@ -39,7 +40,7 @@ export default class CardFilter extends Component {
                   checked={ this.props.filter.red }
                   onChange={ this.props.onInputChange }
                 />
-                <label className="form-check-label" htmlFor="red">Rouge</label>
+                <label className="form-check-label" htmlFor="red"><Trans>Rouge</Trans></label>
               </div>
               <div className="form-check form-check-inline">
                 <input
@@ -50,7 +51,7 @@ export default class CardFilter extends Component {
                   checked={ this.props.filter.yellow }
                   onChange={ this.props.onInputChange }
                 />
-                <label className="form-check-label" htmlFor="yellow">Jaune</label>
+                <label className="form-check-label" htmlFor="yellow"><Trans>Jaune</Trans></label>
               </div>
               <div className="form-check form-check-inline">
                 <input
@@ -61,12 +62,12 @@ export default class CardFilter extends Component {
                   checked={ this.props.filter.blue }
                   onChange={ this.props.onInputChange }
                 />
-                <label className="form-check-label" htmlFor="blue">Bleue</label>
+                <label className="form-check-label" htmlFor="blue"><Trans>Bleue</Trans></label>
               </div>
             </div>
           </div>
           <div className="col-4">
-            <label><b>Type de carte</b></label>
+            <label><b><Trans>Type de carte</Trans></b></label>
             <div className="form-group d-flex flex-column flex-lg-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
@@ -77,7 +78,7 @@ export default class CardFilter extends Component {
                   checked={ this.props.filter.attack }
                   onChange={ this.props.onInputChange }
                 />
-                <label className="form-check-label" htmlFor="attack">Attaque</label>
+                <label className="form-check-label" htmlFor="attack"><Trans>Attaque</Trans></label>
               </div>
               <div className="form-check form-check-inline">
                 <input
@@ -88,7 +89,7 @@ export default class CardFilter extends Component {
                   checked={ this.props.filter.skill }
                   onChange={ this.props.onInputChange }
                 />
-                <label className="form-check-label" htmlFor="skill">Compétence</label>
+                <label className="form-check-label" htmlFor="skill"><Trans>Compétence</Trans></label>
               </div>
               <div className="form-check form-check-inline">
                 <input
@@ -99,12 +100,12 @@ export default class CardFilter extends Component {
                   checked={ this.props.filter.reaction }
                   onChange={ this.props.onInputChange }
                 />
-                <label className="form-check-label" htmlFor="reaction">Réaction</label>
+                <label className="form-check-label" htmlFor="reaction"><Trans>Réaction</Trans></label>
               </div>
             </div>
           </div>
           <div className="col-4">
-            <label><b>Langage</b></label>
+            <label><b><Trans>Langage</Trans></b></label>
             <div className="form-group d-flex flex-column flex-lg-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
@@ -134,7 +135,7 @@ export default class CardFilter extends Component {
 
         <div className="row text-center">
           <div className="col-12">
-            <label><b>Champions</b></label>
+            <label><b><Trans>Champions</Trans></b></label>
             <div className="form-group d-flex align-items-center justify-content-center flex-wrap">
               <div className="form-check form-check-inline">
                 <input
@@ -307,7 +308,7 @@ export default class CardFilter extends Component {
 
         <div className="text-center mb-4">
           <button type="button" className="btn btn-outline-secondary" onClick={ this.props.onReset }>
-            Réinitialiser les filtres
+            <Trans>Réinitialiser les filtres</Trans>
           </button>
         </div>
       </div>

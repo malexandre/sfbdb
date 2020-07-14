@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import { Search } from 'react-bootstrap-icons'
+import { Trans } from 'react-i18next'
 
 
 export default class ChampionFilter extends Component {
@@ -28,7 +29,7 @@ export default class ChampionFilter extends Component {
 
         <div className="row text-center">
           <div className="col-4">
-            <label><b>Réaction</b></label>
+            <label><b><Trans>Réaction</Trans></b></label>
             <div className="form-group d-flex flex-column flex-md-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
@@ -39,7 +40,7 @@ export default class ChampionFilter extends Component {
                   checked={ this.props.filter.red }
                   onChange={ this.props.onInputChange }
                 />
-                <label className="form-check-label" htmlFor="red">Rouge</label>
+                <label className="form-check-label" htmlFor="red"><Trans>Rouge</Trans></label>
               </div>
               <div className="form-check form-check-inline">
                 <input
@@ -50,7 +51,7 @@ export default class ChampionFilter extends Component {
                   checked={ this.props.filter.yellow }
                   onChange={ this.props.onInputChange }
                 />
-                <label className="form-check-label" htmlFor="yellow">Jaune</label>
+                <label className="form-check-label" htmlFor="yellow"><Trans>Jaune</Trans></label>
               </div>
               <div className="form-check form-check-inline">
                 <input
@@ -61,12 +62,12 @@ export default class ChampionFilter extends Component {
                   checked={ this.props.filter.blue }
                   onChange={ this.props.onInputChange }
                 />
-                <label className="form-check-label" htmlFor="blue">Bleue</label>
+                <label className="form-check-label" htmlFor="blue"><Trans>Bleue</Trans></label>
               </div>
             </div>
           </div>
           <div className="col-4">
-            <label><b>Défense</b></label>
+            <label><b><Trans>Défense</Trans></b></label>
             <div className="form-group d-flex flex-column flex-md-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input
@@ -104,7 +105,7 @@ export default class ChampionFilter extends Component {
             </div>
           </div>
           <div className="col-4">
-            <label><b>Langage</b></label>
+            <label><b><Trans>Langage</Trans></b></label>
             <div className="form-group d-flex flex-column flex-md-row align-items-center justify-content-center">
               <div className="form-check form-check-inline">
                 <input

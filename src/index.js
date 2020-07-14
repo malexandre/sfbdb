@@ -5,6 +5,8 @@ import { initReactI18next } from "react-i18next";
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import English from './locales/en.json'
+import French from './locales/fr.json'
 
 i18n
   .use(initReactI18next)
@@ -12,16 +14,18 @@ i18n
     resources: {
       en: {
         translation: {
-          "Les Champions": "The Champions",
-          "Les Cartes": "The Cards",
-          "Team Builder": "Team Builder",
+          skill: 'Skill',
+          attack: 'Attack',
+          reaction: 'Reaction',
+          ...English
         }
       },
       fr: {
         translation: {
-          "Les Champions": "Les Champions",
-          "Les Cartes": "Les Cartes",
-          "Team Builder": "Team Builder",
+          skill: 'Compétence',
+          attack: 'Attaque',
+          reaction: 'Réaction',
+          ...French
         }
       },
     },

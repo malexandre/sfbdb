@@ -4,8 +4,9 @@ import { DropletFill, OctagonFill, HeartFill, Heart, Shield, ShieldSlashFill, La
 
 import "./ChampionCard.css"
 import { ChampionType } from '../types'
+import { withTranslation } from 'react-i18next'
 
-export default class ChampionCard extends Component {
+class ChampionCard extends Component {
   constructor(props) {
     super(props)
 
@@ -54,18 +55,56 @@ export default class ChampionCard extends Component {
             <Heart /> { champion.levelUp.hp } <Shield /> { champion.levelUp.defense }
           </div>
           {!this.props.shortVersion && (
-            <p className="level-up-power text-muted" title={ champion.levelUp.fr }>{ champion.levelUp.fr }</p>
+            <p
+              className="level-up-power text-muted"
+              title={ champion.levelUp[this.props.i18n.language] }
+            >
+              { champion.levelUp[this.props.i18n.language] }
+            </p>
           )}
           <table className={`${tableColor} rounded m-auto text-center`}>
             <tbody>
             <tr>
-              <td className="px-1 pt-2" title="Nombre d'attaques"><DropletFill /></td>
-              <td className="px-1 pt-2" title="Nombre de cartes de contrôle"><OctagonFill /></td>
-              <td className="px-1 pt-2" title="Nombre de cartes permettant de piocher ou planifier"><LayersFill /></td>
-              <td className="px-1 pt-2" title="Nombre de cartes sans mouvement"><DashCircleFill /></td>
-              <td className="px-1 pt-2" title="Nombre de cartes de soin"><HeartFill /></td>
-              <td className="px-1 pt-2" title="Nombre de cartes de buff"><FileArrowUpFill /></td>
-              <td className="px-1 pt-2" title="Nombre de cartes anti-armure"><ShieldSlashFill /></td>
+              <td
+                className="px-1 pt-2"
+                title={ this.props.t("Nombre d'attaques") }
+              >
+                <DropletFill />
+              </td>
+              <td
+                className="px-1 pt-2"
+                title={ this.props.t("Nombre de cartes de contrôle") }
+              >
+                <OctagonFill />
+              </td>
+              <td
+                className="px-1 pt-2"
+                title={ this.props.t("Nombre de cartes permettant de piocher ou planifier") }
+              >
+                <LayersFill />
+              </td>
+              <td
+                className="px-1 pt-2"
+                title={ this.props.t("Nombre de cartes sans mouvement") }
+              >
+                <DashCircleFill /></td>
+              <td
+                className="px-1 pt-2"
+                title={ this.props.t("Nombre de cartes de soin") }
+              >
+                <HeartFill />
+              </td>
+              <td
+                className="px-1 pt-2"
+                title={ this.props.t("Nombre de cartes de buff") }
+              >
+                <FileArrowUpFill /></td>
+              <td
+                className="px-1 pt-2"
+                title={ this.props.t("Nombre de cartes anti-armure") }
+              >
+                <ShieldSlashFill />
+              </td>
             </tr>
             <tr>
               <td className="px-1 pb-2">{ champion.metadata.total.attack }</td>
@@ -91,3 +130,5 @@ ChampionCard.propTypes = {
   onChampionClick: PropTypes.func,
   onChampionClearClick: PropTypes.func
 }
+
+export default withTranslation()(ChampionCard)

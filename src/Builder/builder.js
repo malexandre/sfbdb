@@ -4,6 +4,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard'
 
 import Champions from '../champions/Champions'
 import { buildDeckCode, parseDeckCode } from '../deckCode';
+import { Trans } from 'react-i18next';
 
 const DEFAULT_STATE = {
   draftMode: "0",
@@ -203,7 +204,7 @@ export default class Builder extends Component {
                     className="form-check-input"
                     onChange={ this.handleDraftModeChange }
                   />
-                  Amicale
+                  <Trans>Amicale</Trans>
                 </label>
               </div>
               <div className="form-check form-check-inline">
@@ -216,7 +217,7 @@ export default class Builder extends Component {
                     className="form-check-input"
                     onChange={ this.handleDraftModeChange }
                   />
-                  Draft Compétitive
+                  <Trans>Draft Compétitive</Trans>
                 </label>
               </div>
               <div className="form-check form-check-inline">
@@ -229,7 +230,7 @@ export default class Builder extends Component {
                     className="form-check-input"
                     onChange={ this.handleDraftModeChange }
                   />
-                  Double Draft Compétitive
+                  <Trans>Double Draft Compétitive</Trans>
                 </label>
               </div>
             </div>
@@ -237,31 +238,31 @@ export default class Builder extends Component {
         </div>
 
         <div className="text-center mb-4">
-          Deck code :
+          <Trans>Deck code :</Trans>
           { this.state.deckCode ? (
               <blockquote className="blockquote">
                 <p>{ this.state.deckCode }</p>
                 <CopyToClipboard text={ this.state.deckCode } onCopy={ this.onCopyToClipboard }>
-                  <button className="btn btn-outline-secondary">Copier le code</button>
+                  <button className="btn btn-outline-secondary"><Trans>Copier le code</Trans></button>
                 </CopyToClipboard>
                 {" "}
                 <CopyToClipboard text={ window.location.href } onCopy={ this.onCopyToClipboard }>
-                  <button className="btn btn-outline-secondary">Copier l'URL</button>
+                  <button className="btn btn-outline-secondary"><Trans>Copier l'URL</Trans></button>
                 </CopyToClipboard>
                 {this.state.copyAlert && (
                   <div className="alert alert-success mx-auto mt-4 w-50" role="alert">
-                    C'est copié !
+                    <Trans>C'est copié !</Trans>
                     <button type="button" className="close" aria-label="Close" onClick={ this.onCloseCopyAlert }>
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                 )}
               </blockquote>
-            ) : <div><i>Le code sera généré une fois la compo finie</i></div> }
+            ) : <div><i><Trans>Le code sera généré une fois la compo finie</Trans></i></div> }
         </div>
 
         <div>
-          {this.state.draftMode === "2" && <h4 className="text-center">Équipe 1</h4>}
+          {this.state.draftMode === "2" && <h4 className="text-center"><Trans>Équipe 1</Trans></h4>}
           <ChampionPicker
             team={ 0 }
             size={ this.state.teamSize }
@@ -272,7 +273,7 @@ export default class Builder extends Component {
             onClearSlot={ this.handleClearSlot }
           />
           {this.state.draftMode === "2" && [
-            <h4 className="text-center" key="teamTitle">Équipe 2</h4>,
+            <h4 className="text-center" key="teamTitle"><Trans>Équipe 2</Trans></h4>,
             <ChampionPicker
               team={ 1 }
               size={ this.state.teamSize }
