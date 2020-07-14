@@ -20,6 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "i18n-extract": "i18next 'src/**/*.js' -r i18next-parser.config.js"
