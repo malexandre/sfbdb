@@ -64,7 +64,7 @@ export default function App() {
           </div>
         </div>
 
-        <span class="navbar-text" onClick={ setEnglish }>
+        <span className="navbar-text" onClick={ setEnglish }>
           <img src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/GB.svg"
               width="30"
               height="20"
@@ -72,7 +72,7 @@ export default function App() {
               alt="Set language to English"
             />
         </span>
-        <span class="navbar-text" onClick={ setFrench }>
+        <span className="navbar-text" onClick={ setFrench }>
           <img src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/FR.svg"
               width="30"
               height="20"
