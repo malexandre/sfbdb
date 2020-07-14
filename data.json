@@ -1615,7 +1615,7 @@
         },
         "text": {
           "en": ["Place Mariusz adjacent to an Enemy. Each adjacent Bloodied Enemy suffers Stun."],
-          "fr": ["Placez Mariusz sur une case adjacente à un ennemi. Tous les ennemis adjacents Mal en point subissent un Étourdissement."]
+          "fr": ["Placez Mariusz sur une case adjacente à un ennemi. Tous les ennemis Mal en point adjacents à Mariusz subissent un Étourdissement."]
         },
         "metadata": {
           "control": false,
@@ -1651,8 +1651,7 @@
             "If Mariusz is Bloodied, this attack gains Double."
           ],
           "fr": [
-            "↶ Course 2.",
-            "Si Mariusz est Mal en point, cette attaque gagne Doublé."
+            "↶ Course 2. Si Mariusz est Mal en point, cette attaque gagne Doublé."
           ]
         },
         "metadata": {
@@ -1719,7 +1718,7 @@
         "defense": null,
         "name": {
           "en": "Bone to Pick",
-          "fr": "Rancune"
+          "fr": "Rancune tenace"
         },
         "text": {
           "en": [
@@ -1728,7 +1727,7 @@
           ],
           "fr": [
             "↶ Si Mariusz est Mal en point, Course 2.",
-            "Si Mariusw est Mal en point, cette attaque gagne +2 force."
+            "Si Mariusz est Mal en point, cette attaque gagne +2 force."
           ]
         },
         "metadata": {
@@ -1810,7 +1809,7 @@
         },
         "text": {
           "en": ["↷ If the target is Bloodied, it suffers Force 1."],
-          "fr": ["↷ Si la cible est Mal en point, elle subit Transfert 1."]
+          "fr": ["↷ Si la cible est Mal en point, elle subit un Transfert 1."]
         },
         "metadata": {
           "control": true,
@@ -1944,7 +1943,7 @@
         },
         "text": {
           "en": ["↷ If the attacker is Bloodied, ignore any post attack effects."],
-          "fr": ["↷ Si l'attaquant est Mal en point, ignorez tous les effets Après l'attaque."]
+          "fr": ["↷ Si l'attaquant est Mal en point, ignorez les autres effets Après l'attaque."]
         },
         "metadata": {
           "control": false,
@@ -2029,7 +2028,7 @@
             "Plan 5."
           ],
           "fr": [
-            "Pioche 1.",
+            "Piochez 1 carte.",
             "Plan 5."
           ]
         },
@@ -2063,7 +2062,7 @@
         "defense": null,
         "name": {
           "en": "Grasping Vines",
-          "fr": "Charme"
+          "fr": "Liane étrangleuse"
         },
         "text": {
           "en": ["Place the target adjacent to Loralei. This may target Loralei's Allies."],
@@ -2099,7 +2098,7 @@
         },
         "text": {
           "en": ["Discard up to 4 cards. Heal your Champions 1 for each of their cards discarded."],
-          "fr": ["Défaussez jusqu'à 4 cartes. Vous pouvez effectuer un Soin sur vos champions de 1 pour chacune de leurs cartes défaussées."]
+          "fr": ["Défaussez jusqu'à 4 cartes. Vous pouvez effectuer un Soin 1 sur vos champions pour chacune de leurs cartes défaussées."]
         },
         "metadata": {
           "control": false,
@@ -2607,7 +2606,7 @@
         "defense": null,
         "name": {
           "en": "Finishing Blow",
-          "fr": "Coup final"
+          "fr": "Coup fatal"
         },
         "text": {
           "en": [
@@ -2721,7 +2720,7 @@
         "number": "KOL03",
         "color": "red",
         "type": "attack",
-        "movement": 1,
+        "movement": 0,
         "range": null,
         "aoe": 6,
         "strength": 2,
@@ -2744,7 +2743,7 @@
           "control": true,
           "attack": true,
           "deckManagement": false,
-          "withoutMove": false,
+          "withoutMove": true,
           "reaction": false,
           "textDamages": false,
           "buff": false,
@@ -2925,7 +2924,7 @@
         "defense": null,
         "name": {
           "en": "Darting Strikes",
-          "fr": "Scission de l'âme"
+          "fr": "Dards de lancer"
         },
         "text": {
           "en": ["Double."],
@@ -2970,7 +2969,7 @@
           ],
           "fr": [
             "Drain de vie.",
-            "Vous pouvez choisir à la place de soigner l'un des alliés de Sulka."
+            "Les soins de ce Drain de vie peuvent être assignés à un allié à la place de Sulka."
           ]
         },
         "metadata": {
@@ -3045,7 +3044,7 @@
         },
         "text": {
           "en": ["May move through Enemies, statues, and traps. Enemies moved through suffer -2 defense until the end of the turn."],
-          "fr": ["Peut se déplacer à travers les ennemis, les statues et les pièges. Les ennemis situés sur la trajectoire du déplacement subissent -2 défense jusqu'à la fin du tour."]
+          "fr": ["Peut se déplacer à travers les ennemis, les statues et les pièges, sans les activer. Les ennemis situés sur la trajectoire du déplacement subissent -2 défense jusqu'à la fin du tour."]
         },
         "metadata": {
           "control": false,
@@ -3077,7 +3076,7 @@
         },
         "text": {
           "en": ["Discard the top card of an opponent's deck. The matching Enemy suffers Force 2."],
-          "fr": ["Défaussez la carte supérieure de la pioche d'un adversaire. L'ennemi correspondant à la carte subit Transfert 2."]
+          "fr": ["Défaussez la carte du dessus de la pioche d'un adversaire. L'ennemi correspondant à la carte subit Transfert 2."]
         },
         "metadata": {
           "control": true,
