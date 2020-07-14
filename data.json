@@ -528,7 +528,7 @@
           "fr": "Chaîne d'éclairs"
         },
         "text": {
-          "en": ["↷ Fi damage was dealt, deal 2 damages to another Champion within 2 hexes of the target."],
+          "en": ["↷ If damage was dealt, deal 2 damages to another Champion within 2 hexes of the target."],
           "fr": ["↷ Si au moins un dommage a été infligé, infligez 2 dommages à un autre champion qui se trouve dans les 2 cases de la cible."]
         },
         "metadata": {
@@ -2124,7 +2124,7 @@
         "range": null,
         "aoe": null,
         "strength": null,
-        "defense": null,
+        "defense": 1,
         "name": {
           "en": "Intervention",
           "fr": "Intervention"
