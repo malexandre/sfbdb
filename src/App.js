@@ -11,8 +11,8 @@ import logo from './logo192.png'
 export default function App() {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
   };
 
   const setEnglish = () => {
@@ -65,10 +65,20 @@ export default function App() {
         </div>
 
         <span class="navbar-text" onClick={ setEnglish }>
-          EN
+          <img src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/GB.svg"
+              width="30"
+              height="20"
+              className={ `d-inline-block align-top mx-2 ${i18n.language !== 'en' && 'unselected-flag'}` }
+              alt="Set language to English"
+            />
         </span>
         <span class="navbar-text" onClick={ setFrench }>
-          FR
+          <img src="http://catamphetamine.gitlab.io/country-flag-icons/3x2/FR.svg"
+              width="30"
+              height="20"
+              className={ `d-inline-block align-top mx-2 ${i18n.language !== 'fr' && 'unselected-flag'}` }
+              alt="Changer la langue du site en Français"
+            />
         </span>
       </nav>
 
