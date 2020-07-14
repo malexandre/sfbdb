@@ -189,7 +189,7 @@ export default class Builder extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid mt-4">
         <div className="row text-center">
           <div className="col-12">
             <label><b>Mode de draft</b></label>
