@@ -25,7 +25,6 @@
 .card-details {
   font-size: 13px;
   line-height: 1.2;
-  height: 87px;
 }
 
 .card-champion-name {
@@ -36,6 +35,10 @@
 @media (min-width: 576px) {
   .card-text {
     height: 165px;
+  }
+
+  .card-details {
+    height: 87px;
   }
 }
 
