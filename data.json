@@ -512,7 +512,7 @@
       },
       {
         "number": "GWA04",
-        "color": "red",
+        "color": "yellow",
         "type": "attack",
         "movement": 2,
         "range": {
@@ -1043,7 +1043,7 @@
       },
       {
         "number": "TZU07",
-        "color": "red",
+        "color": "yellow",
         "type": "attack",
         "movement": 0,
         "range": null,
