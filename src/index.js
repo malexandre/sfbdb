@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import i18n from "i18next";
+import i18nLanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from "react-i18next";
 import './index.css';
 import App from './App';
@@ -10,6 +11,7 @@ import French from './locales/fr.json'
 
 i18n
   .use(initReactI18next)
+  .use(i18nLanguageDetector)
   .init({
     resources: {
       en: {
@@ -29,7 +31,6 @@ i18n
         }
       },
     },
-    lng: "en",
     fallbackLng: "en",
 
     interpolation: {
