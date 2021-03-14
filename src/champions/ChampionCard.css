@@ -7,6 +7,10 @@
   font-size: 14px;
 }
 
+.legends {
+  font-size: 11px;
+}
+
 @media (min-width: 576px) {
   .level-up-power {
     height: 120px;

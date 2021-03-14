@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { withTranslation } from 'react-i18next'
+import { DropletFill, OctagonFill, HeartFill, ShieldSlashFill, LayersFill, DashCircleFill, FileArrowUpFill } from 'react-bootstrap-icons'
 import data from '../data.json'
 import ChampionFilter from './ChampionFilter'
 import ChampionList from './ChampionList'
@@ -14,7 +16,7 @@ function normalizeString(str) {
     .trim()
 }
 
-export default class Champions extends Component {
+class Champions extends Component {
   constructor(props) {
     super(props)
 
@@ -96,6 +98,40 @@ export default class Champions extends Component {
 
     return (
       <div className="container mt-4">
+        <div className="card bg-light text-muted mb-4">
+          <div className="card-body">
+            <div className="row">
+              <div className="col-lg">
+                <DropletFill />&nbsp;:&nbsp;
+                <span className="legends">{ this.props.t("Nombre d'attaques") }</span>
+              </div>
+              <div className="col-lg">
+                <OctagonFill />&nbsp;:&nbsp;
+                <span className="legends">{ this.props.t("Nombre de cartes de contrôle") }</span>
+              </div>
+              <div className="col-lg">
+                <LayersFill />&nbsp;:&nbsp;
+                <span className="legends">{ this.props.t("Nombre de cartes permettant de piocher ou planifier") }</span>
+              </div>
+              <div className="col-lg">
+                <DashCircleFill />&nbsp;:&nbsp;
+                <span className="legends">{ this.props.t("Nombre de cartes sans mouvement") }</span>
+              </div>
+              <div className="col-lg">
+                <HeartFill />&nbsp;:&nbsp;
+                <span className="legends">{ this.props.t("Nombre de cartes de soin") }</span>
+              </div>
+              <div className="col-lg">
+                <FileArrowUpFill />&nbsp;:&nbsp;
+                <span className="legends">{ this.props.t("Nombre de cartes de buff") }</span>
+              </div>
+              <div className="col-lg">
+                <ShieldSlashFill />&nbsp;:&nbsp;
+                <span className="legends">{ this.props.t("Nombre de cartes anti-armure") }</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <ChampionFilter
           filter={ this.state }
           onInputChange={ this.handleInputChange }
@@ -106,3 +142,5 @@ export default class Champions extends Component {
     )
   }
 }
+
+export default withTranslation()(Champions)
