@@ -3347,5 +3347,226 @@
         }
       }
     ]
+  },
+  "Izabella" : {
+    "id": 15,
+    "hp": 8,
+    "defense": 0,
+    "levelUp": {
+      "hp": 8,
+      "defense": 0,
+      "en": "At the start of your Activation Phase, Plan 1.",
+      "fr": "Au début de votre phase d'activation, Plan 1."
+    },
+    "cards": [
+      {
+        "number": "IZA02",
+        "color": "yellow",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": 2,
+        "name": {
+          "en": "Fully Prepared",
+          "fr": "Préparation totale"
+        },
+        "text": {
+          "en": [],
+          "fr": []
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "IZA03",
+        "color": "red",
+        "type": "skill",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": false
+        },
+        "aoe": 1,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Burden of Destiny",
+          "fr": "Le poids du destin"
+        },
+        "text": {
+          "en": ["The target Champion gains +1 strength and suffers -1 defense until the end of the turn. This may target Izabella's Allies."],
+          "fr": ["Le champion ciblé gagne +1 force et subit -1 défense jusqu'a la fin du tour. Les alliés d'Izabella peuvent être ciblés."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "IZA04",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Right Place, Right Time",
+          "fr": "Au bon endroit, au bon moment"
+        },
+        "text": {
+          "en": ["Place Izabella in any free hex."],
+          "fr": ["Placez Izabella dans une case libre de votre choix."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "IZA05",
+        "color": "blue",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Foretell",
+          "fr": "Prédiciton"
+        },
+        "text": {
+          "en": [
+            "Discard your hand.",
+            "Draw 5.",
+            "Plan 2."
+          ],
+          "fr": [
+            "Défausser votre main.",
+            "Pioche 5.",
+            "Plan 2."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "IZA06",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 2,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strength": 1,
+        "defense": null,
+        "name": {
+          "en": "Prophecy of Doom",
+          "fr": "Prophétie funeste"
+        },
+        "text": {
+          "en": ["↷ Stun."],
+          "fr": ["↷ Étourdissement."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "IZA07",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strength": 3,
+        "defense": null,
+        "name": {
+          "en": "Déjà vu",
+          "fr": "Déjà vu"
+        },
+        "text": {
+          "en": ["Reactions cannot be played during this attack."],
+          "fr": ["Il est impossible de jouer des cartes Réaction durant cette attaque."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
   }
 }

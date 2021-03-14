@@ -290,6 +290,17 @@ export default class CardFilter extends Component {
                 />
                 <label className="form-check-label" htmlFor="akh">Akhet</label>
               </div>
+              <div className="form-check form-check-inline">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="iza"
+                  name="iza"
+                  checked={ this.props.filter.iza }
+                  onChange={ this.props.onInputChange }
+                />
+                <label className="form-check-label" htmlFor="iza">Izabella</label>
+              </div>
             </div>
           </div>
         </div>
