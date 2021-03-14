@@ -3801,5 +3801,234 @@
         }
       }
     ]
+  },
+  "Xinshén" : {
+    "id": 17,
+    "hp": 4,
+    "defense": 0,
+    "levelUp": {
+      "hp": 5,
+      "defense": 1,
+      "en": "When an enemy Champion suffers displacement effects by Xinshén, they also suffer Stun.",
+      "fr": "L'un de vos champions peut effectuer une action standard par round, sans dépenser d'essence."
+    },
+    "cards": [
+      {
+        "number": "XIN02",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": 2,
+        "name": {
+          "en": "Shift the elements",
+          "fr": "Fluctuation des éléments"
+        },
+        "text": {
+          "en": ["↷ Attacker suffers Force 1."],
+          "fr": ["↷ L'attaquant subit Transfert 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "XIN03",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 2,
+          "max": 3,
+          "direct": false
+        },
+        "aoe": 1,
+        "strength": 1,
+        "defense": null,
+        "name": {
+          "en": "Mind Over Matter",
+          "fr": "L'esprit domine la matière"
+        },
+        "text": {
+          "en": ["↷ Force 1. Push 1."],
+          "fr": ["↷ Transfert 1. Poussée 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "XIN04",
+        "color": "blue",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Feline's Grace",
+          "fr": "Grâce féline"
+        },
+        "text": {
+          "en": ["Jump 3.", "An adjacent enemy suffers Push 1."],
+          "fr": ["Saut 3.", "Un ennemi adjacent subit une Poussée 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "XIN05",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 1,
+        "range": {
+          "min": 3,
+          "max": 5,
+          "direct": false
+        },
+        "aoe": 1,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Pull of the Panther",
+          "fr": "Attirance de la panthère"
+        },
+        "text": {
+          "en": ["Pull 2."],
+          "fr": ["Attraction 2."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "XIN06",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Contemplation",
+          "fr": "Contemplation"
+        },
+        "text": {
+          "en": [
+            "Draw 2.",
+            "Plan 2."
+          ],
+          "fr": [
+            "Pioche 2.",
+            "Plan 2."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "XIN07",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 2,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "Telekinetic Fury",
+          "fr": "Fureur télékinétique"
+        },
+        "text": {
+          "en": [
+            "Double",
+            "↷ Push 1."
+          ],
+          "fr": [
+            "Doublé",
+            "↷ Poussée 1."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
   }
 }
