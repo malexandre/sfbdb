@@ -65,7 +65,7 @@
           "deckManagement": false,
           "withoutMove": false,
           "reaction": false,
-          "textDamages": true,
+          "textDamages": false,
           "buff": true,
           "defense": false,
           "textMovement": false,
@@ -103,7 +103,7 @@
           "deckManagement": false,
           "withoutMove": false,
           "reaction": false,
-          "textDamages": true,
+          "textDamages": false,
           "buff": false,
           "defense": false,
           "textMovement": false,
@@ -676,7 +676,7 @@
         "text": {
           "en": [
             "Force 1.",
-            "Place Kolgore in the target's original hex."
+            "Place Kilgore in the target's original hex."
           ],
           "fr": [
             "Transfert 1.",
@@ -991,7 +991,7 @@
           "fr": "Éclair de jade"
         },
         "text": {
-          "en": ["Deal damages to each target until they are Blooddied."],
+          "en": ["Deal damages to each target until they are Bloodied."],
           "fr": ["Infligez des dommages à chaque cible jusqu'à ce qu'elle soit Mal en point."]
         },
         "metadata": {
@@ -1153,7 +1153,7 @@
         },
         "text": {
           "en": ["The next attack on the target this turn ignores defense and gains +1 strength."],
-          "fr": ["La prochaine attaque sur la cible durant ce tour ignore la défense et gagne +1 strength."]
+          "fr": ["La prochaine attaque sur la cible durant ce tour ignore la défense et gagne +1 force."]
         },
         "metadata": {
           "control": false,
