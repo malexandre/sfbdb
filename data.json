@@ -6,7 +6,7 @@
     "levelUp": {
       "hp": 7,
       "defense": 2,
-      "en": "Adjacent enemies must target Dugrun, if able.",
+      "en": "Adjacent opponents cannot attack unless Dugrun is a target of the attack.",
       "fr": "Les ennemis adjacents ne peuvent pas attaquer, sauf si Dugrun est la cible de l'attaque."
     },
     "cards": [
@@ -885,7 +885,7 @@
     "levelUp": {
       "hp": 9,
       "defense": 0,
-      "en": "Adjacent Enemies suffer -1.",
+      "en": "Adjacent Enemies suffer -1 defense.",
       "fr": "Les ennemis adjacents subissent -1 défense."
     },
     "cards": [
@@ -1632,7 +1632,7 @@
           "fr": "Traque carnassière"
         },
         "text": {
-          "en": ["Place Mariusz adjacent to an Enemy. Each adjacent Bloodied Enemy suffers Stun."],
+          "en": ["Place Mariusz adjacent to an Enemy. Each Bloodied Enemy adjacent to him suffers Stun."],
           "fr": ["Placez Mariusz sur une case adjacente à un ennemi. Tous les ennemis Mal en point adjacents à Mariusz subissent un Étourdissement."]
         },
         "metadata": {
@@ -1960,8 +1960,8 @@
           "fr": "Rugissement sanglant"
         },
         "text": {
-          "en": ["↷ If the attacker is Bloodied, ignore any post attack effects."],
-          "fr": ["↷ Si l'attaquant est Mal en point, ignorez les autres effets Après l'attaque."]
+          "en": ["↷ If the attacker is Bloodied, ignore any further ↷ effects."],
+          "fr": ["↷ Si l'attaquant est Mal en point, ignorez les autres effets ↷."]
         },
         "metadata": {
           "control": false,
