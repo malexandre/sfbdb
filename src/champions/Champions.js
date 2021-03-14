@@ -102,31 +102,31 @@ class Champions extends Component {
           <div className="card-body">
             <div className="row">
               <div className="col-lg">
-                <DropletFill />&nbsp;:&nbsp;
+                <DropletFill />&nbsp;
                 <span className="legends">{ this.props.t("Nombre d'attaques") }</span>
               </div>
               <div className="col-lg">
-                <OctagonFill />&nbsp;:&nbsp;
+                <OctagonFill />&nbsp;
                 <span className="legends">{ this.props.t("Nombre de cartes de contrôle") }</span>
               </div>
               <div className="col-lg">
-                <LayersFill />&nbsp;:&nbsp;
+                <LayersFill />&nbsp;
                 <span className="legends">{ this.props.t("Nombre de cartes permettant de piocher ou planifier") }</span>
               </div>
               <div className="col-lg">
-                <DashCircleFill />&nbsp;:&nbsp;
+                <DashCircleFill />&nbsp;
                 <span className="legends">{ this.props.t("Nombre de cartes sans mouvement") }</span>
               </div>
               <div className="col-lg">
-                <HeartFill />&nbsp;:&nbsp;
+                <HeartFill />&nbsp;
                 <span className="legends">{ this.props.t("Nombre de cartes de soin") }</span>
               </div>
               <div className="col-lg">
-                <FileArrowUpFill />&nbsp;:&nbsp;
+                <FileArrowUpFill />&nbsp;
                 <span className="legends">{ this.props.t("Nombre de cartes de buff") }</span>
               </div>
               <div className="col-lg">
-                <ShieldSlashFill />&nbsp;:&nbsp;
+                <ShieldSlashFill />&nbsp;
                 <span className="legends">{ this.props.t("Nombre de cartes anti-armure") }</span>
               </div>
             </div>
