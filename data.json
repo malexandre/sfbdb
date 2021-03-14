@@ -3586,5 +3586,220 @@
         }
       }
     ]
+  },
+  "Al'kemi" : {
+    "id": 16,
+    "hp": 6,
+    "defense": 0,
+    "levelUp": {
+      "hp": 6,
+      "defense": 0,
+      "en": "One of your Champions can make one standard action per round, without spending a core.",
+      "fr": "L'un de vos champions peut effectuer une action standard par round, sans dépenser d'essence."
+    },
+    "cards": [
+      {
+        "number": "ALK02",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 3,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "Barrage",
+          "fr": "Salve"
+        },
+        "text": {
+          "en": ["This attack ignores the target's defense."],
+          "fr": ["Cette attaque ignore la défense de la cible."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "ALK03",
+        "color": "blue",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Acid Rain",
+          "fr": "Pluie acide"
+        },
+        "text": {
+          "en": ["Deal damage to each Champion equal to their defense."],
+          "fr": ["Infligez à chaque champion des dommages égaux à leur défense."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "ALK04",
+        "color": "blue",
+        "type": "skill",
+        "movement": 3,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Recipe for Disaster",
+          "fr": "La Recette du désastre"
+        },
+        "text": {
+          "en": ["Draw 2.", "Plan 2."],
+          "fr": ["Pioche 2.", "Plan 2"]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "ALK05",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Aqua Vitae",
+          "fr": "Aqua Vitae"
+        },
+        "text": {
+          "en": ["Remove 1 damage from an enemy Champion to ready your Manipulation Core."],
+          "fr": ["Soin 1 sur un champion ennemi pour régénérer votre essence de Manipulation."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "ALK06",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Alchamical Fire",
+          "fr": "Feu alchimique"
+        },
+        "text": {
+          "en": [
+            "Next opponent player Draw 1.",
+            "Ready your Destruction Core."
+          ],
+          "fr": [
+            "Pioche 1 pour le prochain joueur adverse.",
+            "Régénérez votre essence de Destruction."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "ALK07",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Up in Smoke",
+          "fr": "Volatilisation"
+        },
+        "text": {
+          "en": [
+            "↷ Deal 2 damages to each enemy Champion adjacent to the target. Place the target in your deployment zone."
+          ],
+          "fr": [
+            "↷ Infligez 2 dommages à chaque champion ennemi adjacent à la cible. Placez la cible dans votre zone de déploiement."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      }
+    ]
   }
 }

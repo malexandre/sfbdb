@@ -32,6 +32,7 @@ const DEFAULT_STATE = {
   sul: true,
   akh: true,
   iza: true,
+  alk: true,
 
   search: ""
 }
@@ -62,7 +63,8 @@ export default class Cards extends Component {
     const target = event.target
     const value = [
       'red', 'blue', 'yellow', 'attack', 'skill', 'reaction', 'english', 'french',
-      'dug', 'gol', 'gwa', 'kil', 'tzu', 'der', 'rat', 'mar', 'kor', 'lor', 'nev', 'taz', 'kol', 'sul', 'akh', 'iza'
+      'dug', 'gol', 'gwa', 'kil', 'tzu', 'der', 'rat', 'mar', 'kor', 'lor', 'nev', 'taz', 'kol', 'sul', 'akh',
+      'iza', 'alk'
     ].includes(target.name) ? target.checked : target.value
     const name = target.name
 
@@ -92,7 +94,8 @@ export default class Cards extends Component {
       kol: true,
       sul: true,
       akh: true,
-      iza: true
+      iza: true,
+      alk: true
     })
   }
 
@@ -113,7 +116,8 @@ export default class Cards extends Component {
       kol: false,
       sul: false,
       akh: false,
-      iza: false
+      iza: false,
+      alk: false
     })
   }
 
