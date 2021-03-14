@@ -114,7 +114,7 @@ class ChampionCard extends Component {
               <td className="px-1 pb-2">{ champion.metadata.total.withoutMove }</td>
               <td className="px-1 pb-2">{ champion.metadata.total.heal + champion.metadata.total.selfHeal }</td>
               <td className="px-1 pb-2">{ champion.metadata.total.buff }</td>
-              <td className="px-1 pb-2">{ champion.metadata.total.textDamages +  champion.metadata.total.antiDefense }</td>
+              <td className="px-1 pb-2">{ champion.metadata.total.antiDefense }</td>
             </tr>
             </tbody>
           </table>

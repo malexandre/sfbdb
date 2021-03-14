@@ -144,7 +144,10 @@
           "textDamages": false,
           "buff": false,
           "defense": false,
-          "textMovement": true
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
         }
       },
       {
@@ -176,7 +179,7 @@
           "textMovement": false,
           "selfHeal": false,
           "heal": false,
-          "antiDefense": false
+          "antiDefense": true
         }
       },
       {
@@ -211,7 +214,10 @@
           "textDamages": false,
           "buff": false,
           "defense": false,
-          "textMovement": true
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
         }
       }
     ]
@@ -422,7 +428,10 @@
           "textDamages": true,
           "buff": false,
           "defense": false,
-          "textMovement": true
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
         }
       }
     ]
@@ -471,7 +480,7 @@
           "textMovement": false,
           "selfHeal": false,
           "heal": false,
-          "antiDefense": false
+          "antiDefense": true
         }
       },
       {
@@ -543,7 +552,7 @@
           "textMovement": false,
           "selfHeal": false,
           "heal": false,
-          "antiDefense": false
+          "antiDefense": true
         }
       },
       {
@@ -640,7 +649,10 @@
           "textDamages": false,
           "buff": false,
           "defense": false,
-          "textMovement": true
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
         }
       }
     ]
@@ -692,7 +704,10 @@
           "textDamages": false,
           "buff": false,
           "defense": false,
-          "textMovement": true
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
         }
       },
       {
@@ -753,7 +768,10 @@
           "textDamages": false,
           "buff": false,
           "defense": false,
-          "textMovement": true
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
         }
       },
       {
@@ -1006,7 +1024,7 @@
           "textMovement": false,
           "selfHeal": false,
           "heal": false,
-          "antiDefense": false
+          "antiDefense": true
         }
       },
       {
@@ -1038,7 +1056,7 @@
           "textMovement": false,
           "selfHeal": false,
           "heal": false,
-          "antiDefense": false
+          "antiDefense": true
         }
       },
       {
@@ -1444,7 +1462,7 @@
           "textMovement": true,
           "selfHeal": false,
           "heal": false,
-          "antiDefense": false
+          "antiDefense": true
         }
       },
       {
@@ -1774,7 +1792,7 @@
           "textMovement": false,
           "selfHeal": false,
           "heal": false,
-          "antiDefense": false
+          "antiDefense": true
         }
       }
     ]
@@ -2303,7 +2321,7 @@
           "textMovement": true,
           "selfHeal": false,
           "heal": false,
-          "antiDefense": false
+          "antiDefense": true
         }
       },
       {
@@ -2486,7 +2504,7 @@
           "textMovement": false,
           "selfHeal": false,
           "heal": false,
-          "antiDefense": false
+          "antiDefense": true
         }
       },
       {
