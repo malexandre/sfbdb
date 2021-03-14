@@ -3805,12 +3805,12 @@
   "Xinshén" : {
     "id": 17,
     "hp": 4,
-    "defense": 0,
+    "defense": 1,
     "levelUp": {
       "hp": 5,
       "defense": 1,
       "en": "When an enemy Champion suffers displacement effects by Xinshén, they also suffer Stun.",
-      "fr": "L'un de vos champions peut effectuer une action standard par round, sans dépenser d'essence."
+      "fr": "Quand un champion ennemi subit un effet de déplacement infligé par Xinshén, il subit aussi un étourdissement."
     },
     "cards": [
       {
