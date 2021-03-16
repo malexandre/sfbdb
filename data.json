@@ -4269,7 +4269,7 @@
         },
         "text": {
           "en": ["Dash 3 ignoring traps and Champions. Deal 1 damage to each enemy Champion dashed through. You may exhaust your Destruction Core to play this card again."],
-          "fr": ["Course 3 en ignorant les pièges et les champions. Infligez 1 dommage à chaque champion adverse ainsi traversé. Vous pouvez épuiser votre Essence Destruction pour rejouger cette carte."]
+          "fr": ["Course 3 en ignorant les pièges et les champions. Infligez 1 dommage à chaque champion adverse ainsi traversé. Vous pouvez épuiser votre Essence Destruction pour rejouer cette carte."]
         },
         "metadata": {
           "control": false,
@@ -4552,7 +4552,7 @@
             "Plan 1."
           ],
           "fr": [
-            "Placez Lil'Y n'importe où sur le palteau de jeu, mais pas adjacente à un autre champion.",
+            "Placez Lil'Y n'importe où sur le plateau de jeu, mais pas adjacente à un autre champion.",
             "Plan 1."
           ]
         },
@@ -4645,7 +4645,7 @@
         "defense": null,
         "name": {
           "en": "Cracklewind",
-          "fr": "Cent crépitant"
+          "fr": "Vent crépitant"
         },
         "text": {
           "en": [
@@ -4653,8 +4653,8 @@
             "↷ If there are no Manipulation cards in your discard pile, this attack gains Stun."
           ],
           "fr": [
-            "↷ Piqué 2.",
-            "↷ S'il n'y a pas de carte Manipulation dans votre défausse, cette attaque gagne Étourissement."
+            "↶ Piqué 2.",
+            "↷ S'il n'y a pas de carte Manipulation dans votre défausse, cette attaque gagne Étourdissement."
           ]
         },
         "metadata": {
@@ -4686,7 +4686,7 @@
         "strength": 2,
         "defense": null,
         "name": {
-          "en": "Didn't See That Comin', Eh?",
+          "en": "Blackwater's Bite",
           "fr": "Morsure des eaux noires"
         },
         "text": {
@@ -4723,7 +4723,7 @@
         },
         "text": {
           "en": ["If the attacker is adjacent to the target, this card gains +2 defense."],
-          "fr": ["Si l'attaquant est adjacent à la cible, cette reáction gagne +2 défense."]
+          "fr": ["Si l'attaquant est adjacent à la cible, cette réaction gagne +2 défense."]
         },
         "metadata": {
           "control": false,
