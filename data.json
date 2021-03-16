@@ -1,8 +1,12 @@
 {
-  "Dugrun" : {
-    "id": 0,
+  "DUG" : {
+    "id": "DUG",
     "hp": 6,
     "defense": 2,
+    "name": {
+      "en": "Dugrun",
+      "fr": "Dugrun"
+    },
     "levelUp": {
       "hp": 7,
       "defense": 2,
@@ -222,10 +226,14 @@
       }
     ]
   },
-  "Gold'arr" : {
-    "id": 1,
+  "GOL" : {
+    "id": "GOL",
     "hp": 8,
     "defense": 1,
+    "name": {
+      "en": "Gold'arr",
+      "fr": "Gold'arr"
+    },
     "levelUp": {
       "hp": 8,
       "defense": 1,
@@ -436,10 +444,14 @@
       }
     ]
   },
-  "Gwaien" : {
-    "id": 2,
+  "GWA" : {
+    "id": "GWA",
     "hp": 6,
     "defense": 0,
+    "name": {
+      "en": "Gwaien",
+      "fr": "Gwaien"
+    },
     "levelUp": {
       "hp": 6,
       "defense": 0,
@@ -657,10 +669,14 @@
       }
     ]
   },
-  "Kilgore" : {
-    "id": 3,
+  "KIL" : {
+    "id": "KIL",
     "hp": 7,
     "defense": 1,
+    "name": {
+      "en": "Kilgore",
+      "fr": "Kilgore"
+    },
     "levelUp": {
       "hp": 8,
       "defense": 1,
@@ -878,10 +894,14 @@
       }
     ]
   },
-  "Tzu Xiao" : {
-    "id": 4,
+  "TZU" : {
+    "id": "TZU",
     "hp": 9,
     "defense": 0,
+    "name": {
+      "en": "Tzu Xiao",
+      "fr": "Tzu Xiao"
+    },
     "levelUp": {
       "hp": 9,
       "defense": 0,
@@ -1099,10 +1119,14 @@
       }
     ]
   },
-  "Deryn" : {
-    "id": 5,
+  "DER" : {
+    "id": "DER",
     "hp": 7,
     "defense": 0,
+    "name": {
+      "en": "Deryn",
+      "fr": "Deryn"
+    },
     "levelUp": {
       "hp": 7,
       "defense": 0,
@@ -1340,10 +1364,14 @@
       }
     ]
   },
-  "Rath" : {
-    "id": 6,
+  "RAT" : {
+    "id": "RAT",
     "hp": 6,
     "defense": 0,
+    "name": {
+      "en": "Rath",
+      "fr": "Rath"
+    },
     "levelUp": {
       "hp": 7,
       "defense": 0,
@@ -1569,10 +1597,14 @@
       }
     ]
   },
-  "Mariusz" : {
-    "id": 7,
+  "MAR" : {
+    "id": "MAR",
     "hp": 7,
     "defense": 0,
+    "name": {
+      "en": "Mariusz",
+      "fr": "Mariusz"
+    },
     "levelUp": {
       "hp": 7,
       "defense": 0,
@@ -1797,10 +1829,14 @@
       }
     ]
   },
-  "Korvash" : {
-    "id": 8,
+  "KOR" : {
+    "id": "KOR",
     "hp": 8,
     "defense": 0,
+    "name": {
+      "en": "Korvash",
+      "fr": "Korvash"
+    },
     "levelUp": {
       "hp": 9,
       "defense": 0,
@@ -2016,10 +2052,14 @@
       }
     ]
   },
-  "Loralei" : {
-    "id": 9,
+  "LOR" : {
+    "id": "LOR",
     "hp": 4,
     "defense": 2,
+    "name": {
+      "en": "Loralei",
+      "fr": "Loralei"
+    },
     "levelUp": {
       "hp": 4,
       "defense": 2,
@@ -2239,10 +2279,14 @@
       }
     ]
   },
-  "Nevamor" : {
-    "id": 10,
+  "NEV" : {
+    "id": "NEV",
     "hp": 8,
     "defense": 1,
+    "name": {
+      "en": "Nevamor",
+      "fr": "Nevamor"
+    },
     "levelUp": {
       "hp": 8,
       "defense": 1,
@@ -2458,10 +2502,14 @@
       }
     ]
   },
-  "Taze" : {
-    "id": 11,
+  "TAZ" : {
+    "id": "TAZ",
     "hp": 9,
     "defense": 0,
+    "name": {
+      "en": "Taze",
+      "fr": "Taze"
+    },
     "levelUp": {
       "hp": 9,
       "defense": 0,
@@ -2685,10 +2733,14 @@
       }
     ]
   },
-  "Ko'lel" : {
-    "id": 12,
+  "KOL" : {
+    "id": "KOL",
     "hp": 8,
     "defense": 0,
+    "name": {
+      "en": "Ko'lel",
+      "fr": "Ko'lel"
+    },
     "levelUp": {
       "hp": 8,
       "defense": 0,
@@ -2916,10 +2968,14 @@
       }
     ]
   },
-  "Sulka" : {
-    "id": 13,
+  "SUL" : {
+    "id": "SUL",
     "hp": 7,
     "defense": 0,
+    "name": {
+      "en": "Sulka",
+      "fr": "Sulka"
+    },
     "levelUp": {
       "hp": 8,
       "defense": 0,
@@ -3145,10 +3201,14 @@
       }
     ]
   },
-  "Akhet" : {
-    "id": 14,
+  "AKH" : {
+    "id": "AKH",
     "hp": 7,
     "defense": 1,
+    "name": {
+      "en": "Akhet",
+      "fr": "Akhet"
+    },
     "levelUp": {
       "hp": 8,
       "defense": 1,
@@ -3366,10 +3426,14 @@
       }
     ]
   },
-  "Izabella" : {
-    "id": 15,
+  "IZA" : {
+    "id": "IZA",
     "hp": 8,
     "defense": 0,
+    "name": {
+      "en": "Izabella",
+      "fr": "Izabella"
+    },
     "levelUp": {
       "hp": 8,
       "defense": 0,
@@ -3587,10 +3651,14 @@
       }
     ]
   },
-  "Al'kemi" : {
-    "id": 16,
+  "ALK" : {
+    "id": "ALK",
     "hp": 6,
     "defense": 0,
+    "name": {
+      "en": "Al'kemi",
+      "fr": "Al'kemi"
+    },
     "levelUp": {
       "hp": 6,
       "defense": 0,
@@ -3802,10 +3870,14 @@
       }
     ]
   },
-  "Xinshén" : {
-    "id": 17,
+  "XIN" : {
+    "id": "XIN",
     "hp": 4,
     "defense": 1,
+    "name": {
+      "en": "Xinshén",
+      "fr": "Xinshén"
+    },
     "levelUp": {
       "hp": 5,
       "defense": 1,
@@ -4031,10 +4103,14 @@
       }
     ]
   },
-  "Jacques le Beau" : {
-    "id": 18,
+  "JAQ" : {
+    "id": "JAQ",
     "hp": 6,
     "defense": 1,
+    "name": {
+      "en": "Jacques le Beau",
+      "fr": "Jacques le Magnifique"
+    },
     "levelUp": {
       "hp": 7,
       "defense": 1,
@@ -4250,10 +4326,14 @@
       }
     ]
   },
-  "Lil'Y" : {
-    "id": 19,
+  "LIL" : {
+    "id": "LIL",
     "hp": 6,
     "defense": 0,
+    "name": {
+      "en": "Lil'Y",
+      "fr": "Lil'Y"
+    },
     "levelUp": {
       "hp": 6,
       "defense": 1,
@@ -4493,10 +4573,14 @@
       }
     ]
   },
-  "Nikkit" : {
-    "id": 20,
+  "NIK" : {
+    "id": "NIK",
     "hp": 7,
     "defense": 0,
+    "name": {
+      "en": "Nikkit",
+      "fr": "Nikkit"
+    },
     "levelUp": {
       "hp": 9,
       "defense": 0,

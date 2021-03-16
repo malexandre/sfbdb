@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import ChampionPicker from './ChampionPicker'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
+import { Trans } from 'react-i18next';
 
 import Champions from '../champions/Champions'
 import { buildDeckCode, parseDeckCode } from '../deckCode';
-import { Trans } from 'react-i18next';
+import data from '../data.json';
 
 const DEFAULT_STATE = {
   draftMode: "0",
@@ -24,6 +25,21 @@ function resizeArray(arr, size, defaultValue) {
   arr.length = size;
 }
 
+function formatParsedData(parsedData) {
+  return {
+    draftMode: `${parsedData.draftMode}`,
+    teams: parsedData.teams.map((team) => team.map((member) => {
+      const champion = data[member];
+
+      if (!champion) {
+        return null;
+      }
+
+      return champion;
+    }))
+  };
+}
+
 export default class Builder extends Component {
   constructor(props) {
     super(props)
@@ -34,10 +50,10 @@ export default class Builder extends Component {
       const parsedData = parseDeckCode(props.match.params.deckCode)
       state = Object.assign(
         state,
-        parsedData,
+        formatParsedData(parsedData),
         {
           deckCode: props.match.params.deckCode,
-          teamSize: parsedData.draftMode === "0" ? 3 : 5
+          teamSize: parsedData.draftMode === 0 ? 3 : 5
         }
       )
     }
@@ -76,10 +92,11 @@ export default class Builder extends Component {
   }
 
   buildNewDeckCodeAndUpdateHistory(draftMode, teams) {
-    const flattenTeams = [].concat.apply([], teams)
+    const formattedTeams = teams.map((team) => team.map((member) => member ? member.id : null))
+    const flattenTeams = [].concat.apply([], formattedTeams)
     const deckCode =
       flattenTeams.filter((champion) => champion === null).length === 0 ?
-        buildDeckCode(draftMode, teams) :
+        buildDeckCode(parseInt(draftMode), formattedTeams) :
         null
 
     if (deckCode && deckCode !== this.state.deckCode) {

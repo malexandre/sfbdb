@@ -68,7 +68,10 @@ export const ChampionType = PropTypes.shape({
   id: PropTypes.number,
   hp: PropTypes.number,
   defense: PropTypes.number,
-  name: PropTypes.string,
+  name: PropTypes.shape({
+    en: PropTypes.string,
+    fr: PropTypes.string
+  }),
   levelUp: PropTypes.shape({
     hp: PropTypes.number,
     defense: PropTypes.number,

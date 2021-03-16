@@ -23,7 +23,7 @@ class CardCard extends Component {
       <div className={ `card border-${cardColor} w-100 mb-4` }>
         <div className={ `card-header text-center header-bg-${card.color} d-flex flex-column justify-content-center` }>
           <h5 className="m-0">{ getTranslatedTextFromObject(card.name, this.props.i18n.language) }</h5>
-          <div className="card-champion-name">{ card.metadata.championName } · { this.props.t(card.type) }</div>
+          <div className="card-champion-name">{ getTranslatedTextFromObject(card.metadata.championName, this.props.i18n.language) } · { this.props.t(card.type) }</div>
         </div>
         <div className="card-body">
           <dl className="row card-details">

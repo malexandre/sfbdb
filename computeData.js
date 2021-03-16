@@ -41,7 +41,8 @@ function normalizeString(str) {
 function computeCardSearchData(championName, card) {
   return {
     i18n: [
-      normalizeString(championName),
+      normalizeString(championName.en),
+      normalizeString(championName.fr),
       normalizeString(card.number),
       SEARCH_I18N[card.color],
       SEARCH_I18N[card.type],
@@ -51,7 +52,7 @@ function computeCardSearchData(championName, card) {
       ...card.text.fr.map((str) => normalizeString(str))
     ].join(" "),
     en: [
-      normalizeString(championName),
+      normalizeString(championName.en),
       normalizeString(card.number),
       SEARCH_EN[card.color],
       SEARCH_EN[card.type],
@@ -59,7 +60,7 @@ function computeCardSearchData(championName, card) {
       ...card.text.en.map((str) => normalizeString(str))
     ].join(" "),
     fr: [
-      normalizeString(championName),
+      normalizeString(championName.fr),
       normalizeString(card.number),
       SEARCH_FR[card.color],
       SEARCH_FR[card.type],
@@ -71,16 +72,17 @@ function computeCardSearchData(championName, card) {
 
 function computeChampionSearchData(champion) {  return {
   i18n: [
-    normalizeString(champion.name),
+    normalizeString(champion.name.en),
+    normalizeString(champion.name.fr),
     normalizeString(champion.levelUp.en),
     normalizeString(champion.levelUp.fr)
   ].join(" "),
   en: [
-    normalizeString(champion.name),
+    normalizeString(champion.name.en),
     normalizeString(champion.levelUp.en)
   ].join(" "),
   fr: [
-    normalizeString(champion.name),
+    normalizeString(champion.name.fr),
     normalizeString(champion.levelUp.fr)
   ].join(" ")
 }
@@ -134,12 +136,10 @@ function computeDataForCards(cards) {
 
 function computeData() {
   const computedData = {}
-  for (const [championName, champion] of Object.entries(data)) {
-    champion.name = championName
-
+  for (const champion of Object.values(data)) {
     for (const card of champion.cards) {
-      card.metadata.searchData = computeCardSearchData(championName, card)
-      card.metadata.championName = championName
+      card.metadata.searchData = computeCardSearchData(champion.name, card)
+      card.metadata.championName = champion.name
     }
 
     champion.metadata = {
