@@ -38,6 +38,27 @@
   background: linear-gradient(90deg, #f5c6cb 50%, #ffeeba 50%);
 }
 
+.table-blueyellowred,
+.table-blueyellowred > td,
+.table-blueyellowred > th,
+.table-blueredyellow,
+.table-blueredyellow > td,
+.table-blueredyellow > th,
+.table-redyellowblue,
+.table-redyellowblue > td,
+.table-redyellowblue > th,
+.table-yellowredblue,
+.table-yellowredblue > td,
+.table-yellowredblue > th,
+.table-redblueyellow,
+.table-redblueyellow > td,
+.table-redblueyellow > th,
+.table-yelbluelowred,
+.table-yelbluelowred > td,
+.table-yelbluelowred > th {
+  background-image: linear-gradient(90deg, #f5c6cb 33%, #ffeeba 33% 67%, #b8daff 67%);
+}
+
 @media (min-width: 576px) {
   .level-up-power {
     height: 120px;
