@@ -20,7 +20,7 @@ function SearchInput(props) {
             value={ props.search }
             onChange={ props.onInputChange }
           />
-          <div class="input-group-append clear-text-button">
+          <div className="input-group-append clear-text-button">
             <button type="button" className="close" aria-label="Clear" onClick={ props.onClearSearchInput }>
               <span aria-hidden="true">&times;</span>
             </button>

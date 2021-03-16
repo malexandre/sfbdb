@@ -80,7 +80,11 @@ class Champions extends Component {
           return false
         }
 
-        if (!this.state[champion.metadata.reactionColor]) {
+        if (!(
+          (this.state.red && champion.metadata.reactionColor.includes("red")) ||
+          (this.state.blue && champion.metadata.reactionColor.includes("blue")) ||
+          (this.state.yellow && champion.metadata.reactionColor.includes("yellow"))
+        )) {
           return false
         }
 

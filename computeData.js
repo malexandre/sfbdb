@@ -148,7 +148,7 @@ function computeData() {
       blue: computeDataForCards(champion.cards.filter((card) => card.color === "blue")),
       yellow: computeDataForCards(champion.cards.filter((card) => card.color === "yellow")),
       searchData: computeChampionSearchData(champion),
-      reactionColor: champion.cards.find((card) => card.type === "reaction").color
+      reactionColor: champion.cards.filter((card) => card.type === "reaction").map((card) => card.color).join("")
     }
 
     computedData[champion.id] = champion

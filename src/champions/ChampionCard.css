@@ -11,6 +11,33 @@
   font-size: 11px;
 }
 
+.table-bluered,
+.table-bluered > td,
+.table-bluered > th,
+.table-redblue,
+.table-redblue > td,
+.table-redblue > th {
+  background: linear-gradient(90deg, #f5c6cb 50%, #b8daff 50%);
+}
+
+.table-blueyellow,
+.table-blueyellow > td,
+.table-blueyellow > th,
+.table-yellowblue,
+.table-yellowblue > td,
+.table-yellowblue > th {
+  background: linear-gradient(90deg, #ffeeba 50%, #b8daff 50%);
+}
+
+.table-yellowred,
+.table-yellowred > td,
+.table-yellowred > th,
+.table-redyellow,
+.table-redyellow > td,
+.table-redyellow > th {
+  background: linear-gradient(90deg, #f5c6cb 50%, #ffeeba 50%);
+}
+
 @media (min-width: 576px) {
   .level-up-power {
     height: 120px;

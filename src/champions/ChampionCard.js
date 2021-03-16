@@ -32,13 +32,16 @@ class ChampionCard extends Component {
   render() {
     const champion = this.props.champion
 
-    let tableColor = "table-primary"
+    let tableColor = `table-${champion.metadata.reactionColor}`
 
     if (champion.metadata.reactionColor === "red") {
       tableColor = "table-danger"
     }
     else if (champion.metadata.reactionColor === "yellow") {
       tableColor = "table-warning"
+    }
+    else if (champion.metadata.reactionColor === "blue") {
+      tableColor = "table-primary"
     }
 
     return (
