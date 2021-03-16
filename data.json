@@ -4030,5 +4030,710 @@
         }
       }
     ]
+  },
+  "Jacques le Beau" : {
+    "id": 18,
+    "hp": 6,
+    "defense": 1,
+    "levelUp": {
+      "hp": 7,
+      "defense": 1,
+      "en": "At the start of your Activation Phase you may ready a Core.",
+      "fr": "Au début de votre phase d'activation, vous pouvez régénérer une essence."
+    },
+    "cards": [
+      {
+        "number": "JAQ02",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": 1,
+        "name": {
+          "en": "Parrying Blow",
+          "fr": "Parade circulaire"
+        },
+        "text": {
+          "en": ["Discard up to 3 cards. For each Manipulation card discarded, gain +1 defense."],
+          "fr": ["Défaussez jusqu'à 3 cartes. Pour chauqe carte Manipulation défaussée, gagnez +1 défense."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "JAQ03",
+        "color": "blue",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": 1,
+        "name": {
+          "en": "Riposte",
+          "fr": "Riposte"
+        },
+        "text": {
+          "en": ["↷ Discard up to 3 cards. For each Destruction card discarded, the attacker suffers 1 damage."],
+          "fr": ["↷ Défaussez jusqu'à 3 cartes. Pour chaque carte Destruction défaussée, l'attaquant subit 1 dommage."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": true,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "JAQ04",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 3,
+        "strength": 1,
+        "defense": null,
+        "name": {
+          "en": "En-Garde",
+          "fr": "En garde!"
+        },
+        "text": {
+          "en": ["This attack gains +1 strength for each Champion targeted."],
+          "fr": ["Cette attaque gagne +1 force pour chaque champion ciblé."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "JAQ05",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "A Pirate's Life For Me",
+          "fr": "Ma vie de pirate"
+        },
+        "text": {
+          "en": [
+            "Draw 1.",
+            "Heal 1.",
+            "You may exhaust your Manipulation Core to Plan 2."
+          ],
+          "fr": [
+            "Pioche 1.",
+            "Soin 1.",
+            "Vous pouvez épuiser votre Essence Manipulation pour exéctuer Plan 2."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "JAQ06",
+        "color": "blue",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Swift Sword Cut",
+          "fr": "Botte rapide"
+        },
+        "text": {
+          "en": ["Dash 3 ignoring traps and Champions. Deal 1 damage to each enemy Champion dashed through. You may exhaust your Destruction Core to play this card again."],
+          "fr": ["Course 3 en ignorant les pièges et les champions. Infligez 1 dommage à chaque champion adverse ainsi traversé. Vous pouvez épuiser votre Essence Destruction pour rejouger cette carte."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "JAQ07",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "Coup de Grâce",
+          "fr": "Coup de grâce"
+        },
+        "text": {
+          "en": [
+            "↶ Dash 2.",
+            "This attack gains +1 strength for each Destruction card in your discard pile."
+          ],
+          "fr": [
+            "↶ Course 2.",
+            "Cette attaque gagne +1 force pour chaque carte Destruction dans votre défausse."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Lil'Y" : {
+    "id": 19,
+    "hp": 6,
+    "defense": 0,
+    "levelUp": {
+      "hp": 6,
+      "defense": 1,
+      "en": "Can't be targeted by attacks if she's adjacent to an ally.",
+      "fr": "Lil'Y ne peut pas être la cible d'une attaque si elle est adjacente à un allié."
+    },
+    "cards": [
+      {
+        "number": "LIL02",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "Flank",
+          "fr": "Attaque de flanc"
+        },
+        "text": {
+          "en": [
+            "Ignores defense.",
+            "+1 strength per ally adjacet to the target.",
+            "↷ Dash 3."
+          ],
+          "fr": [
+            "Ignorez la défense.",
+            "+1 force par allié adjacent à la cible.",
+            "↷ Course 3."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "LIL03",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strength": 1,
+        "defense": null,
+        "name": {
+          "en": "Twin Blades",
+          "fr": "Lames jumelles"
+        },
+        "text": {
+          "en": [
+            "Double.",
+            "↷ You can exhaust a Core to play this card again."
+          ],
+          "fr": [
+            "Doublé.",
+            "↷ Vous pouvez épuiser une Essence pour rejouer cette carte."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "LIL04",
+        "color": "yellow",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": 1,
+        "name": {
+          "en": "Didn't See That Comin', Eh?",
+          "fr": "Tu l'avais pas vu venir, hein ?"
+        },
+        "text": {
+          "en": [
+            "Draw 2.",
+            "You can play another reaction this attack."
+          ],
+          "fr": [
+            "Pioche 2.",
+            "Vous pouvez jouer une autre réaction cette attaque."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "LIL05",
+        "color": "blue",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": 1,
+        "name": {
+          "en": "Vanish",
+          "fr": "Disparition"
+        },
+        "text": {
+          "en": ["↷ Place the target adjacent to an ally."],
+          "fr": ["↷ Placez la cible sur une case adjacente à celle d'un allié."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "LIL06",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Snatch",
+          "fr": "Chapardage"
+        },
+        "text": {
+          "en": [
+            "The targeted Champion's controller discards a card at random.",
+            "Draw 1.",
+            "Dash 2."
+          ],
+          "fr": [
+            "Le contrôleur du champion ciblé défausse aléatoirement une carte.",
+            "Pioche 1.",
+            "Course 2."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "LIL07",
+        "color": "blue",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Through the Shadows",
+          "fr": "Dans les ombres"
+        },
+        "text": {
+          "en": [
+            "Place Lil'Y anywhere on the board except adjacent to a Champion.",
+            "Plan 1."
+          ],
+          "fr": [
+            "Placez Lil'Y n'importe où sur le palteau de jeu, mais pas adjacente à un autre champion.",
+            "Plan 1."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "Nikkit" : {
+    "id": 20,
+    "hp": 7,
+    "defense": 0,
+    "levelUp": {
+      "hp": 9,
+      "defense": 0,
+      "en": "Whenever you Plan, you may Plan from your discard pile.",
+      "fr": "À chaque fois que vous exécutez un Plan, vous pouvez prendre des cartes dans votre défausse."
+    },
+    "cards": [
+      {
+        "number": "NIK02",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "Fearsome Spitfire",
+          "fr": "Crache-feu effroyable"
+        },
+        "text": {
+          "en": [
+            "If there are no Destruction cards in your discard pile, this attack gains +2 strength.",
+            "↷ Push 1."
+          ],
+          "fr": [
+            "S'il n'y a pas de carte Destruction dans votre défausse, cette attaque gagne +2 force.",
+            "↷ Poussée 1."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "NIK03",
+        "color": "blue",
+        "type": "attack",
+        "movement": 0,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": false
+        },
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "Cracklewind",
+          "fr": "Cent crépitant"
+        },
+        "text": {
+          "en": [
+            "↶  Swoop 2.",
+            "↷ If there are no Manipulation cards in your discard pile, this attack gains Stun."
+          ],
+          "fr": [
+            "↷ Piqué 2.",
+            "↷ S'il n'y a pas de carte Manipulation dans votre défausse, cette attaque gagne Étourissement."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "NIK04",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": false
+        },
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "Didn't See That Comin', Eh?",
+          "fr": "Morsure des eaux noires"
+        },
+        "text": {
+          "en": ["If there are no Creation cards in your discard pile, this attack gains +1 strength and Lifesteal."],
+          "fr": ["S'il n'y a pas de carte Création dans votre défausse, cette attaque gagne +1 force et Drain de vie."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "NIK05",
+        "color": "yellow",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": 1,
+        "name": {
+          "en": "Shell of the Swamp",
+          "fr": "Carapace du marais"
+        },
+        "text": {
+          "en": ["If the attacker is adjacent to the target, this card gains +2 defense."],
+          "fr": ["Si l'attaquant est adjacent à la cible, cette reáction gagne +2 défense."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "NIK06",
+        "color": "red",
+        "type": "skill",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 3,
+          "direct": false
+        },
+        "aoe": 1,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Burning Wrath",
+          "fr": "Courroux ardent"
+        },
+        "text": {
+          "en": [
+            "The targeted Champion suffers 1 damage and gains +2 strength until the end of the turn. This may target Nikkit's Allies."
+          ],
+          "fr": [
+            "Le champion ciblé subit 1 dommage et gagne +2 force jusqu'à la fin du tour. Les alliés de Nikkit peuvent être cibleś."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": true,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": true
+        }
+      },
+      {
+        "number": "NIK07",
+        "color": "blue",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Recovery",
+          "fr": "Récupération"
+        },
+        "text": {
+          "en": [
+            "Shuffle all cards from your discard pile into your deck.",
+            "Heal 2."
+          ],
+          "fr": [
+            "Mélangez toutes les cartes de votre défausse à votre pioche.",
+            "Soin 2."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
   }
 }

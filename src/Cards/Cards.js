@@ -34,6 +34,9 @@ const DEFAULT_STATE = {
   iza: true,
   alk: true,
   xin: true,
+  jaq: true,
+  lil: true,
+  nik: true,
 
   search: ""
 }
@@ -65,7 +68,7 @@ export default class Cards extends Component {
     const value = [
       'red', 'blue', 'yellow', 'attack', 'skill', 'reaction', 'english', 'french',
       'dug', 'gol', 'gwa', 'kil', 'tzu', 'der', 'rat', 'mar', 'kor', 'lor', 'nev', 'taz', 'kol', 'sul', 'akh',
-      'iza', 'alk', 'xin'
+      'iza', 'alk', 'xin', 'jaq', 'lil', 'nik'
     ].includes(target.name) ? target.checked : target.value
     const name = target.name
 
@@ -97,7 +100,10 @@ export default class Cards extends Component {
       akh: true,
       iza: true,
       alk: true,
-      xin: true
+      xin: true,
+      jaq: true,
+      lil: true,
+      nik: true
     })
   }
 
@@ -120,7 +126,10 @@ export default class Cards extends Component {
       akh: false,
       iza: false,
       alk: false,
-      xin: false
+      xin: false,
+      jaq: false,
+      lil: false,
+      nik: false
     })
   }
 
