@@ -65,7 +65,7 @@ const ChampionMetadataType = PropTypes.shape({
 })
 
 export const ChampionType = PropTypes.shape({
-  id: PropTypes.number,
+  id: PropTypes.string,
   hp: PropTypes.number,
   defense: PropTypes.number,
   name: PropTypes.shape({

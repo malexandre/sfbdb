@@ -5,6 +5,7 @@ import CardList from './CardList'
 
 
 const CARDS = [].concat.apply([], Object.values(data).map((champion) => champion.cards))
+const CHAMPIONS = Object.values(data).map((champion) => ({ id: champion.id.toLowerCase(), name: champion.name }))
 
 const DEFAULT_STATE = {
   red: true,
@@ -16,29 +17,11 @@ const DEFAULT_STATE = {
   english: true,
   french: true,
 
-  dug: true,
-  gol: true,
-  gwa: true,
-  kil: true,
-  tzu: true,
-  der: true,
-  rat: true,
-  mar: true,
-  kor: true,
-  lor: true,
-  nev: true,
-  taz: true,
-  kol: true,
-  sul: true,
-  akh: true,
-  iza: true,
-  alk: true,
-  xin: true,
-  jaq: true,
-  lil: true,
-  nik: true,
-
   search: ""
+}
+
+for (const { id } of CHAMPIONS) {
+  DEFAULT_STATE[id] = true;
 }
 
 function normalizeString(str) {
@@ -66,9 +49,7 @@ export default class Cards extends Component {
   handleInputChange(event) {
     const target = event.target
     const value = [
-      'red', 'blue', 'yellow', 'attack', 'skill', 'reaction', 'english', 'french',
-      'dug', 'gol', 'gwa', 'kil', 'tzu', 'der', 'rat', 'mar', 'kor', 'lor', 'nev', 'taz', 'kol', 'sul', 'akh',
-      'iza', 'alk', 'xin', 'jaq', 'lil', 'nik'
+      'red', 'blue', 'yellow', 'attack', 'skill', 'reaction', 'english', 'french', ...CHAMPIONS.map((champion) => champion.id)
     ].includes(target.name) ? target.checked : target.value
     const name = target.name
 
@@ -82,55 +63,23 @@ export default class Cards extends Component {
   }
 
   selectAllChampionsFilters() {
-    this.setState({
-      dug: true,
-      gol: true,
-      gwa: true,
-      kil: true,
-      tzu: true,
-      der: true,
-      rat: true,
-      mar: true,
-      kor: true,
-      lor: true,
-      nev: true,
-      taz: true,
-      kol: true,
-      sul: true,
-      akh: true,
-      iza: true,
-      alk: true,
-      xin: true,
-      jaq: true,
-      lil: true,
-      nik: true
-    })
+    const newState = {}
+
+    for (const { id } of CHAMPIONS) {
+      newState[id] = true;
+    }
+
+    this.setState(newState)
   }
 
   deselectAllChampionsFilters() {
-    this.setState({
-      dug: false,
-      gol: false,
-      gwa: false,
-      kil: false,
-      tzu: false,
-      der: false,
-      rat: false,
-      mar: false,
-      kor: false,
-      lor: false,
-      nev: false,
-      taz: false,
-      kol: false,
-      sul: false,
-      akh: false,
-      iza: false,
-      alk: false,
-      xin: false,
-      jaq: false,
-      lil: false,
-      nik: false
-    })
+    const newState = {}
+
+    for (const { id } of CHAMPIONS) {
+      newState[id] = false;
+    }
+
+    this.setState(newState)
   }
 
   render() {
@@ -169,6 +118,7 @@ export default class Cards extends Component {
     return (
       <div className="container mt-4">
         <CardFilter
+          champions={ CHAMPIONS }
           filter={ this.state }
           onInputChange={ this.handleInputChange }
           onClearSearchInput={ this.handleSearchInputClear }

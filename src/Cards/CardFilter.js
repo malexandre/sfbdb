@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { Trans } from 'react-i18next'
+import { Trans, withTranslation } from 'react-i18next'
 import SearchInput from '../SearchInput'
+import { ChampionType } from '../types'
+import { getTranslatedTextFromObject } from '../utils'
 
 
-export default class CardFilter extends Component {
+class CardFilter extends Component {
   render() {
     return (
       <div>
@@ -125,237 +127,21 @@ export default class CardFilter extends Component {
           <div className="col-12">
             <label><b><Trans>Champions</Trans></b></label>
             <div className="form-group d-flex align-items-center justify-content-center flex-wrap">
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="dug"
-                  name="dug"
-                  checked={ this.props.filter.dug }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="dug">Dugrun</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="gol"
-                  name="gol"
-                  checked={ this.props.filter.gol }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="gol">Gold'arr</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="gwa"
-                  name="gwa"
-                  checked={ this.props.filter.gwa }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="gwa">Gwaien</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="kil"
-                  name="kil"
-                  checked={ this.props.filter.kil }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="kil">Kilgore</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="tzu"
-                  name="tzu"
-                  checked={ this.props.filter.tzu }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="tzu">Tzu Xiao</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="der"
-                  name="der"
-                  checked={ this.props.filter.der }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="der">Deryn</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="rat"
-                  name="rat"
-                  checked={ this.props.filter.rat }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="rat">Rath</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="mar"
-                  name="mar"
-                  checked={ this.props.filter.mar }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="mar">Mariusz</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="kor"
-                  name="kor"
-                  checked={ this.props.filter.kor }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="kor">Korvash</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="lor"
-                  name="lor"
-                  checked={ this.props.filter.lor }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="lor">Loralei</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="nev"
-                  name="nev"
-                  checked={ this.props.filter.nev }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="nev">Nevamor</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="taz"
-                  name="taz"
-                  checked={ this.props.filter.taz }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="taz">Taze</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="kol"
-                  name="kol"
-                  checked={ this.props.filter.kol }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="kol">Ko'lel</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="sul"
-                  name="sul"
-                  checked={ this.props.filter.sul }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="sul">Sulka</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="akh"
-                  name="akh"
-                  checked={ this.props.filter.akh }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="akh">Akhet</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="iza"
-                  name="iza"
-                  checked={ this.props.filter.iza }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="iza">Izabella</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="alk"
-                  name="alk"
-                  checked={ this.props.filter.alk }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="alk">Al'kemi</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="xin"
-                  name="xin"
-                  checked={ this.props.filter.xin }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="xin">Xinshén</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="jaq"
-                  name="jaq"
-                  checked={ this.props.filter.jaq }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="jaq">Jacques le Beau</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="lil"
-                  name="lil"
-                  checked={ this.props.filter.lil }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="lil">Lil'Y</label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="nik"
-                  name="nik"
-                  checked={ this.props.filter.nik }
-                  onChange={ this.props.onInputChange }
-                />
-                <label className="form-check-label" htmlFor="nik">Nikkit</label>
-              </div>
+              { this.props.champions.map((champion) => {
+                return (
+                  <div className="form-check form-check-inline" key={ champion.id }>
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id={ champion.id }
+                      name={ champion.id }
+                      checked={ this.props.filter[champion.id] }
+                      onChange={ this.props.onInputChange }
+                    />
+                    <label className="form-check-label" htmlFor={ champion.id }>{ getTranslatedTextFromObject(champion.name, this.props.i18n.language) }</label>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -374,6 +160,7 @@ export default class CardFilter extends Component {
 }
 
 CardFilter.propTypes = {
+  champions: PropTypes.arrayOf(ChampionType),
   filter: PropTypes.shape({
     red: PropTypes.bool,
     yellow: PropTypes.bool,
@@ -390,3 +177,5 @@ CardFilter.propTypes = {
   onSelectAllChampions: PropTypes.func,
   onDeselectAllChampions: PropTypes.func
 }
+
+export default withTranslation()(CardFilter);
