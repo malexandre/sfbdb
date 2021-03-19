@@ -52,7 +52,11 @@ class ChampionCard extends Component {
               <span aria-hidden="true">&times;</span>
             </button>
           )}
-          <h4 className="card-title text-center">{ getTranslatedTextFromObject(champion.name, this.props.i18n.language) }</h4>
+          <h4
+            className="card-title text-center champion-name"
+            title={ getTranslatedTextFromObject(champion.name, this.props.i18n.language) }>
+            { getTranslatedTextFromObject(champion.name, this.props.i18n.language) }
+          </h4>
           <div className="text-center champion-hp mb-3">
             <Heart /> { champion.hp } <Shield /> { champion.defense }
             <ForwardFill className="mx-2" />

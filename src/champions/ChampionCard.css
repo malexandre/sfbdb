@@ -11,6 +11,12 @@
   font-size: 11px;
 }
 
+.champion-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .table-bluered,
 .table-bluered > td,
 .table-bluered > th,
