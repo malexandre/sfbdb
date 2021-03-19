@@ -2979,7 +2979,7 @@
     "levelUp": {
       "hp": 8,
       "defense": 0,
-      "en": "After you play a Sulka Manipulation card, Draw 1, Plan 2.",
+      "en": "After you play a Sulka Manipulation card, Draw 1 and then Plan 1.",
       "fr": "Après avoir joué une carte Manipulation de Sulka, Pioche 1, Plan 1."
     },
     "cards": [
@@ -3039,7 +3039,7 @@
         "text": {
           "en": [
             "Lifesteal.",
-            "You may choose to heal one of Sulka's Allies instead."
+            "The heal from this Lifesteal may be assigned to one of Sulka's Allies instead of her."
           ],
           "fr": [
             "Drain de vie.",
@@ -3117,7 +3117,7 @@
           "fr": "Esprit glissant"
         },
         "text": {
-          "en": ["May move through Enemies, statues, and traps. Enemies moved through suffer -2 defense until the end of the turn."],
+          "en": ["May move through Enemies, statues, and traps without activating them. Enemies moved through suffer -2 defense until the end of the turn."],
           "fr": ["Peut se déplacer à travers les ennemis, les statues et les pièges, sans les activer. Les ennemis situés sur la trajectoire du déplacement subissent -2 défense jusqu'à la fin du tour."]
         },
         "metadata": {
