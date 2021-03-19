@@ -28,7 +28,10 @@ const idToString = {
   17: "XIN",
   18: "JAQ",
   19: "LIL",
-  20: "NIK"
+  20: "NIK",
+  21: "TEN",
+  22: "KHA",
+  23: "ALI"
 };
 
 const stringToId = Object.entries(idToString).reduce((acc, entry) => {
