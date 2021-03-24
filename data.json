@@ -3305,7 +3305,7 @@
         },
         "text": {
           "en": ["↷ If the target was taken Out of Action by the attack, place them adjacent to the attacker instead of on their gate."],
-          "fr": ["↷ Si la cible a été mise Hors de combat par l'attaque, placez-la sur une case adjacente à l'attaquant au lieu de son protail."]
+          "fr": ["↷ Si la cible a été mise Hors de combat par l'attaque, placez-la sur une case adjacente à l'attaquant au lieu de son portail."]
         },
         "metadata": {
           "control": false,
