@@ -4846,14 +4846,14 @@
         "defense": null,
         "name": {
           "en": "Heaven's Blessing",
-          "fr": "Crache-feu effroyable"
+          "fr": "Bénédiction des cieux"
         },
         "text": {
           "en": [
             "Target any allied Champion. The target may Heal 2, gain +1 strength and +1 movement until the end of the turn."
           ],
           "fr": [
-            "Ciblez n'importe quel champion allié. La cible peut recevoir Soin 2, gagner +1 force et +1 movement jusqu'à la fin du tour."
+            "Ciblez n'importe quel champion allié. La cible peut recevoir Soin 2, gagner +1 force et +1 mouvement jusqu'à la fin du tour."
           ]
         },
         "metadata": {
@@ -5149,7 +5149,7 @@
         },
         "text": {
           "en": ["↷ If damage was dealt, the target suffers Fear 1."],
-          "fr": ["↷ Si un ou plusieurs dommages on été infligés, la cible subit Peur 1."]
+          "fr": ["↷ Si un ou plusieurs dommages ont été infligés, la cible subit Peur 1."]
         },
         "metadata": {
           "control": true,
@@ -5287,7 +5287,7 @@
     "levelUp": {
       "hp": 7,
       "defense": 1,
-      "en": "If Tentaclot is adjacent to a statue, he ignores displacement effets from enemies.",
+      "en": "If Tentaclot is adjacent to a statue, he ignores displacement effects from enemies.",
       "fr": "Si Tentaclot est adjacent à une statue, il ignore les effets de déplacement des ennemis."
     },
     "cards": [
@@ -5365,7 +5365,7 @@
       },
       {
         "number": "TEN04",
-        "color": "red",
+        "color": "blue",
         "type": "attack",
         "movement": 1,
         "range": {
