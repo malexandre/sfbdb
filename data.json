@@ -4819,5 +4819,696 @@
         }
       }
     ]
+  },
+  "KHA" : {
+    "id": "KHA",
+    "hp": 7,
+    "defense": 0,
+    "name": {
+      "en": "Khalize",
+      "fr": "Khalize"
+    },
+    "levelUp": {
+      "hp": 7,
+      "defense": 0,
+      "en": "You can use any Core as a Creation Core.",
+      "fr": "Vous pouvez utiliser toutes les essences comme essence de Création."
+    },
+    "cards": [
+      {
+        "number": "KHA02",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Heaven's Blessing",
+          "fr": "Crache-feu effroyable"
+        },
+        "text": {
+          "en": [
+            "Target any allied Champion. The target may Heal 2, gain +1 strength and +1 movement until the end of the turn."
+          ],
+          "fr": [
+            "Ciblez n'importe quel champion allié. La cible peut recevoir Soin 2, gagner +1 force et +1 movement jusqu'à la fin du tour."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": true,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": true,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KHA03",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strength": 0,
+        "defense": null,
+        "name": {
+          "en": "Salt the Wound",
+          "fr": "Du sel sur la plaie"
+        },
+        "text": {
+          "en": [
+            "This attack gains +1 strength for each damage on the target."
+          ],
+          "fr": [
+            "Cette attaque gagne +1 force pour chaque dommage sur la cible."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KHA04",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Glimpse of Divinity",
+          "fr": "Vision du divin"
+        },
+        "text": {
+          "en": ["Cancel all ↷ effects of the attack."],
+          "fr": ["Annulez tous les effets ↷ de l'attaque."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KHA05",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Restoration",
+          "fr": "Restauration"
+        },
+        "text": {
+          "en": ["An Ally adjacent to Khalize may Heal 3. Return one of that champion's cards from your discard pile to your hand."],
+          "fr": ["Un allié adjacent à Khalize peut recevoir un Soin 3. Remettez dans votre main une des cartes de ce champion se trouvant dans la défausse."]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": true,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": true,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KHA06",
+        "color": "blue",
+        "type": "attack",
+        "movement": 2,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": false
+        },
+        "aoe": 1,
+        "strength": 1,
+        "defense": null,
+        "name": {
+          "en": "Ibis Strike",
+          "fr": "Frappe de l'ibis"
+        },
+        "text": {
+          "en": [
+            "↷ Pull 1."
+          ],
+          "fr": [
+            "↷ Attraction 1."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "KHA07",
+        "color": "blue",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Radiant Rush",
+          "fr": "Essor radieux"
+        },
+        "text": {
+          "en": [
+            "Swoop 3.",
+            "Heal 1 for each hex moved through."
+          ],
+          "fr": [
+            "Piqué 3.",
+            "Soin 1 pour chaque case traversée."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "ALI" : {
+    "id": "ALI",
+    "hp": 9,
+    "defense": 0,
+    "name": {
+      "en": "King Alistair",
+      "fr": "Roi Alistair"
+    },
+    "levelUp": {
+      "hp": 10,
+      "defense": 1,
+      "en": "",
+      "fr": ""
+    },
+    "cards": [
+      {
+        "number": "ALI02",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 6,
+        "strength": 3,
+        "defense": null,
+        "name": {
+          "en": "Die for Your King!",
+          "fr": "Mourez pour votre roi"
+        },
+        "text": {
+          "en": [],
+          "fr": []
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "ALI03",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strength": 3,
+        "defense": null,
+        "name": {
+          "en": "Long Live the King!",
+          "fr": "Vive le roi !"
+        },
+        "text": {
+          "en": [
+            "↷ If the target was taken Out of Action, Heal 2."
+          ],
+          "fr": [
+            "↷ Si la cible a été mise Hors de Combat, Soin 2."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": true,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "ALI04",
+        "color": "blue",
+        "type": "attack",
+        "movement": 1,
+        "range": null,
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "Bow Before the King!",
+          "fr": "À genoux devant le roi"
+        },
+        "text": {
+          "en": ["↷ If damage was dealt, the target suffers Fear 1."],
+          "fr": ["↷ Si un ou plusieurs dommages on été infligés, la cible subit Peur 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "ALI05",
+        "color": "blue",
+        "type": "skill",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": true
+        },
+        "aoe": 1,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "The Tyrant's Gaze",
+          "fr": "Le Regard du tyran"
+        },
+        "text": {
+          "en": ["Fear 2.", "Stun."],
+          "fr": ["Peur 2.", "Étourdissement."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": true,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "ALI06",
+        "color": "red",
+        "type": "skill",
+        "movement": 2,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Forced March",
+          "fr": "Marche forcée"
+        },
+        "text": {
+          "en": [
+            "Force 1 your Allies."
+          ],
+          "fr": [
+            "Transfert 1 pour les alliés."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "ALI07",
+        "color": "yellow",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": 1,
+        "name": {
+          "en": "Reverence",
+          "fr": "Révérence"
+        },
+        "text": {
+          "en": [
+            "The target is immune to Fear until the end of the turn."
+          ],
+          "fr": [
+            "La cible est immunisée à la Peur jusqu'à la fin du tour."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": false,
+          "buff": false,
+          "defense": true,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
+  },
+  "TEN" : {
+    "id": "TEN",
+    "hp": 7,
+    "defense": 0,
+    "name": {
+      "en": "Sir Tentaclot",
+      "fr": "Sire Tentaclot"
+    },
+    "levelUp": {
+      "hp": 7,
+      "defense": 1,
+      "en": "If Tentaclot is adjacent to a statue, he ignores displacement effets from enemies.",
+      "fr": "Si Tentaclot est adjacent à une statue, il ignore les effets de déplacement des ennemis."
+    },
+    "cards": [
+      {
+        "number": "TEN02",
+        "color": "yellow",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 2,
+          "max": 3,
+          "direct": true
+        },
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "All Eight Tentacles",
+          "fr": "Huit d'un coup !"
+        },
+        "text": {
+          "en": ["Double.", "↷ Pull 2."],
+          "fr": ["Doublé.", "↷ Attraction 2."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TEN03",
+        "color": "red",
+        "type": "attack",
+        "movement": 2,
+        "range": null,
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "Tentacle Strike",
+          "fr": "Coup de tentacule"
+        },
+        "text": {
+          "en": [
+            "Poison 2."
+          ],
+          "fr": [
+            "Poison 2."
+          ]
+        },
+        "metadata": {
+          "control": false,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TEN04",
+        "color": "red",
+        "type": "attack",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": true
+        },
+        "aoe": 1,
+        "strength": 2,
+        "defense": null,
+        "name": {
+          "en": "One-Eighth of My Strength",
+          "fr": "Un huitième de ma force"
+        },
+        "text": {
+          "en": ["↷ Pull 1."],
+          "fr": ["↷ Attraction 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": true,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TEN05",
+        "color": "red",
+        "type": "reaction",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Mask of Fear",
+          "fr": "Masque de peur"
+        },
+        "text": {
+          "en": ["↷ All enemies Champions adjacent to the target suffers 1 damage and Fear 1."],
+          "fr": ["↷ Tous les champions ennemis adjacents à la cible subissent 1 dommage et Peur 1."]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": true,
+          "textDamages": true,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": true,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TEN06",
+        "color": "yellow",
+        "type": "skill",
+        "movement": 1,
+        "range": {
+          "min": 1,
+          "max": 2,
+          "direct": false
+        },
+        "aoe": 1,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Mindcloud",
+          "fr": "Obscurcissement de l'esprit"
+        },
+        "text": {
+          "en": [
+            "The target suffers Force 1 and its controller puts 1 card at random from their hand on top of their deck."
+          ],
+          "fr": [
+            "La cible subit Transfert 1 et son contrôleur place 1 carte au hasard de sa main sur le dessus de son deck."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": false,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": false,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      },
+      {
+        "number": "TEN07",
+        "color": "blue",
+        "type": "skill",
+        "movement": 0,
+        "range": null,
+        "aoe": null,
+        "strength": null,
+        "defense": null,
+        "name": {
+          "en": "Oh R'Lyeh?",
+          "fr": "Oh R'Lyeh ?"
+        },
+        "text": {
+          "en": [
+            "Jump 3.",
+            "Force 1 all adjacent champions."
+          ],
+          "fr": [
+            "Saut 3.",
+            "Transfert 1 tous les champions adjacents."
+          ]
+        },
+        "metadata": {
+          "control": true,
+          "attack": false,
+          "deckManagement": false,
+          "withoutMove": true,
+          "reaction": false,
+          "textDamages": false,
+          "buff": false,
+          "defense": false,
+          "textMovement": true,
+          "selfHeal": false,
+          "heal": false,
+          "antiDefense": false
+        }
+      }
+    ]
   }
 }
